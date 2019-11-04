@@ -1,4 +1,4 @@
-package randomGenerator;
+package com.techlabs.randomgenerator;
 
 public class RandomNumberGenerator {
 	public int randomNumberGenerator() {

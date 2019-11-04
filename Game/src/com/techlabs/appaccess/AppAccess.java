@@ -1,4 +1,4 @@
-package appAccess;
+package com.techlabs.appaccess;
 
 
 public class AppAccess {
@@ -11,9 +11,9 @@ public class AppAccess {
 	boolean winCondition2 = false;
 	boolean winCondition3 = false;
 	
-	randomGenerator.RandomNumberGenerator playerone = new randomGenerator.RandomNumberGenerator();
-	randomGenerator.RandomNumberGenerator playertwo = new randomGenerator.RandomNumberGenerator();
-	randomGenerator.RandomNumberGenerator playerthree = new randomGenerator.RandomNumberGenerator();
+	com.techlabs.randomgenerator.RandomNumberGenerator playerone = new com.techlabs.randomgenerator.RandomNumberGenerator();
+	com.techlabs.randomgenerator.RandomNumberGenerator playertwo = new com.techlabs.randomgenerator.RandomNumberGenerator();
+	com.techlabs.randomgenerator.RandomNumberGenerator playerthree = new com.techlabs.randomgenerator.RandomNumberGenerator();
 	
 	public void appAccess() {
 		

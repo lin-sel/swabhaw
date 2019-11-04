@@ -1,6 +1,6 @@
-package appExecute;
+package com.techlabs.appexecute;
 
-import appAccess.AppAccess;
+import com.techlabs.appaccess.AppAccess;
 
 public class MyApp {
 
