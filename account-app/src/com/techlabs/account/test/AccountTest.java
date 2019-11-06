@@ -22,5 +22,7 @@ public class AccountTest {
 		else {
 			System.out.println("Transaction Failed....");
 		}
+		
+		System.out.println(Account.getTotalaccount());
 	}
 }
