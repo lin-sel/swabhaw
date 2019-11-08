@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 import com.techlabs.model.Contact;
 import com.techlabs.model.Group;
@@ -15,41 +14,24 @@ public class ContactService{
 
 	private ArrayList<Contact> contactdata = new ArrayList<>();
 
-	public void storeContact() {
-		
-		@SuppressWarnings("resource")
-		Scanner scanner = new Scanner(System.in);
+	public boolean storeContact(String firstname, String lastname, String phonenumber, int group) {
 		Contact contact = new Contact();
-		System.out.println("Enter First Name:");
-		contact.setFirstname(scanner.nextLine());
-		System.out.println("Enter Last Name:");
-		contact.setLastname(scanner.nextLine());
-		System.out.println("Enter Phone Number:");
-		contact.setPhonenumber(scanner.nextLine());
-		System.out.println("Set Group:");
-		System.out.println("1. Personal");
-		System.out.println("2. Office");
-		System.out.println("3. Home");
-		contact.setGroup(setGroup(scanner.nextInt()));
-		if(contactdata.add(contact)) {
-			System.out.println("Contact Added Successfully.....");
-		}else {
-			System.out.println("Some error ........");
-		}
+		contact.setFirstname(firstname);
+		contact.setLastname(lastname);
+		contact.setPhonenumber(phonenumber);
+		contact.setGroup(setGroup(group));
+		return contactdata.add(contact);
 	}
 	
-	// View All Contact Details
-	public void viewContact() {
-		for(Contact contact : contactdata) {
-			System.out.println("Name: "+contact.getFirstname()+" "+contact.getLastname());
-			System.out.println("Phone Number: "+contact.getPhonenumber());
-			System.out.println("Group: "+contact.getGroup());
-		}
+	// COntact Data All Contact Details
+	public ArrayList<Contact> viewContact() {
+		return contactdata;
 	}
 	
 	// Serialize data
-	public void serializeData() throws IOException{
+	public boolean exitService() throws IOException{
 		String filename = "Contact.ser";
+		boolean status = false;
 		try
         {
             FileOutputStream fos = new FileOutputStream(filename);
@@ -57,18 +39,21 @@ public class ContactService{
             oos.writeObject(contactdata);
             oos.close();
             fos.close();
-            System.out.println("Serialized Successfully...");
+            status = true;
         } 
         catch (IOException ioe) 
         {
             ioe.printStackTrace();
+            status = true;
         }
+		return status;
 	}
 	
 	// Deserialize Data
 	@SuppressWarnings("unchecked")
-	public void deSerializedata() throws ClassNotFoundException, IOException{
+	public boolean initService() throws ClassNotFoundException, IOException{
 		String filename = "Contact.ser";
+		boolean status = false;
 		try
         {
             FileInputStream fos = new FileInputStream(filename);
@@ -76,13 +61,13 @@ public class ContactService{
             contactdata = (ArrayList<Contact>) oos.readObject();
             oos.close();
             fos.close();
-            System.out.println("Deserialized Successfully...");
+            status = true;
         } 
         catch (IOException ioe) 
         {
             ioe.printStackTrace();
         }
-		
+		return status;
 	}
 	
 	// Get Total Contact Store..
@@ -92,10 +77,12 @@ public class ContactService{
 	
 	// Set Contact Group Type..
 	private Group setGroup(int option) {
-		if(option == 1) {
+		byte option1 = 1;
+		byte option2 = 2;
+		if(option == option1) {
 			return Group.Personal;
 		}
-		else if(option == 2) {
+		else if(option == option2) {
 			return Group.Office;
 		}
 		return Group.Home;
