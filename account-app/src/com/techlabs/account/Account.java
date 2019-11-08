@@ -60,4 +60,19 @@ public class Account {
 		}
 		return false;
 	}
+	
+	@Override
+	public String toString(){
+		String srr = super.toString();
+        return "Account Number: "+getAccountnumber()+" Name: "+getName()+" Balance: "+getBalance()+" "+srr;
+    }
+	
+	@Override
+	public boolean equals(Object object) {
+		Account acc = (Account) object;
+		if(this.accountnumber == acc.accountnumber) {
+			return true;
+		}
+		return false;
+	}
 }

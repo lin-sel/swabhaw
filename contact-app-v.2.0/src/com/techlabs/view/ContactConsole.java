@@ -81,6 +81,7 @@ public class ContactConsole {
 			System.out.println("Last Name: "+contactlist.getLastname());
 			System.out.println("Phone Number: "+contactlist.getPhonenumber());
 			System.out.println("Group: "+contactlist.getGroup());
+			sys
 		}
 	}
 }
