@@ -26,9 +26,4 @@ public class FoolPuzzleOne {
 			iterator = iterator + 1;
 		}
 	}
-	
-	public static void main(String[] args) {
-		FoolPuzzleOne fool = new FoolPuzzleOne();
-		fool.poolPuzzleOne();
-	}
 }
