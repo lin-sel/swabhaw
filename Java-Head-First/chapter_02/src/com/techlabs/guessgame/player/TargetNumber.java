@@ -1,4 +1,4 @@
-package com.techlabs.player;
+package com.techlabs.guessgame.player;
 
 public class TargetNumber {
 	private int targetnumber;

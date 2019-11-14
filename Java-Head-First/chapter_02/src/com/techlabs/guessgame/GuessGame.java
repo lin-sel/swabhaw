@@ -1,7 +1,7 @@
 package com.techlabs.guessgame;
 
-import com.techlabs.player.Player;
-import com.techlabs.player.TargetNumber;
+import com.techlabs.guessgame.player.Player;
+import com.techlabs.guessgame.player.TargetNumber;
 
 public class GuessGame {
 	private int targetnumber;
