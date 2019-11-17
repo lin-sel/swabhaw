@@ -2,12 +2,21 @@ package com.techlabs.guitar;
 
 import java.io.Serializable;
 
+import com.techlabs.constant.Builder;
+import com.techlabs.constant.Type;
+import com.techlabs.constant.Wood;
+
 public class Guitar implements Serializable{
 	private static final long serialVersionUID = -2623003420134921882L;
 	private String serialNumber;
-	private String builder;
+	private Builder builder;
 	private double price;
-	public Guitar(String serialNumber, String builder, double price, String model, String type, String backwood,String topwood) {
+	private String model;
+	private Type type;
+	private Wood backwood;
+	private Wood topwood;
+	
+	public Guitar(String serialNumber, Builder builder, double price, String model, Type type, Wood backwood,Wood topwood) {
 		this.serialNumber = serialNumber;
 		this.builder = builder;
 		this.price = price;
@@ -16,10 +25,6 @@ public class Guitar implements Serializable{
 		this.backwood = backwood;
 		this.topwood = topwood;
 	}
-	private String model;
-	private String type;
-	private String backwood;
-	private String topwood;
 	
 	public double getPrice() {
 		return price;
@@ -30,19 +35,19 @@ public class Guitar implements Serializable{
 	public String getSerialNumber() {
 		return serialNumber;
 	}
-	public String getBuilder() {
+	public Builder getBuilder() {
 		return builder;
 	}
 	public String getModel() {
 		return model;
 	}
-	public String getType() {
+	public Type getType() {
 		return type;
 	}
-	public String getBackwood() {
+	public Wood getBackwood() {
 		return backwood;
 	}
-	public String getTopwood() {
+	public Wood getTopwood() {
 		return topwood;
 	}
 }
