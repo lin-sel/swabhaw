@@ -14,7 +14,7 @@ public class TestInterface {
 		atTheParty(man);
 		atTheParty(boy);
 		atTheMovieHall(boy);
-		atTheMovieHall(man);
+//		atTheMovieHall(man);
 	}
 	
 	public static void atTheMovieHall(Iemotional object) {
