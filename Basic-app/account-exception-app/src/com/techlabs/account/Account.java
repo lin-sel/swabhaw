@@ -1,14 +1,12 @@
 package com.techlabs.account;
 
-import com.techlabs.exception.InsufficientFundException;
+import com.techlabs.exception.InsufficientException;
 
 public class Account {
 	private String accountnumber;
 	private String name;
 	private double balance;
 	private static int totalaccount = 0;
-	private int limit = 5000;
-	private InsufficientFundException exception;
 	
 	
 	public Account(String acc, String name, double bal){
@@ -16,7 +14,6 @@ public class Account {
 		this.balance = bal;
 		this.name = name;
 		setTotalaccount();
-		exception = new InsufficientFundException(null);
 	}
 	
 	public Account(String acc, String name) {
@@ -58,15 +55,12 @@ public class Account {
 		this.balance = this.balance+(long)bal;
 	}
 	
-	public boolean withdraw(long amount) throws InsufficientFundException {
-		if(exception.isValid(this.balance,amount)) {
-			return false;
-		}
-		else if(exception.isValidFund(this.balance, amount, this.limit)) {
+	public void withdraw(long amount) {
+		if(this.balance >= (500+amount)) {
 			this.balance -= amount;
-			return true;
+			return ;
 		}
-		return false;
+		throw new InsufficientException(this,amount);
 	}
 	
 	@Override

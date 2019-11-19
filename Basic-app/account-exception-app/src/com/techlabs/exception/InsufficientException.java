@@ -1,29 +1,17 @@
 package com.techlabs.exception;
 
-public class InsufficientFundException extends Throwable{
+import com.techlabs.account.Account;
+
+public class InsufficientException extends RuntimeException{
 
 	private static final long serialVersionUID = 1L;
-	private String exception;
+	public String exception;
 	
-	public InsufficientFundException(String exception) {
-		this.exception = exception;
-	}
-	public Boolean isValidFund(double accountbalance, double withdrawbalance,int limit) throws InsufficientFundException {
-		if(!(accountbalance-withdrawbalance >= limit)) {
-			throw new InsufficientFundException("You can Not Withdraw fund more than "+(accountbalance-limit)+".");
-		}
-		return true;
+	public InsufficientException(Account account, double amount) {
+		this.exception = "Account Holder :"+account.getName()+" have balance "+account.getBalance()+" but they are trying to withdraw "+amount+". 'You have to maintain minimum 2000 balance'.";
 	}
 	
-	public Boolean isValid(double accountbalance, double withdrawbalance) throws InsufficientFundException {
-		if((withdrawbalance > accountbalance)) {
-			throw new InsufficientFundException("Insufficient Balance");
-		}
-		return true;
+	public String getMessage() {
+		return this.exception;
 	}
-	public String getException() {
-		return exception;
-	}
-	
-	
 }
