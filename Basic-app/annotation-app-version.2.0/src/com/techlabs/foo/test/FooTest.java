@@ -2,8 +2,8 @@ package com.techlabs.foo.test;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-
 import com.techlabs.foo.Foo;
+import com.techlabs.unit.testcase.UnitTestCase;
 
 public class FooTest {
 
@@ -13,7 +13,7 @@ public class FooTest {
 		Foo foo = new Foo();
 		Method []methods = Foo.class.getMethods();
 		for(Method method : methods) {
-			if(method.getGenericReturnType() == boolean.class) {
+			if(method.getGenericReturnType() == boolean.class && method.getAnnotation(UnitTestCase.class) != null) {
 				try {
 					if((boolean) method.invoke(foo)) {
 						pass += 1;
@@ -26,7 +26,7 @@ public class FooTest {
 			}
 		}
 		System.out.println("Pass "+pass);
-		System.out.println("Fail "+fail);
+		System.err.println("Fail "+fail);
 	}
 
 }

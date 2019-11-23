@@ -1,12 +1,12 @@
 package com.techlabs.dog.door.remote.test;
 
-import com.techlabs.dog.Dog;
+import com.techlabs.dog.DogDoor;
 import com.techlabs.dog.door.remote.BarkRecognizer;
 
 public class BarkRecognizerTest {
 
 	public static void main(String[] args) {
-		Dog dog = new Dog();
+		DogDoor dog = new DogDoor();
 		BarkRecognizer remote = new BarkRecognizer(dog);
 		
 		remote.open("Woof Woof!");

@@ -1,11 +1,11 @@
 package com.techlabs.dog.door.remote;
 
-import com.techlabs.dog.Dog;
+import com.techlabs.dog.DogDoor;
 
 public class BarkRecognizer {
-	private Dog door;
+	private DogDoor door;
 	
-	public BarkRecognizer(Dog door) {
+	public BarkRecognizer(DogDoor door) {
 		this.door = door;
 	}
 	

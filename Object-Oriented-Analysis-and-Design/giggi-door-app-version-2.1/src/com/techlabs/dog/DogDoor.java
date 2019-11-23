@@ -3,11 +3,11 @@ package com.techlabs.dog;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class Dog {
+public class DogDoor {
 	private boolean open;
 	private Timer timer;
 	
-	public Dog(){
+	public DogDoor(){
 		this.open = false;
 	}
 	
