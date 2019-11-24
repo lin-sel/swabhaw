@@ -1,22 +1,24 @@
 package com.techlabs.employee;
 
+import com.techlabs.constant.Designation;
+
 public class Employee implements Comparable<Employee>{
 
 	private int id;
 	private String name;
-	private String Designation;
+	private Designation designation;
 	private String dateofjoining;
 	private int salary;
 	private String departmentid;
 	private String managerid;
 	private String commission;
 	
-	public Employee(int id, String name, String designation, String dateofjoining, int salary, String departmentid,
+	public Employee(int id, String name, Designation designation, String dateofjoining, int salary, String departmentid,
 			String managerid, String commision) {
 		super();
 		this.id = id;
 		this.name = name;
-		Designation = designation;
+		this.designation = designation;
 		this.dateofjoining = dateofjoining;
 		this.salary = salary;
 		this.departmentid = departmentid;
@@ -48,14 +50,14 @@ public class Employee implements Comparable<Employee>{
 
 
 
-	public String getDesignation() {
-		return Designation;
+	public Designation getDesignation() {
+		return this.designation;
 	}
 
 
 
-	public void setDesignation(String designation) {
-		Designation = designation;
+	public void setDesignation(Designation designation) {
+		this.designation = designation;
 	}
 
 

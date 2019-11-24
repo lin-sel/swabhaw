@@ -5,19 +5,20 @@ import java.io.IOException;
 import java.util.Set;
 import java.util.TreeSet;
 
+import com.techlabs.constant.Designation;
 import com.techlabs.employee.Employee;
 
 public class DataAnalyzer {
-	private Fetch dataload;
+	private DataReader dataload;
 	private Set<Employee> employeelist = new TreeSet<>();
 	
 	public DataAnalyzer(String url) throws FileNotFoundException, IOException {
-		this.dataload = new Fetch(url);
+		this.dataload = new DataReader(url);
 		employeelist = dataload.employeelist();
 	}
 	
 	public DataAnalyzer() throws FileNotFoundException, IOException {
-		this.dataload = new Fetch("dataFile.txt");
+		this.dataload = new DataReader("dataFile.txt");
 		employeelist = dataload.employeelist();
 	}
 	
@@ -41,10 +42,10 @@ public class DataAnalyzer {
 		return totalcount;
 	}
 	
-	public int totalEmployeeByDesignation(String designation) {
+	public int totalEmployeeByDesignation(Designation designation) {
 		int totalcount = 0;
 		for(Employee employee: employeelist) {
-			if(employee.getDesignation().equalsIgnoreCase(designation)) {
+			if(employee.getDesignation() == designation) {
 				totalcount += 1;
 			}
 		}

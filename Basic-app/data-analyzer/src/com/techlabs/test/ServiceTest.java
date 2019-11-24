@@ -3,6 +3,7 @@ package com.techlabs.test;
 import java.io.IOException;
 import java.util.Set;
 
+import com.techlabs.constant.Designation;
 import com.techlabs.employee.Employee;
 import com.techlabs.service.DataAnalyzer;
 
@@ -24,7 +25,7 @@ public class ServiceTest {
 	}
 
 	private static String totalEmployeeInDesignation(String designation, DataAnalyzer service) {
-		return "Total Employee as "+designation+" "+service.totalEmployeeByDesignation(designation);
+		return "Total Employee as "+designation+" "+service.totalEmployeeByDesignation(Designation.PRESIDENT);
 	}
 
 	private static String totalEmployeeInDepartment(int dept, DataAnalyzer access) {
