@@ -5,6 +5,7 @@ import java.io.Serializable;
 public enum Builder implements Serializable{
 	FENDER, MARTIN, GIBSON, COLING, OLSON, RYAN, PRS, ANY;
 	
+	@Override
 	public String toString() {
 		switch(this) {
 		case FENDER:

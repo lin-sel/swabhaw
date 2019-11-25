@@ -52,7 +52,7 @@ public class DataAnalyzer {
 		return totalcount;
 	}
 	
-	public int totalEMployee() {
+	public int totalEmployee() {
 		return employeelist.size();
 	}
 	

@@ -1,13 +1,10 @@
-package com.techlabs.guitar;
-
-import java.io.Serializable;
+package com.techlabs.instrument;
 
 import com.techlabs.constant.Builder;
 import com.techlabs.constant.Type;
 import com.techlabs.constant.Wood;
 
-public abstract class GuitarSpecification implements Serializable{
-	private static final long serialVersionUID = 5036144058390142034L;
+public class InstrumentSpec {
 	protected Builder builder;
 	protected String model;
 	protected Type type;
@@ -15,7 +12,7 @@ public abstract class GuitarSpecification implements Serializable{
 	protected Wood topwood;
 	
 	// Constructor
-	public GuitarSpecification(Builder builder, String model, Type type, Wood backwood, Wood topwood) {
+	public InstrumentSpec(Builder builder, String model, Type type, Wood backwood, Wood topwood) {
 		this.builder = builder;
 		this.model = model;
 		this.type = type;
@@ -38,5 +35,26 @@ public abstract class GuitarSpecification implements Serializable{
 	}
 	public Wood getTopwood() {
 		return topwood;
+	}
+	
+	public boolean matches(InstrumentSpec instrumentspec) {
+		
+		if(instrumentspec.backwood != backwood) {
+			return false;
+		}
+		if(instrumentspec.builder != this.builder) {
+			return false;
+		}
+		if(instrumentspec.model != this.model) {
+			return false;
+		}
+		if(instrumentspec.topwood != this.topwood) {
+			return false;
+		}
+		if(instrumentspec.type != this.type) {
+			return false;
+		}
+		
+		return true;
 	}
 }

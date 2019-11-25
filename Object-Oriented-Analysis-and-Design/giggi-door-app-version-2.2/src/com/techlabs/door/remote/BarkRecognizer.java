@@ -1,4 +1,4 @@
-package com.techlabs.dog.door.remote;
+package com.techlabs.door.remote;
 
 import com.techlabs.dog.Bark;
 import com.techlabs.dog.DogDoor;

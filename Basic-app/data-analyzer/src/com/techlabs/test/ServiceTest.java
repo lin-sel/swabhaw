@@ -21,11 +21,11 @@ public class ServiceTest {
 		
 		printdata(service.employeelist());
 		System.out.println(totalEmployeeInDepartment(30, service));
-		System.out.println(totalEmployeeInDesignation("clerk",service));
+		System.out.println(totalEmployeeInDesignation(Designation.PRESIDENT,service));
 	}
 
-	private static String totalEmployeeInDesignation(String designation, DataAnalyzer service) {
-		return "Total Employee as "+designation+" "+service.totalEmployeeByDesignation(Designation.PRESIDENT);
+	private static String totalEmployeeInDesignation(Designation president, DataAnalyzer service) {
+		return "Total Employee as "+president+" "+service.totalEmployeeByDesignation(president);
 	}
 
 	private static String totalEmployeeInDepartment(int dept, DataAnalyzer access) {

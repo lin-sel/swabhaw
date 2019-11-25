@@ -48,16 +48,16 @@ public class DataReader {
 	
 	// get Designation from string to Designation type.
 	private Designation getDesignation(String trimString) {
-		if(trimString  == "ANALYST") {
+		if(trimString.equalsIgnoreCase("ANALYST")) {
 			return Designation.ANALYST;
 		}
-		else if(trimString == "CLERK") {
+		else if(trimString.equalsIgnoreCase("CLERK")) {
 			return Designation.CLERK;
 		}
-		else if(trimString == "MANAGER") {
+		else if(trimString.equalsIgnoreCase("MANAGER")) {
 			return Designation.MANAGER;
 		}
-		else if(trimString == "PRESIDENT") {
+		else if(trimString.equalsIgnoreCase("PRESIDENT")) {
 			return Designation.PRESIDENT;
 		}
 		return Designation.SALESMAN;

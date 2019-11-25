@@ -1,15 +1,16 @@
-package com.techlabs.dog.door.remote.test;
+package com.techlabs.door.remote.test;
 
+import com.techlabs.dog.Bark;
 import com.techlabs.dog.DogDoor;
-import com.techlabs.dog.door.remote.Remote;
+import com.techlabs.door.remote.BarkRecognizer;
 
-public class RemoteTest {
+public class BarkRecognizerTest {
 
 	public static void main(String[] args) {
-		DogDoor dog = new DogDoor();
-		Remote remote = new Remote(dog);
+		DogDoor dog = new DogDoor(new Bark("Woof Woof"));
+		BarkRecognizer remote = new BarkRecognizer(dog);
 		
-		remote.pressButton();
+		remote.open(new Bark("Woof Woof"));
 		System.out.println("Fido has gone outside.");
 		System.out.println("Fido done everything.");
 		try {
@@ -18,8 +19,7 @@ public class RemoteTest {
 		catch(Exception e) { }
 		System.out.println("But Fido stuck outside..");
 		System.out.println("Fido Start Barking again...");
-		System.out.println("so, Todd grab the remote..");
-		remote.pressButton();
+		remote.open(new Bark("hello!"));
 		System.out.println("Fido back inside.");
 	}
 
