@@ -7,7 +7,8 @@ import java.net.URL;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeSet;
-import com.techlabs.constant.Designation;
+
+import com.techlabs.designation.DDesignation;
 import com.techlabs.employee.Employee;
 import com.techlabs.employee.EmployeeSpec;
 
@@ -19,12 +20,13 @@ public class FileReader {
 		employeelist = fetchFrom(filename);
 	}
 	
+	// Fetch ad store data and store in SET.
 	private Set<Employee> getDataFromSource(Scanner scanner) throws IOException{
 		Scanner getdata = scanner;
 		getdata.useDelimiter(",");
 		int id  = 0;
 		String name = null;
-		Designation designation = null;
+		DDesignation designation = null;
 		String managerid = null;
 		String dateofjoin  = null;
 		int salary = 0;
@@ -47,19 +49,7 @@ public class FileReader {
 	
 	// get Designation from string to Designation type.
 	private Designation getDesignation(String trimString) {
-		if(trimString.equalsIgnoreCase("ANALYST")) {
-			return Designation.ANALYST;
-		}
-		else if(trimString.equalsIgnoreCase("CLERK")) {
-			return Designation.CLERK;
-		}
-		else if(trimString.equalsIgnoreCase("MANAGER")) {
-			return Designation.MANAGER;
-		}
-		else if(trimString.equalsIgnoreCase("PRESIDENT")) {
-			return Designation.PRESIDENT;
-		}
-		return Designation.SALESMAN;
+		
 	}
 	
 	// Trim All unnecessory Character from String. 
