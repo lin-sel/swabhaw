@@ -35,11 +35,11 @@ public class ServiceTest {
 
 	private static void printdata(Set<Employee> dataload) {
 		dataload.forEach((action) -> {
-			System.out.println("Designation:" + action.getEmployeespec().getDesignation() + "\nId:"
-					+ action.getEmployeespec().getId() + "\nName:" + action.getEmployeespec().getName()
-					+ "\nDate of Joining:" + action.getEmployeespec().getDateofjoining() + "\nSalary:"
-					+ action.getEmployeespec().getSalary() + "\nDepartment:" + action.getDepartmentid() + "\nManager:"
-					+ action.getManagerid() + "\nCommision:" + action.getCommission());
+			System.out.println("Designation:	" + action.getEmployeespec().getDesignation() + "\nId:		"
+					+ action.getEmployeespec().getId() + "\nName:		" + action.getEmployeespec().getName()
+					+ "\nDate of Joining:" + action.getEmployeespec().getDateofjoining() + "\nSalary:		"
+					+ action.getEmployeespec().getSalary() + "\nDepartment:	" + action.getDepartmentid()
+					+ "\nManager:	" + action.getManagerid() + "\nCommision:	" + action.getCommission());
 			System.out.println("");
 		});
 	}

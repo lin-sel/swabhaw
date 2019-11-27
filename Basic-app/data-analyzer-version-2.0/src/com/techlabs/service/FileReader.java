@@ -7,21 +7,20 @@ import java.net.URL;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeSet;
-
 import com.techlabs.constant.Designation;
 import com.techlabs.employee.Employee;
 import com.techlabs.employee.EmployeeSpec;
 
-public class DataReader {
+public class FileReader {
 	
 	private static Set<Employee> employeelist = new TreeSet<>();
 	
-	public DataReader(String filename) throws FileNotFoundException, IOException {
+	public FileReader(String filename) throws FileNotFoundException, IOException {
 		employeelist = fetchFrom(filename);
 	}
 	
 	// Fetch ad store data and store in SET.
-	private Set<Employee> fetchData(Scanner scanner) throws IOException{
+	private Set<Employee> getDataFromSource(Scanner scanner) throws IOException{
 		Scanner getdata = scanner;
 		getdata.useDelimiter(",");
 		int id  = 0;
@@ -78,9 +77,9 @@ public class DataReader {
 	// Read Data from Source.
 	public Set<Employee> fetchFrom(String url) throws IOException {
 		if(pathIdentify(url)) {
-			return fetchData(new Scanner(new URL(url).openStream()));
+			return getDataFromSource(new Scanner(new URL(url).openStream()));
 		}
-		return fetchData(new Scanner(new File(url)));
+		return getDataFromSource(new Scanner(new File(url)));
 	}
 	
 	// Return All Employee List.

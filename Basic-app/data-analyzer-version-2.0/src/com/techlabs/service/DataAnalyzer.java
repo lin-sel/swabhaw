@@ -9,16 +9,17 @@ import com.techlabs.constant.Designation;
 import com.techlabs.employee.Employee;
 
 public class DataAnalyzer {
-	private DataReader dataload;
+	private FileReader dataload;
 	private Set<Employee> employeelist = new TreeSet<>();
+	private String filename = "dataFile.txt";
 
 	public DataAnalyzer(String url) throws FileNotFoundException, IOException {
-		this.dataload = new DataReader(url);
+		this.dataload = new FileReader(url);
 		employeelist = dataload.employeelist();
 	}
 
 	public DataAnalyzer() throws FileNotFoundException, IOException {
-		this.dataload = new DataReader("dataFile.txt");
+		this.dataload = new FileReader(filename);
 		employeelist = dataload.employeelist();
 	}
 
