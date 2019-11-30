@@ -1,6 +1,7 @@
 package com.techlabs.game.controller;
 
 import com.techlabs.board.IBoard;
+import com.techlabs.board.IBoardPrinter;
 import com.techlabs.player.IPlayer;
 import com.techlabs.resultanalyzer.IResultAnalyzer;
 
@@ -10,12 +11,14 @@ public class GameController implements IGameController{
 	private IPlayer playertwo;
 	private IPlayer currentPlayer;
 	private IResultAnalyzer analyzer;
+	private IBoardPrinter boardprint;
 
-	public GameController(IBoard board, IPlayer playerone, IPlayer playertwo, IResultAnalyzer analyzer) {
+	public GameController(IBoard board, IPlayer playerone, IPlayer playertwo, IResultAnalyzer analyzer, IBoardPrinter boardprint) {
 		this.board = board;
 		this.playerone = playerone;
 		this.playertwo = playertwo;
 		this.analyzer = analyzer;
+		this.boardprint = boardprint;
 		currentPlayer = playerone;
 	}
 	
@@ -32,6 +35,10 @@ public class GameController implements IGameController{
 		return "";
 	}
 
+	public String getBoardOnConsole() {
+		return boardprint.boardprint();
+	}
+
 	private boolean callAnalyzer(int position) {
 		return analyzer.analyzelinearly(position) || analyzer.analyzeVerticle(position)
 				|| analyzer.analyzeDiagonal(position);
@@ -45,22 +52,7 @@ public class GameController implements IGameController{
 		currentPlayer = playerone;
 	}
 	
-	public String getBoardFormat() {
-		StringBuffer boardformat = new StringBuffer();
-		int boardsize = board.getBoardsize();
-		int coordinate = 0;
-		String mark ; 
-		for(int initpos = 0; initpos < boardsize; initpos++) {
-			for(int row = 0; row < boardsize; row++) {
-				mark = board.getBoardCell(coordinate) != null ? board.getBoardCell(coordinate).getMark().toString() : " ";
-				boardformat.append(mark);
-				boardformat.append(" | ");
-				coordinate++;
-			}
-			boardformat.append("\n");
-		}
-		
-		return boardformat.toString();
+	public IPlayer getCurrentPlayer() {
+		return this.currentPlayer;
 	}
-
 }
