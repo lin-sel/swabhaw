@@ -16,6 +16,7 @@ public class ButtonListner implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		frame.getContentPane().setBackground(getcolor(e));
+		System.out.println(e);
 	}
 
 
