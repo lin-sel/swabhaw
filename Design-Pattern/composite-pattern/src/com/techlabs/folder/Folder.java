@@ -8,7 +8,7 @@ import com.techlabs.storeitem.IStoreItem;
 public class Folder implements IStoreItem{
 	private String name;
 	private List<IStoreItem> children;
-	private int level = 1;
+	private static int level = 0;
 	
 	
 	public Folder(String name) {
@@ -22,9 +22,9 @@ public class Folder implements IStoreItem{
 	
 	@Override
 	public void display() {
-		printlevel();
-		System.out.println(this.name);
+		System.out.println(" ".repeat(level)+this.name);
 		for(IStoreItem item : children) {
+			System.out.print(" ".repeat(level+1));
 			item.display();
 		}
 	}
@@ -32,10 +32,4 @@ public class Folder implements IStoreItem{
 	public List<IStoreItem> getChildren() {
 		return children;
 	}	
-	
-	private void printlevel() {
-		for(int i = 0; i < this.level ; i++) {
-			System.out.print(" ");
-		}
-	}
 }

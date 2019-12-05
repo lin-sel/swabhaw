@@ -6,7 +6,7 @@ public class File implements IStoreItem{
 	private String name;
 	private String extension;
 	private int size;
-	private int level = 2;
+	private static int level = 1;
 	
 	public File(String name, String extension, int size) {
 		this.name = name;
@@ -28,15 +28,6 @@ public class File implements IStoreItem{
 
 	@Override
 	public void display() {
-		printlevel();
-		System.out.println(this.name+" "+this.extension+" "+this.size);
-		
+		System.out.println("  ".repeat(level)+""+this.name+this.extension+" "+this.size);		
 	}
-
-	private void printlevel() {
-		for(int i = 0; i < this.level ; i++) {
-			System.out.print(" ");
-		}
-	}
-	
 }
