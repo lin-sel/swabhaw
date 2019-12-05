@@ -9,23 +9,26 @@
 <body>
     <div class="block">
         <input type="text" name="element" id = "input" >
-        <input type="button" value = "Add" onclick="addElement()">
+        <input type="button" id="submit" value = "Add">
     </div>
     <div id="content">
 
     </div>
 
     <script>
-        var lastnode;
-        function addElement(){
-            var node = document.createElement("p");
-            var text = document.getElementById("input").value;
-            console.log(text);
-            node.appendChild(document.createTextNode(text));
-            // document.getElementById("content").appendChild(node);
-            document.getElementById("content").insertBefore(node, lastnode);
-            lastnode = node;
-        }
+        (function(){
+            var lastnode;
+            var button = document.getElementById("submit").addEventListener("click", addElement);
+            function addElement(){
+                var node = document.createElement("p");
+                var text = document.getElementById("input").value;
+                console.log(button);
+                node.appendChild(document.createTextNode(text));
+                document.getElementById("content").insertBefore(node, lastnode);
+                lastnode = node;
+            }
+            console.log(button);
+        })();
     </script>
 </body>
 </html>

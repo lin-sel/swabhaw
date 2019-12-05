@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" name="" id="input"/>
+    <input type="button" id="add" value="add">
+    <section id="section">
+
+
+    </section>
+    <script>
+        (function(){
+            
+            var button = document.getElementById("add").addEventListener("click", addNode);
+            var section = document.getElementById("section");
+            var task = [];
+
+            window.onload = () =>{
+                task = JSON.parse(localStorage.getItem('taskitem'));
+                if(task == null){
+                    task = [];
+                }
+                console.log(task);
+                for(let key = 0; key < task.length; key++){
+                    var tag = document.createElement("p");
+                    var input = document.createTextNode(task[key]);
+                    tag.append(input);
+                    section.append(tag);
+                }
+            }
+
+            function saveTask(para){
+                task.push(para);
+                localStorage.setItem("taskitem",JSON.stringify(task));
+            }
+
+            function addNode(){
+                var input = document.getElementById("input").value;
+                var p = document.createElement("p");
+                p.append(document.createTextNode(input));
+                section.append(p);
+                saveTask(input);
+            }
+        }());    
+    </script>
+</body>
+</html>
