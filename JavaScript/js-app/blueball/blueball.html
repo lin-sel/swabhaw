@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #main {
+            width: 500px;
+            height: 500px;
+            display: none;
+        }
+
+        #notification {
+            text-align: center;
+            /* height: 90px;
+            line-height: 90px; */
+        }
+
+        /* #details {
+            height: 144px;
+            width: 300px;
+            padding-top: 5%;
+        } */
+
+
+        .main-block {
+            width: auto;
+            /* height: 250px; */
+        }
+
+        #buttonsec {
+            display: block;
+            margin-top: 100px;
+        }
+
+        #buttonsec button {
+            border: 1px solid gray;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            outline: none;
+        }
+
+        #startgame {
+            width: 100px;
+            height: 35px;
+            border-radius: 10px;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="rulessection">
+        <h2>Rules:</h2>
+        <ul>
+            <li>
+                <a>you have only five attempt.</a>
+            </li>
+            <li>
+                <a>if you select greater number button from blue button then button will be change to red.</a>
+            </li>
+            <li>
+                <a>if you select less number button from blue button then button will be change to green.</a>
+            </li>
+        </ul>
+        <button id="startgame">Start</button>
+    </section>
+    <section id="main">
+        <section id="display" class="main-block">
+            <p id="notification"></p>
+            <article id="details">
+
+            </article>
+        </section>
+        <section id="buttonsec">
+
+        </section>
+    </section>
+    <script src="blueball.js"></script>
+</body>
+
+</html>
