@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <label for="info">Background:</label>
+    <select name="" id="coloroption">
+        <option selected disabled>--Select option--</option>
+    </select>
+
+    <script>
+    (function(){
+
+        var colorlist = [
+            {name:"INDIANRED",  value:"#CD5C5C"}, 
+            {name:"LIGHTCORAL",value:"#F08080"}, 
+            {name:"DARKSALMON", value:"#E9967A"}
+        ];
+        
+        var select = document.getElementById("coloroption");
+        function selectOption(){
+            colorlist.forEach(color => {
+                var option = new Option();
+                option.value = color.value
+                option.innerHTML = color.name;
+                select.append(option);
+            });
+        }
+
+        window.addEventListener("load", () =>{
+            selectOption();
+            setColor();
+        });
+
+        // Onchange Event.
+        select.addEventListener("change", setColor);
+         function setColor(){
+            document.body.style.backgroundColor = select.value;
+        }
+    }());    
+    </script>
+</body>
+</html>

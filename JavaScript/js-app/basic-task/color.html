@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <label for="info">Background:</label>
+    <select name="" id="coloroption">
+        <option selected disabled>--Select option--</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="black">Black</option>
+        <option value="pink">Pink</option>
+    </select>
+
+    <script>
+    (function(){
+
+        window.addEventListener("load", setColor);
+        document.getElementById("coloroption").addEventListener("change", setColor);
+         function setColor(){
+            var selectoption = document.getElementById("coloroption").value;
+            document.body.style.backgroundColor = selectoption;
+        }
+    }());    
+    </script>
+</body>
+</html>

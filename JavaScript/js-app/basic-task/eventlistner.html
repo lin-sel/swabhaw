@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="popup">start loop</button>
+    <button id="stopworker">stop loop</button>
+    <button onclick="alert('hello');">popup</button>
+    <script src="worker.js"></script>
+    <script>
+        (function () {
+            var w;
+            document.getElementById("popup").addEventListener("click", startWorker);
+            document.getElementById("stopworker").addEventListener("click", stopWorker);
+
+            function startWorker() {
+                if (typeof (Worker) !== "undefined") {
+                    if (typeof (w) == "undefined") {
+                        w = new Worker("worker.js");
+                    }
+                    w.onmessage = function (event) {
+                        console.log(event.data);
+                    };
+                } else {
+                    console("Sorry, your browser does not support Web Workers...");
+                }
+            }
+
+            function stopWorker() {
+                w.terminate();
+                w = undefined;
+            }
+        }());
+    </script>
+</body>
+
+</html>
