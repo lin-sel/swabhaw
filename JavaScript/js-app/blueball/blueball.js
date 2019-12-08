@@ -39,9 +39,7 @@
         if (e.target.innerHTML == selectedbutton) {
             e.target.style.backgroundColor = "blue";
             alert("You Have Win the Game.");
-            setTimeout(() => {
-                location.reload();
-            }, 5000);
+            reload();
             return;
         }
         else if (Number(e.target.innerHTML) > selectedbutton) {
@@ -57,8 +55,12 @@
             return;
         }
         detail.innerHTML = "Total Attempt left: " + attempt + "<br/> Lose the Game.";
+        reload();
+    }
+
+    function reload() {
         setTimeout(() => {
             location.reload();
-        }, 3000);
+        }, 5000);
     }
 }());

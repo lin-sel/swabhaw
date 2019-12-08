@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web-Worker</title>
+</head>
+
+<body>
+    <button onclick="sayHI()">Say HI</button>
+    <button onclick="unknownCmd()">Send unknown command</button>
+    <button onclick="stop()">Stop worker</button>
+    <output id="result"></output>
+
+    <script>
+        function sayHI() {
+            worker.postMessage({ 'cmd': 'start', 'msg': 'Hi' });
+        }
+
+        function stop() {
+            worker.postMessage({ 'cmd': 'stop', 'msg': 'Bye' });
+        }
+
+        function unknownCmd() {
+            worker.postMessage({ 'cmd': 'foobard', 'msg': 'unknown cammand fire.' });
+        }
+
+        var worker = new Worker('worker.js');
+
+        worker.addEventListener('message', function (e) {
+            console.log(e.data);
+        }, false);
+    </script>
+</body>
+
+</html>

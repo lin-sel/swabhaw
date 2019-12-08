@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Question Bank</title>
+    <style>
+        #mainsection {
+            width: 100%;
+            height: 50%;
+            /* background: lightcyan; */
+            margin: 0px;
+            display: inline-block;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-left: 50%;
+        }
+
+        #quesnumberdiv {
+            width: 30%;
+            height: 20%;
+            position: absolute;
+            /* background: lightslategray; */
+        }
+
+        #quesnumber {
+            text-align: center;
+        }
+
+        #questionblock {
+            margin-left: 30.8%;
+            width: 60%;
+            height: 100%;
+            display: block;
+            /* background: lightseagreen; */
+        }
+
+        #questionblock input {
+            display: inline;
+            position: absolute;
+            margin-left: 30px;
+        }
+
+
+        #resultdisplay {
+            width: 50%;
+            height: 5%;
+            position: absolute;
+            background: rgb(185, 16, 16);
+            display: none;
+        }
+
+        #wrongdiv {
+            right: 0px;
+            height: 100%;
+            text-align: right;
+            line-height: 100%;
+            margin-right: 10px;
+            position: absolute;
+        }
+
+        #rightdiv {
+            width: 0px;
+            height: 100%;
+            background: rgb(10, 155, 22);
+            line-height: 100%;
+            margin-left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="mainsection">
+        <section id="quesnumberdiv">
+            <h2 id="quesnumber">
+            </h2>
+        </section>
+        <section id="questionblock">
+            <section id="question">
+            </section>
+            <section id="option">
+            </section>
+        </section>
+        <section id="buttonaction">
+            <!-- <button type="submit" id="previousbutton">
+                previous
+            </button> -->
+            <button class="button" type="submit" id="submitbutton">
+                Next
+            </button>
+        </section>
+    </section>
+    <section id="resultdisplay">
+        <div id="wrongdiv">
+        </div>
+        <div id="rightdiv">
+        </div>
+    </section>
+    <script src="questionbank.js"></script>
+</body>
+
+</html>
