@@ -1,0 +1,57 @@
+[
+    {
+        "id": "1001",
+        "text": "Which of the following is true about Go programming language?",
+        "option": [
+            "Go is a general-purpose language designed with systems programming in mind.",
+            "It is strongly and statically typed, provides inbuilt support for garbage collection.",
+            "It supports concurrent programming.",
+            "All of the above."
+        ],
+        "answer": "3"
+    },
+    {
+        "id": "1002",
+        "text": "Which of the following is a derived type in Go?",
+        "option": [
+            "Union types",
+            "Function types",
+            "Slice types",
+            "All of the above."
+        ],
+        "answer": "3"
+    },
+    {
+        "id": "1003",
+        "text": "Which of the following is true about for loop statement in Go?",
+        "option": [
+            "if condition is available, then for loop executes as long as condition is true.",
+            "if range is available, then for loop executes for each item in the range",
+            "Both of the above.",
+            "None of the above."
+        ],
+        "answer": "2"
+    },
+    {
+        "id": "1004",
+        "text": "Which of the following is true about functions in Go?",
+        "option": [
+            "Every Go program has at least one function, which is main(), and all the most trivial programs can define additional functions.",
+            "func starts the declaration of a function.",
+            "Both of the above.",
+            "None of the above."
+        ],
+        "answer": "2"
+    },
+    {
+        "id": "1005",
+        "text": "Which of the following transfers control to the labeled statement in Go?",
+        "option": [
+            "break",
+            "Continue",
+            "goto",
+            "None of the Above."
+        ],
+        "answer": "2"
+    }
+]
