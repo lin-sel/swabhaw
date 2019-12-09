@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome</title>
+</head>
+
+<body>
+
+    <section id="main-box">
+        <section id="title">
+            <h1>Welcome to Jquery.</h1>
+        </section>
+    </section>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $("body").css({ "margin": "0px" });
+            $("#main-box").css(
+                {
+                    "width": "100%",
+                    "height": "100%",
+                    "position": "absolute",
+                    "display": "flex",
+                    "flex-direction": "column",
+                    "justify-content": "center",
+                    "align-items": "center"
+                }
+            );
+            $("#title").css(
+                {
+                    "width": "500px",
+                    "height": "200px",
+                    "background": "white",
+                    "text-align": "center",
+                    "display": "flex",
+                    "flex-direction": "column",
+                    "justify-content": "center",
+                    "border": "1px solid black",
+                    "border-style": "dashed",
+                    "outline": "4px solid yellow",
+                }
+            );
+
+            $("h1").css(
+                {
+                    "font-size": "50px",
+                }
+            );
+        });
+
+    </script>
+
+
+
+
+</body>
+
+</html>
