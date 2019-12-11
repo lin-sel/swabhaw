@@ -1,0 +1,49 @@
+body{
+    margin:0px;
+    display: flex;
+}
+
+#main-blog{
+    width:40%;
+    height: 100%;
+    background:lightgreen;
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+form{
+    width:100%;
+    height: 40%;
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form input{
+    width:50%;
+    height:15%;
+    text-align: center;
+    margin-bottom: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    outline:none;
+}
+
+input:focus{
+    border:1px solid lightseagreen;
+    background: lightskyblue;
+}
+
+input[type=submit]{
+    width:15%;
+    height: 13%;
+}
+
+#captch{
+    /* background: red; */
+    margin-bottom: 10px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validation</title>
+</head>
+
+<body>
+    <section id="main-blog">
+        <h3 style="text-align: center;">Form Validation</h3>
+        <form action="http://127.0.0.1:5500/form-validation/fom.html" method="post" onsubmit="login()">
+            <input type="text" name="username" id="username" placeholder="Username" required>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <canvas width="300px" height="100px" id="captch"></canvas>
+            <input type="text" name="email" id="captchainput" placeholder="Captcha">
+            <input type="button" id="submit" value="Validate">
+        </form>
+        <section id="notice">   
+            <section id="usernamenotice">
+                <h3>USERNAME:</h3>
+                <article>
+                    <ul>
+                        <li class="usernamest">username should contain at least one Alphabet letter</li>
+                        <li class="usernamest">username should contain at least one Small letter</li>
+                        <li class="usernamest">username should not contain white space</li>
+                        <li class="usernamest">username should contain at least one Number</li>
+                        <li class="usernamest">username should not be contain Any spcial character</li>
+                    </ul>
+                </article>
+            </section>
+            <section id="passwordnotice">
+                <h3>PASSWORD:</h3>
+                <article>
+                    <ul>
+                        <li class="passwordst">password should contain at least on Alphabet letter</li>
+                        <li class="passwordst">password should contain at least on Small letter</li>
+                        <li class="passwordst">password should not contain white space</li>
+                        <li class="passwordst">password should contain at least one Number</li>
+                        <li class="passwordst">password should contain at least on Special Character % # $ @ & ! _ -
+                        </li>
+                    </ul>
+                </article>
+            </section>
+        </section>
+    </section>
+    <script src="form.js"></script>
+</body>
+
+</html>
