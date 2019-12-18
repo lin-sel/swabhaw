@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Task
+    </title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="website/assets/dist/css/bootstrap.min.css">
+    <script src="moment.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid" style="margin-top:3%">
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group" style="width:30%">
+                    <label for="usr">Task:</label>
+                    <input type="text" class="form-control" id="inputtext">
+                </div>
+                <div id="containermsg">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            const enter = $("#inputtext");
+            const msgbox = $("#containermsg");
+            var nodeid = 1;
+            var m = moment();
+            console.log(m.format("DD Mo YYYY h m s"));
+
+
+            enter.keypress(function (e) {
+                if (e.key == "Enter") {
+                    createNode(enter.val());
+                }
+            });
+
+            const addTask = function (string) {
+                let task = JSON.parse(localStorage.getItem('items'));
+                if (task == null) {
+                    task = [];
+                }
+                task.push({ date: date.getMinutes(), msg: string });
+                localStorage.setItem('items', JSON.stringify(task));
+
+            }
+            function createNode(input) {
+                let node = document.createElement("div");
+                node.setAttribute("id", nodeid + "nd");
+                node.setAttribute("class", "alert alert-info");
+                let text = createMsgNode(input);
+                let dismissNode = createClosingNode(nodeid);
+                nodeid++;
+                node.append(text);
+                node.append(dismissNode);
+                msgbox.append(node);
+            }
+
+
+            function createClosingNode(nodeid) {
+                let node = document.createElement("a");
+                node.setAttribute("class", "closs");
+                node.setAttribute("data-dismiss", "alert");
+                node.setAttribute("aria-label", "close");
+                node.setAttribute("href", "#");
+                node.setAttribute("id", nodeid);
+                node.innerHTML = "&times";
+                node.addEventListener("click", (e) => {
+                    let msg = $("#" + e.target.id + "msg");
+                    $("#" + e.target.id + "nd").remove();
+                    addTask(msg["0"].innerHTML);
+                });
+                return node;
+            }
+
+            function createMsgNode(nodetext) {
+                let msg = document.createElement("p");
+                msg.setAttribute("id", nodeid + "msg");
+                msg.innerHTML = nodetext;
+                return msg;
+            }
+        });
+    </script>
+</body>
+
+</html>

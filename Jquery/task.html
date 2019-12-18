@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Task
+    </title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="website/assets/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container-fluid" style="margin-top:3%">
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group" style="width:30%">
+                    <label for="usr">Task:</label>
+                    <input type="text" class="form-control" id="inputtext">
+                </div>
+                <div id="containermsg">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            const enter = $("#inputtext");
+            const msgbox = $("#containermsg");
+            var nodeid = 1;
+            var moment = moment();
+
+            enter.keypress(function (e) {
+                console.log("Key Press Event.", e);
+                if (e.key == "Enter") {
+                    console.log("Enter Press.");
+                    createNode();
+                }
+            });
+
+            const addTask = function (string) {
+                console.log("Add Task");
+                let task = JSON.parse(localStorage.getItem('items'));
+                if (task == null) {
+                    task = [];
+                }
+                task.push({ date: , msg: string });
+                localStorage.setItem('items', JSON.stringify(task));
+
+            }
+            function createNode() {
+                console.log("Create Node");
+                let node = document.createElement("div");
+                node.setAttribute("id", nodeid);
+                node.setAttribute("class", "alert alert-info");
+                let text = document.createTextNode(enter.val());
+                node.addEventListener("click", (e) => {
+                    $("#" + e.target.id).remove();
+                    addTask(e.target.innerHTML);
+                });
+                nodeid++;
+                node.append(text);
+                msgbox.append(node);
+            }
+        });
+    </script>
+</body>
+
+</html>

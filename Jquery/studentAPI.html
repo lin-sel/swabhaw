@@ -162,7 +162,10 @@
                         url: api,
                         data: datastudent,
                         dataType: "json",
-                        success: function (resultData) { alert("Save Complete") }
+                        success: function (resultData) {
+                            console.log("Inside success add");
+                            alert("Save Complete");
+                        }
                     });
                 }
                 onsubmits.click(function (e) {
