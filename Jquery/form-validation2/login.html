@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Login Form
+    </title>
+    <style>
+        form {
+            width: 500px;
+            height: 300px;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* background: red; */
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            text-align: center;
+            width: 200px;
+            height: 30px;
+            margin-bottom: 10px;
+        }
+    </style>
+    <script src="/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <form action="auth.php" name="login2" method="POST">
+        <h4>Login</h4>
+        <input type="text" name="username" id="username" placeholder="Username">
+        <input type="password" name="password" id="password" placeholder="Password">
+        <input type="submit" id="submit" value="login">
+    </form>
+
+    <script>
+        $(document).ready(function () {
+
+            const username = $("#username");
+            const password = $("#password");
+
+            const usernamevalidate = function () {
+                let usern = username.val();
+                if (typeof usern != "string") {
+                    return {
+                        status: false,
+                        msg: "undefined value"
+                    };
+                }
+                if (usern == "") {
+                    return {
+                        status: false,
+                        msg: "Empty Username"
+                    };
+                }
+                if (usern.match(/[%$#@*&/]/)) {
+                    return {
+                        status: false,
+                        msg: "Special Symbol not Allowed"
+                    };
+                }
+                return {
+                    status: true,
+                    msg: "Ok"
+                };
+            }
+
+            const passwordvalidate = function () {
+                let pass = password.val();
+                if (typeof pass != "string") {
+                    return {
+                        status: false,
+                        msg: "undefined password"
+                    };
+                }
+                if (pass == "") {
+                    return {
+                        status: false,
+                        msg: "Empty Password"
+                    };
+                }
+                return {
+                    status: true,
+                    msg: "Ok"
+                };
+            }
+
+
+            const validate = function (e) {
+                console.log('log');
+                if (usernamevalidate().status == false) {
+                    alert(usernamevalidate().msg);
+                    e.preventDefault();
+                    return;
+                }
+                if (passwordvalidate().status == false) {
+                    alert(passwordvalidate().msg);
+                    e.preventDefault();
+                    return;
+                }
+            }
+
+            $("#submit").click(function (e) {
+                validate(e);
+            });
+        });
+    </script>
+</body>
+
+</html>
