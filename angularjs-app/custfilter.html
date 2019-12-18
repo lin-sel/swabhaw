@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="angular.js"></script>
+    <title>Document</title>
+    <style>
+        body {
+            font-size: xx-large;
+        }
+
+        input {
+            width: 20%;
+            height: 5%;
+        }
+    </style>
+</head>
+
+<body ng-app="filter">
+    <div ng-controller="filtercontroller">
+        <input type="text" ng-change="" ng-model="text">
+        <article>{{text | snackFilter}}</article>
+    </div>
+    <script>
+        angular.module('filter', []).filter('snackFilter', function () {
+            return function (input) {
+                return input.replace(/ /g, "_");
+            }
+        }).controller('filtercontroller', ['$scope', function ($scope) {
+            $scope.text = '';
+        }]);
+    </script>
+</body>
+
+</html>

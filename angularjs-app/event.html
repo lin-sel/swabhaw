@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="angular.js"></script>
+    <style>
+
+    </style>
+    <title>Event</title>
+</head>
+
+<body>
+    <section ng-app="student">
+        <div ng-controller="student-controller">
+            <button ng-click="loadData()" id="button">Load Student List</button>
+            <article ng-repeat="x in data">
+                <img width="50" height="50" ng-src="{{x.profile}}" alt="">
+                <label for="name">Name:</label>&nbsp{{x.name || 'No Name'}}
+                <label for="cgpa">CGPA:</label>&nbsp{{x.cgpa || 0}}
+            </article>
+        </div>
+
+    </section>
+
+    <script>
+        (function (angular) {
+            var studentData = [
+                {
+                    name: "xyz",
+                    cgpa: 8.1,
+                    profile: "/img/profile.jpg"
+                },
+                {
+                    name: "abc",
+                    cgpa: 7.1,
+                    profile: "/img/profile.jpg"
+                },
+                {
+                    name: "pqr",
+                    cgpa: 6.75,
+                    profile: "/img/profile.jpg"
+                }
+            ];
+            
+            angular.module("student", []).controller("student-controller", function ($scope, $timeout) {
+                $scope.loadData = function () {
+                    $scope.data = studentData;
+                    $timeout(function () {
+                        studentData[2].name = "Nilesh";
+                        studentData[2].cgpa = 7.1;
+                    }, 3000);
+                };
+            });
+
+        }(window.angular));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="angular.js"></script>
+    <title>Number API</title>
+</head>
+
+<body ng-app="number-app">
+    <div ng-controller="number-controller">
+        <input type="number" ng-model="num" id="">
+        <button ng-click="getMessages()" type="submit">Click</button>
+        <article ng-repeat="ms in message track by $index">
+            {{ms}}
+        </article>
+    </div>
+    <script>
+        (function (angular) {
+            angular.module('number-app', []).factory('TriviaService', ['$http', '$q', function ($http, $q) {
+                var obj = {};
+                obj.getMessage = function (num) {
+                    return $q(function (resolve, reject) {
+                        $http({
+                            method: 'GET',
+                            url: 'http://numbersapi.com/' + num
+                        }).then(function (msg) {
+                            resolve(msg.data);
+                        }, function (err) {
+                            reject("Can't Find the Fact" + err.data);
+                        });
+                    });
+                }
+                return obj;
+            }]).controller('number-controller', ['$scope', 'TriviaService', function ($scope, TriviaService) {
+                $scope.num;
+                $scope.message = [];
+                $scope.getMessages = function () {
+                    TriviaService.getMessage($scope.num).then(function (data) {
+                        $scope.message.push(data);
+                    }).catch(function (err) {
+                        console.log("Cant find sy");
+                    });
+                }
+            }]);
+        }(window.angular));
+    </script>
+</body>
+
+</html>

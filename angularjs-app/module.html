@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="angular.js"></script>
+    <title>Module</title>
+</head>
+
+<body ng-app="modA">
+    <section ng-controller="controllerA">
+        <div>
+            <h1>{{company}}</h1>
+            <h2>{{message}}</h2>
+        </div>
+    </section>
+    <hr>
+    <section ng-controller="controllerB">
+        <div>
+            <h1>{{company}}</h1>
+            <h2>{{message}}</h2>
+        </div>
+    </section>
+    <hr>
+    <div>
+        <h1>{{company}}</h1>
+        <h2>{{message}}</h2>
+    </div>
+    <script>
+        (function (angular) {
+            angular.module("modA", ["modB"]).controller("controllerA", function ($scope, $rootScope) {
+                console.log("Controlle A");
+                $scope.message = "Hello From Controller A";
+                $rootScope.company = "Swabhav";
+            });
+
+            angular.module("modB", []).controller("controllerB", function ($scope, $rootScope) {
+                console.log("Controlle B");
+                $scope.message = "Hello From Controller B";
+                console.log($rootScope.company);
+            });
+        }(window.angular));
+    </script>
+</body>
+
+</html>

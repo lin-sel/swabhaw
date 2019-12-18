@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="angular.js"></script>
+    <style>
+        .checkedList {
+            text-decoration: line-through;
+            font-size: medium;
+        }
+
+        .uncheckedList {
+            font-size: medium;
+        }
+
+        article {
+            display: inline;
+        }
+    </style>
+    <title>Task</title>
+</head>
+
+<body ng-app="task-app">
+    <div ng-controller="todocontroller">
+        <input type="text" ng-model="text">
+        <button type="submit" ng-click="getTaskController()"> Add Task</button>
+        <h3>TODO:</h3>
+        <article ng-repeat="node in task| filter:{status:false}">
+            <div id={{node.id}}>
+                <input type="checkbox" ng-model="node.status">
+                <label>{{node.msg}}</label>
+            </div>
+        </article>
+        <h3>Complete:</h3>
+        <article ng-repeat="node in task| filter:{status:true}">
+            <div id={{node.id}} class="checkedList">
+                <input type="checkbox" ng-change="updateStatus()" ng-model="node.status">
+                <label>{{node.msg}}</label>
+            </div>
+        </article>
+    </div>
+    <script>
+        (function (angular) {
+            let app = angular.module('task-app', []);
+            const TaskList = "Task";
+
+            app.factory('appService', [function () {
+                var methodlist = {};
+                methodlist.addTask = function (input) {
+                    localStorage.setItem(TaskList, angular.toJson(input));
+                }
+
+                methodlist.getTask = function () {
+                    let task = JSON.parse(localStorage.getItem(TaskList));
+                    if (task == undefined) {
+                        task = [];
+                    }
+                    return task;
+                }
+
+                methodlist.generateTask = function (ms, ids) {
+                    return {
+                        id: ids,
+                        msg: ms,
+                        status: false
+                    };
+                }
+
+                return methodlist;
+            }]);
+
+            app.controller('todocontroller', ['$scope', 'appService', function ($scope, appService) {
+                $scope.text = "";
+                $scope.task = Array();
+                $scope.task = appService.getTask();
+                $scope.id = $scope.task.length;
+                console.log($scope.task);
+                $scope.getTaskController = function () {
+                    $scope.task.push(appService.generateTask($scope.text, $scope.id));
+                    appService.addTask($scope.task);
+                    $scope.id++;
+
+                };
+                $scope.updateStatus = function (node) {
+                    console.log(node);
+                    appService.addTask($scope.task);
+                };
+            }]);
+        }(window.angular));
+    </script>
+</body>
+
+</html>

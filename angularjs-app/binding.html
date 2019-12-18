@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="angular.js"></script>
+    <title>Binding</title>
+</head>
+
+<body>
+    <section ng-app="eventApp">
+        <div ng-controller="eventcontroller">
+            <article>
+                <img width="50" height="50" ng-src="{{x.profile}}" alt="">
+                <label for="name">Name:</label>&nbsp{{x.name || 'No Name'}}
+                <label for="cgpa">CGPA:</label>&nbsp{{x.cgpa || 0}}
+            </article>
+            <hr>
+            <article>
+                <img width="50" height="50" ng-src="{{x.profile}}" alt="">
+                <input type="text" ng-model="x.name">
+                <input type="text" ng-model="x.cgpa">
+            </article>
+            <hr>
+            <article>
+                <img width="50" height="50" ng-src="{{::x.profile}}" alt="">
+                <label for="name">Name:</label>&nbsp{{::x.name || 'No Name'}}
+                <label for="cgpa">CGPA:</label>&nbsp{{::x.cgpa || 0}}
+            </article>
+        </div>
+    </section>
+    <script>
+        (function (angular) {
+            var studentData = [
+                {
+                    name: "xyz",
+                    cgpa: 8.1,
+                    profile: "/img/profile.jpg"
+                }
+            ];
+            angular.module("eventApp", []).controller("eventcontroller", ['$scope', '$timeout', function (a, b) {
+                a.x = studentData[0];
+            }]);
+        }(window.angular))
+    </script>
+</body>
+
+</html>

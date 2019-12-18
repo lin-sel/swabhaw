@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="angular.js"></script>
+    <title>Async Service</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px 0px 0px 0px;
+        }
+
+        .default-style {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input {
+            width: 15%;
+            height: 3%;
+            text-align: center;
+            font-size: large;
+        }
+
+        label {
+            font-size: xx-large;
+            margin-bottom: 20px;
+        }
+
+        .even {
+            background: green;
+        }
+
+        .odd {
+            background: red;
+        }
+
+        .default {
+            background: lightseagreen;
+        }
+    </style>
+</head>
+
+<body ng-app="asyncMod">
+    <div ng-controller="isEvenController">
+        <div class="default-style {{isEvenClass}}">
+            <label for="Number">Number:</label>
+            <input type="number" ng-change="checkNum()" ng-model="number" id="num">
+        </div>
+    </div>
+
+    <script>
+        (function (angular) {
+            angular.module('asyncMod', []).factory('Mathser', ['$q', function ($q) {
+                var obj = {};
+
+                obj.isEven = function (num) {
+                    return $q(function (resolve, reject) {
+                        if (typeof num != 'number') {
+                            reject(false);
+                        }
+                        if (num % 2 == 0) {
+                            resolve(true);
+                        }
+                        resolve(false);
+
+                    });
+                }
+
+                return obj;
+            }]).controller('isEvenController', ['$scope', 'Mathser', function ($scope, Mathser) {
+                $scope.number;
+                $scope.isEvenClass = 'default';
+                $scope.checkNum = function () {
+                    Mathser.isEven($scope.number).then(function (r) {
+                        if (r == true) {
+                            $scope.isEvenClass = 'even';
+                            return;
+                        }
+                        $scope.isEvenClass = 'odd';
+                    }).catch(function () {
+                        $scope.isEvenClass = 'default';
+                    });
+                }
+            }])
+        }(window.angular));
+    </script>
+</body>
+
+</html>

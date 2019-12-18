@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="angular.js"></script>
+    <title>Document</title>
+</head>
+
+<body ng-app="service-app">
+    <section ng-controller="cubecontroller">
+        {{title}}
+    </section>
+    <hr>
+    <section ng-controller="isPrimecontroller">
+        {{title}}
+    </section>
+    <script>
+        (function (angular) {
+            angular.module('service-app', []).factory('Mathser', ['$rootScope', '$log', function ($rootScope, $log) {
+                $log.log("inside main service");
+                var obj = {};
+                obj.cubeEven = function (num) {
+                    if (num % 2 == 0) {
+                        return num * num * num;
+                        return;
+                    }
+                }
+
+                obj.isPrime = function (num) {
+                    for (let i = 2; i < num; i++) {
+                        if (num % i == 0) {
+                            return false;
+                        }
+                        return true;
+                    }
+                }
+                return obj;
+            }]).controller('cubecontroller', ['$scope', 'Mathser', function ($scope, Mathser) {
+                $scope.title = "Cube";
+                console.log(Mathser.cubeEven(2));
+            }]).controller('isPrimecontroller', ['$scope', 'Mathser', function ($scope, Mathser) {
+                $scope.title = "Prime";
+                console.log(Mathser.isPrime(10));
+            }])
+        }(window.angular))
+    </script>
+</body>
+
+</html>
