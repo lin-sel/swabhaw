@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AsyncPattern</title>
+</head>
+
+<body>
+    <script>
+        (function () {
+            var dataServe = function () {
+                var serve = {};
+                serve.cubeEven = function (num) {
+                    return new Promise(function (resolve, reject) {
+                        if (num % 2 == 0) {
+                            resolve({ data: num * num * num, msg: "success" });
+                        }
+                        else {
+                            reject({ data: 0, msg: "fail" });
+                        }
+                    });
+                }
+                return serve;
+            }();
+
+            dataServe.cubeEven(2).then(function (r) {
+                console.log("resolve", r);
+            }).catch(function (e) {
+                console.log("error", e);
+            });
+
+            dataServe.cubeEven(2).then(function (r) {
+                return dataServe.cubeEven(r)
+            }).then(function (p) {
+                console.log(p);
+            }).catch(function (e) {
+                console.log("error", e);
+            });
+
+            console.log("end of the script");
+        }());
+    </script>
+</body>
+
+</html>
