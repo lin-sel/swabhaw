@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Bind
+    </title>
+    <style>
+        body {
+            margin: 0xp;
+        }
+
+        /* #main-blog{
+            width: 100%;
+            height
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="main-blog">
+        <input type="text" name="input" id="text">
+        <input type="number" name="" id="size">
+        <select name="" id="background-color">
+        </select>
+        <select name="" id="font-color"></select>
+    </div>
+    <div id="container">
+
+    </div>
+    <script src="/jquery-3.4.1.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            const text = $("#text");
+            const fontsize = $("#size");
+            const backgroundcolor = $("#background-color");
+            const fontcolor = $("#font-color");
+            const container = $("#container");
+
+            text.on("input", function () {
+                container.text(text.val());
+            });
+
+            fontsize.on("input", function () {
+                container.css("font-size", fontsize.val() + "px");
+            });
+
+            backgroundcolor.change(function () {
+                container.css("background", backgroundcolor.val());
+            });
+
+            fontcolor.change(function () {
+                container.css("color", fontcolor.val());
+            });
+
+
+            function colorList() {
+                let color = Array("red", "blue", "green", "yellow");
+                color.forEach(c => {
+                    backgroundcolor.append(optionGenerate());
+                    fontcolor.append(optionGenerate());
+                    function optionGenerate() {
+                        let option = new Option();
+                        option.value = c;
+                        option.innerHTML = c;
+                        return option;
+                    }
+                });
+            };
+
+
+            colorList()
+
+        });
+    </script>
+</body>
+
+</html>
