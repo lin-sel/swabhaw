@@ -1,0 +1,27 @@
+#mainbox{
+    width:35%;
+    height: 70%;
+    /* background:red; */
+    margin-top: 4%;
+    position: absolute;
+    display: none;
+}
+
+#mainbox button{
+    height: 10%;
+    width:7%;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    margin: 10px 10px 10px 10px;
+}
+
+#display{
+    width:30%;
+    height: 10%;
+    text-align: center;
+    margin:25px 0 0 0;
+    /* background:blue; */
+    position: absolute;
+    display: none;
+}
