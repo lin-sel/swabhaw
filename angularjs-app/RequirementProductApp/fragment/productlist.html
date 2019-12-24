@@ -1,0 +1,38 @@
+<div class="product-list-page">
+    <div class="product-list-div">
+        <div class="product-list-title">
+            <h3>Product list</h3>
+            <article>
+                <!-- <div class="form-group" style="margin:2px 10px 0px 0px;"> -->
+                <input type="text" class=" form-control" ng-model="filterdata" id="usr" placeholder="Filter Data">
+                <!-- </div> -->
+            </article>
+        </div>
+        <div class="product-list">
+            <table class="table table-striped">
+                <thead>
+                    <th><button type="button" ng-click="imageButtonClick()" class="btn btn-primary">{{title}}</button>
+                    </th>
+                    <th>Product</th>
+                    <th>code</th>
+                    <th>release date</th>
+                    <th>Price</th>
+                    <th>Rating</th>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in itemlist | filter:filterdata">
+                        <td><img src={{item.imageUrl}} class="{{class}}" alt="img" width="50" height="50"></td>
+                        <td ng-click="productDetails(item.productId)" class="clickable">{{item.productName}}</td>
+                        <td>{{item.productCode}}</td>
+                        <td>{{item.releaseDate}}</td>
+                        <td>${{item.price}}</td>
+                        <td>
+                            <ng-rate-it ng-model="item.starRating"></ng-rate-it>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            {{log}}
+        </div>
+    </div>
+</div>

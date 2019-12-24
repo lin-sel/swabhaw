@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="angular.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body ng-app="studentapi">
+    <div class="container-fluid">
+        <div ng-controller="apicontroller">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Roll Number</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Email</th>
+                        <th>Date</th>
+                        <th>Gender</th>
+                    </tr>
+                </thead>
+                <tbody ng-repeat="row in response">
+                    <tr ng-click="update(row.id, row.rollNo, row.name, row.age, row.email, row.date, row.isMale)">
+                        <th>{{row.id}}</th>
+                        <th>{{row.rollNo}}</th>
+                        <th>{{row.name}}</th>
+                        <th>{{row.age}}</th>
+                        <th>{{row.email}}</th>
+                        <th>{{row.date}}</th>
+                        <th>{{row.isMale | isMale}}</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+        (function (angular) {
+            var api = "http://gsmktg.azurewebsites.net:80/api/v1/techlabs/test/students/";
+            var datas = {
+                rollNo: 1900,
+                name: "Abhiman",
+                age: 400,
+                email: 'ccnsy86@gmail.com',
+                date: '13/03/1997',
+                isMale: true
+            };
+
+            angular.module('studentapi', []).factory('apiService', ['$http', '$q', function ($http, $q) {
+                let apimethod = {};
+                apimethod.get = function () {
+                    return $q(function (resolve, reject) {
+                        $http({
+                            method: "GET",
+                            url: api
+                        }).then(function (response) {
+                            resolve(response);
+                        }, function (errormsg) {
+                            reject(errormsg);
+                        });
+                    });
+                };
+
+                apimethod.post = function (data) {
+                    return $q(function (resolve, reject) {
+                        $http.post(api, data, 'application/json').then(function (response) {
+
+                            console.log(response);
+                            resolve(response);
+
+                        }, function (response) {
+
+                            console.log(response);
+                            reject(response);
+
+                        });
+                    });
+                }
+
+                apimethod.put = function (studentdata) {
+                    return $q(function (resolve, reject) {
+
+                    });
+                }
+
+                return apimethod;
+            }]).filter('isMale', [function () {
+                return function (input) {
+                    if (input == true) {
+                        return "Male";
+                    }
+                    return "Female";
+                }
+            }]).controller('apicontroller', ['$scope', 'apiService', function ($scope, apiService) {
+                console.log("Heloo");
+                apiService.get().then(function (res) {
+                    console.log(res.data);
+                    $scope.response = res.data;
+                }).catch(function (res) {
+                    console.log(res);
+                });
+                // apiService.post(angular.toJson(datas)).then(function (res) {
+                //     console.log(res.data);
+                //     $scope.response = res.data;
+                // });
+                $scope.update = function (id, rollNo, name, age, email, date, isMale) {
+                    $scope.curStudent =
+                    {
+                        id: id,
+                        roll: rollNo,
+                        name: name,
+                        age: age,
+                        email: email,
+                        date: date,
+                        ismale: isMale
+                    };
+                }
+            }]);
+        }(window.angular));
+    </script>
+</body>
+
+</html>

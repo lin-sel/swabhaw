@@ -1,0 +1,33 @@
+<div class="home-page">
+    <div class="sub-homepage-div">
+        <div class="homepage-title">
+            <h3>Employee Data:</h3>
+            <label for="Add">
+                <button type="button" ng-click="reDirect('add')" class="btn btn-primary">Add New
+                    Employee</button>
+            </label>
+        </div>
+        <table class="table table-striped">
+            <thead class="thead-light">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Salary</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody ng-repeat="emd in empdata">
+                <tr>
+                    <td>{{emd.id}}</td>
+                    <td>{{emd.name}}</td>
+                    <td>{{emd.salary}}</td>
+                    <td><button type="button" ng-click="reDirect('update/'+emd.id)" class="btn btn-primary">Edit
+                            Employee</button>
+                    </td>
+                    <td><button type="button" ng-click="delete(emd.id)" class="btn btn-danger">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

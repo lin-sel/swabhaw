@@ -1,0 +1,55 @@
+
+        /* Base setup */
+        @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+        body {
+            color: #333;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: .5rem;
+        }
+
+        /* Ratings widget */
+        .rate {
+            display: inline-block;
+            border: 0;
+        }
+
+        /* Hide radio */
+        .rate>input {
+            display: none;
+        }
+
+        /* Order correctly by floating highest to the right */
+        .rate>label {
+            float: right;
+        }
+
+        /* The star of the show */
+        .rate>label:before {
+            display: inline-block;
+            font-size: 1.1rem;
+            padding: .3rem .2rem;
+            margin: 0;
+            cursor: pointer;
+            font-family: FontAwesome;
+            content: "\f005";
+            /* full star */
+        }
+
+        /* Zero stars rating */
+
+        /* Half star trick */
+        .rate .half:before {
+            content: "\f089";
+            /* half star no outline */
+            position: absolute;
+            padding-right: 0;
+        }
+
+        /* Click + hover color */
+        input:checked~label {
+            color: rgb(66, 173, 180);
+        }

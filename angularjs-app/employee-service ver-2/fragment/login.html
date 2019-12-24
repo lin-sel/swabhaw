@@ -1,0 +1,22 @@
+<div class="login-page">
+    <form name="loginForm">
+        <div class="form-group">
+            <img src="../assert/img/login.png" alt="lock" width="100" height="100">
+        </div>
+        <div class="form-group">
+            <!-- <label for="username">username:</label> -->
+            <input type="text" class="form-control" name="login.uname" ng-model="login.uname"
+                placeholder="Enter username" required>
+            <span ng-show="loginForm.login.uname.$touched && loginForm.login.uname.$invalid">Heloo</span>
+        </div>
+        <div class="form-group">
+            <!-- <label for="pwd">password:</label> -->
+            <input type="password" class="form-control" name="login.password" ng-model="login.password"
+                placeholder="Enter password" required>
+            <span ng-show="loginForm.login.password.$touched && loginForm.login.password.$invalid">Heloo</span>
+        </div>
+        <div class="form-group">
+            <input type="submit" ng-disabled="loginForm.$invalid" ng-click="login()" class="btn btn-primary" />
+        </div>
+    </form>
+</div>

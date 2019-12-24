@@ -1,0 +1,22 @@
+<h2>Employee Data:</h2><label for="Add"><button type="button" ng-click="reDirect('add')"
+        class="btn">Add</button></label>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody ng-repeat="emd in empdata">
+        <tr>
+            <td>{{emd.id}}</td>
+            <td>{{emd.name}}</td>
+            <td>{{emd.salary}}</td>
+            <td><button type="button" ng-click="reDirect('update/'+emd.id)" class="btn">Edit</button></td>
+            <td><button type="button" ng-click="delete(emd.id)" class="btn btn-danger">Delete</button></td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="angular.js"></script>
+    <script src="angular-route.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="/style/style.css">
+    <!-- <link rel="stylesheet" href="/style/star.css"> -->
+    <script src="/dist/ng-rateit.js"></script>
+    <link rel="stylesheet" href="/dist/ng-rateit.css">
+    <!-- <script src="star.js"></script> -->
+    <title>Document</title>
+</head>
+
+<body ng-app="product-app">
+    <nav class="navbar navbar-expand-sm navbar-dark custome-style-nav">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#">
+            <img src="./img/brand.png" alt="logo" style="width:100px;">
+        </a>
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" style="color:black" href="#!/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color:black" href="#!/productlist">Product list</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div ng-view></div>
+</body>
+
+</html>

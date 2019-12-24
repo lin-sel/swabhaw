@@ -1,0 +1,54 @@
+<div class="product-list-page">
+    <div class="product-list-div">
+        <div class="product-list-title">
+            <article>
+                <button type="button" class="btn btn-secondary" ng-click="returnBack()">
+                    Back
+                </button>&nbsp&nbsp
+                <span>Product:</span>&nbsp&nbsp<strong>{{item.productName}}</strong>
+            </article>
+        </div>
+        <div class="product-list">
+            <div class="product-details">
+                <table class="table table-borderless">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <td>{{item.productId}}</td>
+                        </tr>
+                        <tr>
+                            <th>Name</th>
+                            <td>{{item.productName}}</td>
+                        </tr>
+                        <tr>
+                            <th>Code</th>
+                            <td>{{item.productCode}}</td>
+                        </tr>
+                        <tr>
+                            <th>Description</th>
+                            <td>{{item.description}}</td>
+                        </tr>
+                        <tr>
+                            <th>Availability</th>
+                            <td>{{item.releaseDate}}</td>
+                        </tr>
+                        <tr>
+
+                            <th>Price</th>
+                            <td>${{item.price}}</td>
+                        </tr>
+                        <tr>
+                            <th>Rating</th>
+                            <td>
+                                <ng-rate-it ng-model="item.starRating"></ng-rate-it>
+                            </td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="product-image">
+                <img src="{{item.imageUrl}}" alt="img">
+            </div>
+        </div>
+    </div>
+</div>

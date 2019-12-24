@@ -1,0 +1,10 @@
+<section>
+    <!-- <label for="id">ID: </label> -->
+    <h1>{{student.id}}</h1>
+    <h1 [innerHTML]='"Student Data"'></h1>
+    <!-- <label for="">Name</label> -->
+    <h1 [innerHTML]='student.name'></h1>
+    <!-- <label for="">Profile</label> -->
+    <img [src]='student.profile' [style.width.px]="100" [style.heigth.px]="100" />
+    <h1 [innerHTML]='student.cgpa'></h1>
+</section>

@@ -1,0 +1,102 @@
+.login-page{
+    width:100%;
+    height: 100%;
+    /* background-color: red; */
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+.login-page form{
+    width: 30%;
+    height:50%;
+    /* background-color: blue; */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-page input{
+    width: 100%;
+}
+
+.login-page form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-page{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    /* background-color:red; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding:3%;
+}
+
+.sub-homepage-div{
+    width:100%;
+    height: 100%;
+    /* background-color:blue; */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgba(245, 245, 245,0.9);
+}
+
+.homepage-title{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between ;
+    margin-bottom: 20px;
+    border-bottom: 1px solid gray;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+
+}
+
+.add-page{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6%;
+}
+
+.page-title{
+    padding:1%;
+    width:50%;
+    height: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.page-form{
+    padding: 1%;
+    width:50%;
+    height:50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.update-page{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* background-color:red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6%;
+}

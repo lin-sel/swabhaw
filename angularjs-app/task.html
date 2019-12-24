@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="angular.js"></script>
+    <script src="moment.js"></script>
     <style>
         .checkedList {
             text-decoration: line-through;
@@ -30,23 +31,36 @@
         <h3>TODO:</h3>
         <article ng-repeat="node in task| filter:{status:false}">
             <div id={{node.id}}>
-                <input type="checkbox" ng-model="node.status">
-                <label>{{node.msg}}</label>
+                <input type="checkbox" ng-change="notify()" ng-model="node.status">
+                <label>{{node.msg}}</label>&nbsp&nbsp<label for="">{{node.fromnow | elapesd}}</label>
             </div>
         </article>
         <h3>Complete:</h3>
         <article ng-repeat="node in task| filter:{status:true}">
-            <div id={{node.id}} class="checkedList">
-                <input type="checkbox" ng-change="updateStatus()" ng-model="node.status">
-                <label>{{node.msg}}</label>
+            <div id={{node.id}}>
+                <input type="checkbox" ng-change="notify()" ng-model="node.status">
+                <label class="checkedList">{{node.msg}}</label> <label>{{node.fromnow | elapesd}}</label>
             </div>
         </article>
     </div>
+    <swabhav-techlabs></swabhav-techlabs>
     <script>
         (function (angular) {
+            let format = "D-M-YYYY h:m:s a";
             let app = angular.module('task-app', []);
             const TaskList = "Task";
 
+            app.filter('elapesd', function () {
+                return function (input) {
+                    return moment(input, format).fromNow();
+                }
+            })
+
+            app.directive('swabhavTechlabs', function () {
+                return {
+                    template: "<strong>Swabhaw Techlbas</strong>"
+                };
+            });
             app.factory('appService', [function () {
                 var methodlist = {};
                 methodlist.addTask = function (input) {
@@ -61,11 +75,12 @@
                     return task;
                 }
 
-                methodlist.generateTask = function (ms, ids) {
+                methodlist.generateTask = function (ms, ids, sta) {
                     return {
                         id: ids,
                         msg: ms,
-                        status: false
+                        status: false,
+                        fromnow: sta
                     };
                 }
 
@@ -77,15 +92,17 @@
                 $scope.task = Array();
                 $scope.task = appService.getTask();
                 $scope.id = $scope.task.length;
+                $scope.date = moment().format(format);
                 console.log($scope.task);
                 $scope.getTaskController = function () {
-                    $scope.task.push(appService.generateTask($scope.text, $scope.id));
+                    $scope.task.push(appService.generateTask($scope.text, $scope.id, $scope.date));
+                    console.log($scope.task);
                     appService.addTask($scope.task);
                     $scope.id++;
 
                 };
-                $scope.updateStatus = function (node) {
-                    console.log(node);
+                $scope.notify = function () {
+                    console.log("Change");
                     appService.addTask($scope.task);
                 };
             }]);
