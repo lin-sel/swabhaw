@@ -1,10 +1,49 @@
-<section>
-    <!-- <label for="id">ID: </label> -->
-    <h1>{{student.id}}</h1>
+<!-- <section>
+    <h1>{{student[0].id}}</h1>
     <h1 [innerHTML]='"Student Data"'></h1>
-    <!-- <label for="">Name</label> -->
-    <h1 [innerHTML]='student.name'></h1>
-    <!-- <label for="">Profile</label> -->
-    <img [src]='student.profile' [style.width.px]="100" [style.heigth.px]="100" />
-    <h1 [innerHTML]='student.cgpa'></h1>
+    <h1 [innerHTML]='student[0].name'></h1>
+    <img [src]='student[0].profile' [style.width.px]='imgmaxWidth' [style.heigth.px]='imgmaxHeight' />
+    <h1 [innerHTML]='student[0].cgpa'></h1>
+</section> -->
+
+
+<section>
+    <div class="container">
+        <input type="button" class="btn btn-primary" (click)="loadData()" value="Load Many" />
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th>Sr.</th>
+                    <th>Profile</th>
+                    <th>Name</th>
+                    <th>Id</th>
+                    <th>CGPA</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let data of manyStudent; let i = index">
+                <td>
+                    {{i+1}}
+                </td>
+                <td>
+                    <img [src]='data.profile' [style.width.px]='imgmaxWidth' [style.heigth.px]='imgmaxHeight' />
+                </td>
+                <td>
+                    {{data.name}}
+                </td>
+                <td>
+                    {{data.id}}
+                </td>
+                <td [style.backgroundColor]='changeColor(data.cgpa)'>
+                    {{data.cgpa}}
+                </td>
+            </tbody>
+        </table>
+        <!-- <div *ngFor="let data of manyStudent; let i = index">
+            Index:<li>{{i+1}}</li>
+            ID:<li>{{data.id}}</li>
+            Name:<li>{{data.name}}</li>
+            CGPA:<li [style.backgroundColor]='changeColor(data.cgpa)'>{{data.cgpa}}</li>
+            Profile:<img [src]='data.profile' [style.width.px]='imgmaxWidth' [style.heigth.px]='imgmaxHeight' />
+        </div> -->
+    </div>
 </section>
