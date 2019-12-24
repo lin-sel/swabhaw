@@ -1,0 +1,29 @@
+.mainDiv{
+    margin: auto;
+    width: 560px;
+    height: auto;
+}
+
+.subDiv{
+    display: inline;
+}
+
+.subDiv input{
+    outline:none;
+    border: none;
+    margin:2px;
+}
+
+.rulesDiv{
+    width: 400px;
+    height: auto;
+    margin: auto;
+}
+.rulesDiv li, button{
+    margin-bottom: 10px;
+    font-family: fantasy;
+}
+
+.hideDiv{
+    display: none;
+}

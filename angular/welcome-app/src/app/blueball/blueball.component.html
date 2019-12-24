@@ -1,0 +1,21 @@
+<!-- Rules View -->
+<div [class]="rulesDiv">
+    <h2>Blue Ball Game</h2>
+    <h4>Rules:</h4>
+    <li>You Have Only 5 Chance to win.</li>
+    <li>If you select less number Ball then button will be Green.</li>
+    <li>if you select high number Ball then button will be Red</li>
+    <li>if you select right button then button will be Blue.</li>
+    <button (click)="updatePage()" class="btn btn-primary">Start</button>
+</div>
+
+<!-- Game View -->
+<div [class]="mainDiv">
+    <h2>Blue Ball Game</h2>
+    <h3>Total Remaining Chance: {{TOTAL_TURN}}</h3>
+    <div *ngFor="let ball of balls" [class]="subDiv">
+        <input type="button" (click)="onBallClick($event)" [id]="ball.id" [style.backgroundColor]="ball.color"
+            value={{ball.id}} [style.width.px]="ball.width" [style.height.px]="ball.height"
+            [style.borderRadius]="'50%'">
+    </div>
+</div>
