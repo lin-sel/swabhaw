@@ -1,0 +1,11 @@
+<h2>Two Way Binding</h2>
+<div>
+    <input type="text" class="form-control" [style.width.px]="'300'" [ngModel]="firstname"
+        (ngModelChange)='onChange($event)'><br />
+    FirstName: {{firstname}}
+</div>
+<hr>
+<div>
+    <input type="text" class="form-control" [style.width.px]="'300'" [(ngModel)]="lastname"><br />
+    LastName: {{lastname | snake}}
+</div>
