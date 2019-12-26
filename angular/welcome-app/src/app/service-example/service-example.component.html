@@ -1,0 +1,25 @@
+<div class="container">
+    <h3>Service Example</h3>
+    <form form>
+        <div class="form-group">
+            <label for="email">Number 1:</label>
+            <input type="Number" class="form-control" [(ngModel)]="num1" name="number1" placeholder="Enter Number"
+                required>
+        </div>
+        <div class="form-group">
+            <label for="pwd">Number 2:</label>
+            <input type="number" class="form-control" [(ngModel)]="num2" name="number2" placeholder="Enter Number"
+                required>
+        </div>
+        <div class="form-group">
+            <label for="sel1">Select Action:</label>
+            <select class="form-control" id="sel1" [(ngModel)]="action" [disabled]="optionStatus"
+                (ngModelChange)="onChange($event)" name="action" required>
+                <option value="add">Addition</option>
+                <option value="mul">Multiplication</option>
+                <option value="div">Division</option>
+                <option value="sub">Subtraction</option>
+            </select>
+        </div>
+    </form>
+</div>

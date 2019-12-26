@@ -9,6 +9,10 @@ import { StudentComponent } from './student/student.component';
 import { BlueballComponent } from './blueball/blueball.component';
 import { TwoWayComponent } from './two-way/two-way.component';
 
+import { MathService } from './service/math.service';
+import { ServiceExampleComponent } from './service-example/service-example.component';
+import { LogService } from './service/log.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,13 +20,14 @@ import { TwoWayComponent } from './two-way/two-way.component';
     StudentComponent,
     BlueballComponent,
     TwoWayComponent,
-    Snake
+    Snake,
+    ServiceExampleComponent
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [],
-  bootstrap: [TwoWayComponent]
+  providers: [MathService, LogService],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
