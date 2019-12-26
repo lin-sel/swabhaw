@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        (function () {
+            var list = [3, 6, 9, 10,14];
+
+            function MapExample() {
+                var arr = list.map(function (data) { return data * data });
+                console.log(arr);
+            }
+
+            function MapReducer() {
+                console.log(list.reduce(aggregate, 9));
+            }
+
+            function aggregate(accum, current) {
+                return accum + current;
+            }
+
+            function FilterExample() {
+                console.log(list.filter(data => {
+                    if (data % 2 == 0) {
+                        return true;
+                    }
+                    return false;
+                }))
+            }
+
+            MapExample();
+            MapReducer();
+            FilterExample();
+
+        }())    
+    </script>
+</body>
+
+</html>
