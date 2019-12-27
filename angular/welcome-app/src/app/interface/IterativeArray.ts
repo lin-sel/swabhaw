@@ -1,0 +1,3 @@
+interface IterativeArray {
+    width: number
+}

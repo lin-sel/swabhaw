@@ -1,5 +1,4 @@
 import { Pipe, PipeTransform, Input } from '@angular/core';
-import { createNgModule } from '@angular/compiler/src/core';
 
 @Pipe({ name: 'odd' })
 export class OddFact implements PipeTransform {

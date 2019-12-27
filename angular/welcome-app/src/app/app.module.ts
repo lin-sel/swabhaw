@@ -15,6 +15,8 @@ import { NumberComponent } from './number/number.component';
 import { OddFact } from './pipes/oddNumberFact.pipe';
 import { ParentChildComponent } from './parent-child/parent-child.component';
 import { ChildComponent } from './parent-child/child.component';
+import { StarExampleComponent } from './star-example/star-example.component';
+import { StarComponent } from './star/star.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ChildComponent } from './parent-child/child.component';
     NumberComponent,
     OddFact,
     ParentChildComponent,
-    ChildComponent
+    ChildComponent,
+    StarExampleComponent,
+    StarComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +40,6 @@ import { ChildComponent } from './parent-child/child.component';
     HttpClientModule
   ],
   providers: [],
-  bootstrap: [ParentChildComponent]
+  bootstrap: [StarExampleComponent]
 })
 export class AppModule { }

@@ -1,0 +1,12 @@
+.starclass {
+    overflow: hidden;
+}
+
+.star-main-div{
+    display: flex;
+    flex-direction: row;
+}
+
+polygon {
+    fill:red;
+}

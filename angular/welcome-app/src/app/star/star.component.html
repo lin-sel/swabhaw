@@ -1,0 +1,7 @@
+<div class="star-main-div">
+    <div *ngFor="let x of iterativeArray">
+        <div [class]="starclass" [style.width.%]="x">
+            <img [src]="starimg" alt="" [style.width.px]="size" [style.height.px]="size">
+        </div>
+    </div>
+</div>
