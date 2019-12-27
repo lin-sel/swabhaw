@@ -26,15 +26,18 @@ public class FilePerser implements IParser {
 			sc = new Scanner(file);
 		} catch (FileNotFoundException e) {
 			System.out.println("File Not Found");
+			return null;
 		}
 		String[] data = new String[8];
 		while (sc.hasNextLine()) {
 			data = sc.nextLine().split(",");
 			EmployeeSpec spec = new EmployeeSpec(Integer.parseInt(data[0]), data[1].replace("'", ""),
-					getDesignation(data[2].replace("'", "")), data[4], Integer.parseInt(data[5]), Integer.parseInt(data[7]));
+					getDesignation(data[2].replace("'", "")), data[4], Integer.parseInt(data[5]),
+					Integer.parseInt(data[7]));
 			Employee employee = new Employee(getdata(data[6]), getdata(data[3]), spec);
 			this.employee.add(employee);
 		}
+		sc.close();
 		return this.employee;
 	}
 

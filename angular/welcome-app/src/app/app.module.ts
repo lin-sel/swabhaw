@@ -9,9 +9,12 @@ import { StudentComponent } from './student/student.component';
 import { BlueballComponent } from './blueball/blueball.component';
 import { TwoWayComponent } from './two-way/two-way.component';
 
-import { MathService } from './service/math.service';
+import { HttpClientModule } from '@angular/common/http';
 import { ServiceExampleComponent } from './service-example/service-example.component';
-import { LogService } from './service/log.service';
+import { NumberComponent } from './number/number.component';
+import { OddFact } from './pipes/oddNumberFact.pipe';
+import { ParentChildComponent } from './parent-child/parent-child.component';
+import { ChildComponent } from './parent-child/child.component';
 
 @NgModule({
   declarations: [
@@ -21,13 +24,18 @@ import { LogService } from './service/log.service';
     BlueballComponent,
     TwoWayComponent,
     Snake,
-    ServiceExampleComponent
+    ServiceExampleComponent,
+    NumberComponent,
+    OddFact,
+    ParentChildComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [MathService, LogService],
-  bootstrap: [AppComponent]
+  providers: [],
+  bootstrap: [ParentChildComponent]
 })
 export class AppModule { }
