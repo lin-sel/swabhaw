@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-star',
@@ -8,9 +8,11 @@ import { Component, OnInit, Input } from '@angular/core';
 export class StarComponent implements OnInit {
   private starclass = "starclass";
   private starimg = '/assets/img/favorite.svg';
+  private rt: number;
   @Input() rating: number;
   @Input() private size: number;
   private iterativeArray: number[] = [];
+  @Output() state = new EventEmitter<number>();
 
   constructor() {
     this.size = 50;
@@ -18,6 +20,7 @@ export class StarComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.rt = this.rating;
     this.getArray();
   }
 
@@ -32,6 +35,11 @@ export class StarComponent implements OnInit {
         this.rating -= 1;
       }
     }
+  }
+
+  mouseHoverlistner() {
+    this.state.emit(this.rt);
+    // this.state.emit(this.rating);
   }
 
 }

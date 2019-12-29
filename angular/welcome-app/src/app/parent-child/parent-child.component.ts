@@ -12,4 +12,8 @@ export class ParentChildComponent implements OnInit {
   ngOnInit() {
   }
 
+  onBtnStateChange(event) {
+    console.log(event);
+  }
+
 }

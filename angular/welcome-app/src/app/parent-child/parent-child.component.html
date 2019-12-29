@@ -1,2 +1,3 @@
-<p>parent-child works!</p>
-<app-child [onState]="'pink'" [offState]="'yellow'"></app-child>
+<div class="container">
+    <app-child [onState]="'red'" [offState]="'yellow'" (btnState)="onBtnStateChange($event)"></app-child>
+</div>

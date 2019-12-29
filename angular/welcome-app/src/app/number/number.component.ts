@@ -24,10 +24,12 @@ export class NumberComponent implements OnInit {
   onClick() {
     this.buttonst = true;
     this.msg = null;
-    console.log(this.checkNumber());
     if (this.checkNumber() == true) {
       this._httpService.get(this.url + this.number, { responseType: 'text' }).subscribe((data) => {
         this.numberstatus.push({ num: this.number, fact: data, time: moment() });
+        this.buttonst = false;
+      }, (error) => {
+        console.log(error.message);
         this.buttonst = false;
       });
     } else {

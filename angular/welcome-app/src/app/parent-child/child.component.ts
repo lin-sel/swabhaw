@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
     selector: 'app-child',
@@ -9,6 +9,7 @@ export class ChildComponent implements OnInit {
 
     @Input() onState: string;
     @Input() offState: string;
+    @Output() btnState = new EventEmitter<string>();
 
     public btnStatus: number;
     public btnStyle: string;
@@ -18,17 +19,19 @@ export class ChildComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.btnStatus = 1;
-        this.btnStyle = this.onState;
+        this.btnStatus = 0;
+        this.btnStyle = this.offState;
     }
 
     onBtnToggle() {
         if (this.btnStatus == 1) {
             this.btnStatus = 0;
             this.btnStyle = this.offState;
+            this.btnState.emit(`Button status ${this.btnStatus == 1 ? 'on' : 'off'}`);
             return;
         }
         this.btnStatus = 1;
         this.btnStyle = this.onState;
+        this.btnState.emit(`Button status ${this.btnStatus == 1 ? 'on' : 'off'}`);
     }
 }

@@ -7,7 +7,7 @@ import { StarComponent } from '../star/star.component';
   styleUrls: ['./star-example.component.css']
 })
 export class StarExampleComponent implements OnInit {
-
+  private rating: number;
   constructor() { }
 
   @ViewChild(StarComponent, { static: false }) star;
@@ -17,6 +17,10 @@ export class StarExampleComponent implements OnInit {
 
   AfterViewInit() {
 
+  }
+
+  onState(event) {
+    this.rating = event;
   }
 
 }

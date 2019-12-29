@@ -1,0 +1,48 @@
+[
+    {
+        "id": "1",
+        "question": "Addition of 1 and 2",
+        "option": [
+            {
+                "optionid": "1",
+                "option": "4"
+            },
+            {
+                "optionid": "2",
+                "option": "3"
+            },
+            {
+                "optionid": "3",
+                "option": "9"
+            },
+            {
+                "optionid": "4",
+                "option": "1+2"
+            }
+        ],
+        "ans": 1
+    },
+    {
+        "id": "1",
+        "question": "Multiplication of 1 and 2",
+        "option": [
+            {
+                "optionid": "1",
+                "option": "4"
+            },
+            {
+                "optionid": "2",
+                "option": "2"
+            },
+            {
+                "optionid": "3",
+                "option": "1*2"
+            },
+            {
+                "optionid": "4",
+                "option": "3"
+            }
+        ],
+        "ans": 1
+    }
+]

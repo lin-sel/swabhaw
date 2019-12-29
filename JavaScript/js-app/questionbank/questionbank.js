@@ -34,7 +34,6 @@
             return;
         }
         setProgessBar();
-
     });
 
 
@@ -68,7 +67,6 @@
             }
             return;
         }
-
     }
 
     function createOptionNode() {

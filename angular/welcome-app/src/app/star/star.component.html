@@ -1,5 +1,5 @@
 <div class="star-main-div">
-    <div *ngFor="let x of iterativeArray">
+    <div *ngFor="let x of iterativeArray" (mouseenter)="mouseHoverlistner()">
         <div [class]="starclass" [style.width.%]="x">
             <img [src]="starimg" alt="" [style.width.px]="size" [style.height.px]="size">
         </div>

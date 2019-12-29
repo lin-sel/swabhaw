@@ -17,6 +17,8 @@ import { ParentChildComponent } from './parent-child/parent-child.component';
 import { ChildComponent } from './parent-child/child.component';
 import { StarExampleComponent } from './star-example/star-example.component';
 import { StarComponent } from './star/star.component';
+import { StarFontComponent } from './star-font/star-font.component';
+import { QuestionBankComponent } from './question-bank/question-bank.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { StarComponent } from './star/star.component';
     ParentChildComponent,
     ChildComponent,
     StarExampleComponent,
-    StarComponent
+    StarComponent,
+    StarFontComponent,
+    QuestionBankComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,6 +44,6 @@ import { StarComponent } from './star/star.component';
     HttpClientModule
   ],
   providers: [],
-  bootstrap: [StarExampleComponent]
+  bootstrap: [WelcomeComponent]
 })
 export class AppModule { }

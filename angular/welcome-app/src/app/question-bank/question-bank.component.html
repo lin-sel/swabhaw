@@ -1,0 +1,44 @@
+<div class="container">
+    <div [class]="defaultClass">
+        <h2>Question</h2>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <span>{{getHeading()}}</span>{{currentQuestion.question}}
+            </div>
+            <div class="panel-body">
+                <form>
+                    <div class="checkbox" *ngFor="let opt of currentQuestion.option; let indx = index">
+                        <span style="margin-left:30px;"><input type="radio" #radioInput [value]="indx"
+                                [name]="checkboxname"><label [innerHTML]="opt.option"></label>
+                        </span>
+                    </div>
+                </form>
+            </div>
+            <div class="panel-footer">
+                <button class="btn btn-primary" [disabled]="questionIndex == 0 ? true : false"
+                    (click)="onPrevClick()">Prev</button>&nbsp;&nbsp;
+                <button class="btn btn-primary" [disabled]="questionIndex == question.length-1 ? true : false"
+                    (click)="onNextClick()">Next</button>&nbsp;&nbsp;
+                <button class="btn btn-primary" [disabled]="questionIndex == question.length-1 ? false : true"
+                    (click)="onFinishClick()">Finish</button>
+            </div>
+        </div>
+    </div>
+    <div [class]="hideClass">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Result:
+            </div>
+            <div class="panel-body">
+                <div class="result-display">
+                    <div class="su-success" [style.width.%]="result">
+                        {{result}}%
+                    </div>
+                    <div class="fa-fail" [style.width.%]="100 - result">
+                        {{100-result}}%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

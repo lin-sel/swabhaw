@@ -1,5 +1,5 @@
 <div class="container">
-    <h4>Star Rating</h4>
+    <h4>Star Rating System</h4>
     <table class="table table-hover">
         <thead>
             <tr>
@@ -10,27 +10,12 @@
         </thead>
         <tbody>
             <tr>
-                <td>2.5</td>
-                <td>20</td>
-                <td>
-                    <app-star [rating]=2.5 [size]=20></app-star>
-                </td>
-            </tr>
-            <tr>
-                <td>4.8</td>
-                <td>50</td>
-                <td>
-                    <app-star [rating]=4.8 [size]=50></app-star>
-                </td>
-            </tr>
-            <tr>
                 <td>4.9</td>
                 <td>Default</td>
-                <td>
-                    <app-star [rating]=4.9></app-star>
+                <td data-toggle="tooltip" [title]="rating">
+                    <app-star [rating]=4.9 (state)="onState($event)"></app-star>
                 </td>
             </tr>
         </tbody>
     </table>
 </div>
-
