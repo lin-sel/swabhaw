@@ -10,30 +10,67 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
   studentData: IStudent[] = Array();
-  private index: number;
+  private index: IStudent;
+  private loader: string;
+  private mainDiv: string;
   constructor(private _ser: StudentServiceService, private _router: Router) {
+    this.loader = 'show';
+    this.mainDiv = 'hide';
+    this.getEmpty();
   }
 
   ngOnInit() {
     this.getData();
   }
 
+  getEmpty() {
+    this.index = {
+      age: 0,
+      date: "",
+      email: "",
+      id: "",
+      name: "",
+      rollNo: 0,
+      isMale: null
+    }
+  }
+
   getData() {
     this._ser.getStudentList().subscribe((data) => {
       this.studentData = data;
+      console.log(this.studentData);
+      this.loaderSetting();
+    }, (error) => {
+      alert("Internal Server Error 500");
+      this.loaderSetting();
     });
   }
 
   deleteStudent(id) {
+    this.loaderSetting();
     this._ser.deleteStudent(id).subscribe(() => {
       alert("Deleted SuccessFully");
       this.getData();
     }, error => {
-      console.log(error);
+      alert("Something Went Wrong");
+      this.getData();
     });
+
   }
 
-  getStudData(ind: number) {
-    this.index = ind;
+  getStudData(student: IStudent) {
+    this.index = student;
+    console.log(this.index);
+  }
+
+  loaderSetting() {
+    if (this.loader == 'show') {
+      console.log(this.loader);
+      this.loader = 'hide';
+      this.mainDiv = 'container';
+      return;
+    }
+    this.loader = 'show';
+    this.mainDiv = 'hide';
   }
 }

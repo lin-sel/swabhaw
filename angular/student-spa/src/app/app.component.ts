@@ -6,15 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  public loader: string;
   private showDiv: string;
-  // private loader: string;
+
   constructor() {
-    // this.showDiv = 'hide';
-    // this.loader = 'main-loader';
+    this.loader = 'loader-div';
+    this.showDiv = 'hide';
   }
 
   OnInit() {
+  }
+
+  loaderSetting(event) {
+    this.loader = event;
     this.showDiv = 'show';
-    // this.loader = 'hide';
   }
 }

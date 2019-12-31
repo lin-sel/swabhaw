@@ -31,6 +31,7 @@ export class StudentServiceService {
   }
 
   addStudent(data: IStudent): Observable<Object> {
+    console.log(data);
     return this._http.post(this.url, data);
   }
 }

@@ -8,14 +8,18 @@ import { EditComponent } from './edit/edit.component';
 import { AddComponent } from './add/add.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
-import { GetGenderPipe } from './pipe/gender.pipe'
+import { GetGenderPipe } from './pipe/gender.pipe';
+import { ViewComponent } from './view/view.component';
+import { LoaderComponent } from './loader/loader.component'
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     EditComponent,
     AddComponent,
-    GetGenderPipe
+    GetGenderPipe,
+    ViewComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,

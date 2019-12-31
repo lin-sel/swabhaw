@@ -4,5 +4,6 @@ export interface IStudent {
     email: string,
     id: string,
     name: string,
-    rollNo: number
+    rollNo: number,
+    isMale: boolean
 }

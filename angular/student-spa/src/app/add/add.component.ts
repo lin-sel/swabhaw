@@ -9,12 +9,20 @@ import { Router } from '@angular/router';
 })
 export class AddComponent implements OnInit {
   private addForm: FormGroup;
-
+  private male: boolean;
+  private female: boolean;
+  private loader: string;
+  private mainDiv: string;
   constructor(private _ser: StudentServiceService, private _router: Router) {
     this.initializeForm();
+    this.male = true;
+    this.female = false;
+    this.loader = 'show';
+    this.mainDiv = 'hide';
   }
 
   ngOnInit() {
+    this.loaderSetting();
   }
 
   initializeForm() {
@@ -23,24 +31,38 @@ export class AddComponent implements OnInit {
       email: new FormControl('', Validators.email),
       rollNo: new FormControl(''),
       age: new FormControl(''),
-      date: new FormControl('')
+      date: new FormControl(''),
+      isMale: new FormControl('')
     });
   }
 
   onSubmit() {
+    this.loaderSetting();
     this.storeData();
   }
 
   private storeData() {
+    console.log(this.addForm.value);
     this._ser.addStudent(this.addForm.value).subscribe((data) => {
       alert(`Data Added Successfully ${data}`);
       this.redirect();
     }, error => {
-      console.log(`Failed`);
+      alert('Data Not Added, Something wrong with server');
+      this._router.navigate(['home']);
     });
   }
 
   redirect() {
     this._router.navigate(['home']);
+  }
+
+  loaderSetting() {
+    if (this.loader == 'show') {
+      this.loader = 'hide';
+      this.mainDiv = 'container';
+      return;
+    }
+    this.loader = 'show';
+    this.mainDiv = 'hide';
   }
 }

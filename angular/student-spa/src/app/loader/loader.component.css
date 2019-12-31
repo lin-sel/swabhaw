@@ -1,0 +1,34 @@
+.loader-div{
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    position: absolute;
+}
+
+.loader{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    border:2px solid white;
+    border-top:2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black; 
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.hide {
+    display: none;
+}
+
+.show{
+    display: block;
+}

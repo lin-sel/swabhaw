@@ -9,3 +9,11 @@ button a {
     text-decoration: none;
     color:black;
 }
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}

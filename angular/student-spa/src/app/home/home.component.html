@@ -1,4 +1,5 @@
-<div class="container">
+<app-loader [class]="loader"></app-loader>
+<div [class]="mainDiv">
     <article class="align">
         <h5>Total Student Found: {{studentData.length}}</h5><a routerLink="/add"><button type="button"
                 class="btn btn-info">Add
@@ -24,11 +25,10 @@
                     <td [innerHTML]="student.name"></td>
                     <td [innerHTML]="student.email"></td>
                     <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal"
-                            (click)="getStudData(ind)">View</button></td>
+                            (click)="getStudData(student)">View</button></td>
                     <td>
                         <a routerLink="/edit/{{student.id}}">
-                            <button type="button" class="btn btn-primary" [disabled]="editButton"
-                                (click)="onEditClick()">
+                            <button type="button" class="btn btn-primary" [disabled]="editButton">
                                 Edit
                             </button>
                         </a>
@@ -54,40 +54,7 @@
 
             <!-- Modal body -->
             <div class="modal-body">
-                <table class="table table-hover">
-                    <thead>
-                        <tr>
-                            <!-- <th>Firstname</th>
-                            <th>Lastname</th> -->
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>Name</th>
-                            <td>{{studentData[index].name}}</td>
-                        </tr>
-                        <tr>
-                            <th>Email</th>
-                            <td>{{studentData[index].email}}</td>
-                        </tr>
-                        <tr>
-                            <th>Age</th>
-                            <td>{{studentData[index].age}}</td>
-                        </tr>
-                        <tr>
-                            <th>Date</th>
-                            <td>{{studentData[index].date}}</td>
-                        </tr>
-                        <tr>
-                            <th>Gender</th>
-                            <td>{{studentData[index].isMale | getGender}}</td>
-                        </tr>
-                        <tr>
-                            <th>Id</th>
-                            <td>{{studentData[index].id}}</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <app-view [student]="index"></app-view>
             </div>
 
             <!-- Modal footer -->

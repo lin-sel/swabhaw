@@ -12,8 +12,12 @@ import { IStudent } from '../interface/Istudent';
 export class EditComponent implements OnInit {
   private updateForm: FormGroup;
   private studentData: IStudent;
+  private loader: string;
+  private mainDiv: string;
   constructor(private _ser: StudentServiceService, private _router: Router, private _activeRoute: ActivatedRoute) {
     this.initializeForm();
+    this.loader = 'show';
+    this.mainDiv = 'hide';
   }
 
   ngOnInit() {
@@ -29,7 +33,8 @@ export class EditComponent implements OnInit {
       email: new FormControl('', Validators.email),
       rollNo: new FormControl(''),
       age: new FormControl(''),
-      date: new FormControl('')
+      date: new FormControl(''),
+      isMale: new FormControl('')
     });
   }
 
@@ -40,21 +45,34 @@ export class EditComponent implements OnInit {
       date: this.studentData.date,
       rollNo: this.studentData.rollNo,
       email: this.studentData.email,
+      isMale: this.studentData.isMale
     });
+    this.mainDiv = 'container';
+    this.loader = 'hide';
   }
 
   getStudentData(id: string) {
     this._ser.getStudent(id).subscribe(data => {
       this.studentData = data[0];
-      this.updateValue();
+      if (this.studentData == undefined) {
+        alert("Detail not Found");
+        this._router.navigate(['home']);
+      } else {
+        this.updateValue();
+      }
     }, error => {
-      console.log(error);
+      alert('Something went Wrong');
+      this._router.navigate(['home']);
     })
   }
 
   onSubmit() {
+    this.loader = 'show';
+    this.mainDiv = 'hide';
     this._ser.putStudentDetail(this.updateForm.value, this.studentData.id).subscribe(resp => {
       alert("Detail Update Successfully");
+      this.loader = 'hide';
+      this.mainDiv = 'container';
       this._router.navigate(['home']);
     }, err => {
       console.log(err);
@@ -65,4 +83,13 @@ export class EditComponent implements OnInit {
     this._router.navigate(['home']);
   }
 
+  loaderSetting() {
+    if (this.loader == 'hide') {
+      this.loader = 'show';
+      this.loader = 'hide';
+      return;
+    }
+    this.loader = 'hide';
+    this.loader = 'container';
+  }
 }
