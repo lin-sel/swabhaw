@@ -19,6 +19,8 @@ import { StarExampleComponent } from './star-example/star-example.component';
 import { StarComponent } from './star/star.component';
 import { StarFontComponent } from './star-font/star-font.component';
 import { QuestionBankComponent } from './question-bank/question-bank.component';
+import { HighlightDirective } from './directive/highlight.directive';
+import { DirectiveExampleComponent } from './directive-example/directive-example.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { QuestionBankComponent } from './question-bank/question-bank.component';
     StarComponent,
     StarFontComponent,
     QuestionBankComponent,
+    HighlightDirective,
+    DirectiveExampleComponent,
   ],
   imports: [
     BrowserModule,
