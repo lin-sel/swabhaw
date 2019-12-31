@@ -1,0 +1,51 @@
+/* margin set */
+.navbar{
+    margin: 0 0 10px 0;
+}
+
+.navbar a {
+    color:white;
+}
+
+.main-loader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+    position: absolute;
+}
+
+
+.animation-style{
+    border-radius: 50%;
+    border-top:2px solid #3498db;
+    border-right:2px solid #3498db;
+}
+  
+.center {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+  
+.insd {
+      width:90px;
+      height:90px;
+      animation: anti 10s linear infinite;
+}
+  
+@keyframes anti {
+    0% { transform: rotate(3600deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
