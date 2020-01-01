@@ -1,0 +1,7 @@
+.star{
+    display: flex;
+    flex-direction:row;
+    position: absolute;
+    color:orange;
+    overflow: hidden;
+}

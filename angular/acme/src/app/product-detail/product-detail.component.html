@@ -1,0 +1,54 @@
+<div class="container">
+    <h2>Product Detail</h2>
+    <table class="table table-borderless">
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <th>
+                    <table class="table table-borderless">
+                        <tbody>
+                            <tr>
+                                <td>Product ID:</td>
+                                <td [innerHTML]="product.productId"></td>
+                            </tr>
+                            <tr>
+                                <td>Name:</td>
+                                <td [innerHTML]="product.productName"></td>
+                            </tr>
+                            <tr>
+                                <td>Product Code</td>
+                                <td [innerHTML]="product.productCode"></td>
+                            </tr>
+                            <tr>
+                                <td>Price</td>
+                                <td [innerHTML]="product.price"></td>
+                            </tr>
+                            <tr>
+                                <td>Release Date:</td>
+                                <td [innerHTML]="product.releaseDate"></td>
+                            </tr>
+                            <tr>
+                                <td>Description:</td>
+                                <td [innerHTML]="product.description"></td>
+                            </tr>
+                            <tr>
+                                <td>Rating:</td>
+                                <td>
+                                    <app-star [rating]="product.starRating">
+                                    </app-star>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a routerLink="/productlist"><button class="btn btn-primary">Back</button></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </th>
+                <th>
+                    <img [src]="product.imageUrl" alt="" width="280" height="280">
+                </th>
+            </tr>
+        </tbody>
+    </table>
+</div>

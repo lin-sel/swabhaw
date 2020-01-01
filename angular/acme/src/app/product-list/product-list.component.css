@@ -1,0 +1,21 @@
+.show {
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+.title-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title-div input{
+    width:20%;
+}
+
+.container{
+    margin-top:100px;
+}

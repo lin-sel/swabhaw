@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="title-div">
+        <h2>Product List</h2>
+        <input type="text" [(ngModel)]="input" class="form-control" placeholder="Enter Name for Filter">
+    </div>
+    <p>{{input}}</p>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Sr.</th>
+                <th><button class="btn btn-primary" (click)="onImageClick()">Image</button></th>
+                <th>Product</th>
+                <th>Code</th>
+                <th>Available</th>
+                <th>Price</th>
+                <th>Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products | ListFilter:input; let ind = index"
+                (click)="redirectToDetail(product.productId)">
+                <td [innerHTML]="ind+1"></td>
+                <td><img [class]="image" [src]="product.imageUrl" width="50" height="50"></td>
+                <td [innerHTML]="product.productName"></td>
+                <td [innerHTML]="product.productCode"></td>
+                <td [innerHTML]="product.releaseDate"></td>
+                <td [innerHTML]="product.price"></td>
+                <td>
+                    <app-star [rating]="product.starRating"></app-star>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
