@@ -18,4 +18,21 @@
 
 .container{
     margin-top:100px;
+    border: 1px solid gray;
+    padding: 0px;
+}
+
+.container > .title-div {
+    border-bottom: 1px solid gray;
+    background-color: darkturquoise;
+    height: 50px;
+    padding: 5px;
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
 }

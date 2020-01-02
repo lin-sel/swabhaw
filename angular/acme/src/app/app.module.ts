@@ -12,6 +12,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { NavbarComponent } from './navbar/navbar.component';
 import { ListFilter } from './pipe/Filter.pipe';
 import { FormsModule } from '@angular/forms';
+import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FormsModule } from '@angular/forms';
     StarComponent,
     PageNotFoundComponent,
     NavbarComponent,
-    ListFilter
+    ListFilter,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,

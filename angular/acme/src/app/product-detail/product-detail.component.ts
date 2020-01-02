@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../service/product.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { IProduct } from '../interface/Iproduct';
 import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
+import { IResponse } from '../interface/Iresponse';
 
 @Component({
   selector: 'app-product-detail',
@@ -11,9 +12,12 @@ import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 })
 export class ProductDetailComponent implements OnInit {
   private product: IProduct;
-  constructor(private _ser: ProductService, private _aroute: ActivatedRoute) {
+  private loaderblock: string;
+  private datablock: string;
+  constructor(private _ser: ProductService, private _aroute: ActivatedRoute, private _router: Router) {
     this.product = this.setEmpty();
-    console.log(this.product);
+    this.loaderblock = 'show';
+    this.datablock = 'hide';
   }
 
   ngOnInit() {
@@ -37,13 +41,33 @@ export class ProductDetailComponent implements OnInit {
     this._aroute.paramMap.subscribe((data) => {
       console.log(data.get('productid'));
       this._ser.getProductById(parseInt(data.get('productid'))).subscribe((data) => {
-        this.product = data.data;
-        console.log(this.product);
+        this.chechStatus(data);
+        console.log(data);
       }, (err) => {
         console.log(err);
       });
     }, (err) => {
       alert(`Something wrong`);
     });
+  }
+
+  chechStatus(data: IResponse) {
+    if (data.status) {
+      this.product = data.data;
+      this.loaderSetting();
+      return;
+    }
+    alert(`${data.data}`);
+    this._router.navigate(['/productlist']);
+  }
+
+  loaderSetting() {
+    if (this.loaderblock == 'show') {
+      this.loaderblock = 'hide';
+      this.datablock = 'show';
+      return;
+    }
+    this.loaderblock = 'show';
+    this.datablock = 'hide';
   }
 }

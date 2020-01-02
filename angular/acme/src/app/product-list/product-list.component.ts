@@ -13,6 +13,8 @@ export class ProductListComponent implements OnInit {
   private products: IProduct[] = Array();
   private image: string;
   public input: string;
+  private loaderblock: string = 'show';
+  private datablock: string = 'hide';
   constructor(private _ser: ProductService, private _router: Router) {
     this.getAllProduct();
   }
@@ -24,6 +26,7 @@ export class ProductListComponent implements OnInit {
   getAllProduct() {
     this._ser.getProduct().subscribe(resp => {
       this.products = resp.data;
+      this.loaderSetting();
       console.log(this.products);
     }, (err) => {
       console.log(err);
@@ -41,5 +44,16 @@ export class ProductListComponent implements OnInit {
   redirectToDetail(product: IProduct) {
     console.log(product);
     this._router.navigate(['/productdetail/' + product]);
+  }
+
+  loaderSetting() {
+    console.log(this.datablock, this.loaderblock);
+    if (this.loaderblock == 'show') {
+      this.loaderblock = 'hide';
+      this.datablock = 'show';
+      return;
+    }
+    this.loaderblock = 'show';
+    this.datablock = 'hide';
   }
 }

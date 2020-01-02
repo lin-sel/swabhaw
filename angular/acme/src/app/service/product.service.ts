@@ -34,7 +34,8 @@ export class ProductService {
     return new Observable<IResponse>((observer) => {
       if (this.product.length == 0) {
         this.getProduct().subscribe((data) => {
-          observer.next({ status: true, data: this.findData(id).data });
+          let dt = this.findData(id);
+          observer.next({ status: dt.status, data: dt.data });
           console.log(data.data);
           this.product = data.data;
         }, (err) => {

@@ -6,10 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./welcome.component.css']
 })
 export class WelcomeComponent implements OnInit {
-
-  constructor() { }
+  private loaderblock: string;
+  private datablock: string;
+  constructor() {
+    this.datablock = 'hide';
+    this.loaderblock = 'show';
+  }
 
   ngOnInit() {
+    this.datablock = 'show';
+    this.loaderblock = 'hide';
+  }
+
+  AfterViewInit() {
+
   }
 
 }

@@ -1,4 +1,5 @@
-<div class="container">
+<app-loader [class]="loaderblock"></app-loader>
+<div class="container {{datablock}}">
     <h2>Product Detail</h2>
     <table class="table table-borderless">
         <thead>
@@ -36,7 +37,7 @@
                                 <td>Rating:</td>
                                 <td>
                                     <app-star [rating]="product.starRating">
-                                    </app-star>
+                                    </app-star><label style="margin-left:100px">({{product.starRating}})</label>
                                 </td>
                             </tr>
                             <tr>
