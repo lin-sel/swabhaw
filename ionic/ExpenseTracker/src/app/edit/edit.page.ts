@@ -23,7 +23,7 @@ export class EditPage implements OnInit {
 
   initForm() {
     this.data = new FormGroup({
-      id: new FormControl(),
+      _id: new FormControl(),
       date: new FormControl(),
       description: new FormControl(),
       category: new FormControl(),
@@ -32,7 +32,7 @@ export class EditPage implements OnInit {
   }
 
   getParameter() {
-    this.getExpense(parseInt(this._route.snapshot.paramMap.get('id')));
+    this.getExpense(this._route.snapshot.paramMap.get('id'));
   }
 
   // getExpense(id: number) {
@@ -45,10 +45,10 @@ export class EditPage implements OnInit {
   //   alert(`${resp.data}`);
   // }
 
-  getExpense(id: number) {
+  getExpense(id: string) {
     this._ser.getExpenseById(id).subscribe((data: IExpense) => {
       console.log(data);
-      this.expense = data;
+      this.expense = data[0];
       this.patchFormData();
     })
   }
@@ -58,12 +58,13 @@ export class EditPage implements OnInit {
 
   patchFormData() {
     this.data.patchValue({
-      id: this.expense.id,
+      _id: this.expense._id,
       date: this.expense.date,
       description: this.expense.description,
       category: this.expense.category,
       amount: this.expense.amount
     });
+    console.log("inside log", this.data);
   }
 
   // updateExpense() {
@@ -74,8 +75,10 @@ export class EditPage implements OnInit {
   updateExpense() {
     // alert(this._ser.updateExpense(this.data.value).data);
     this._ser.updateExpense(this.data.value).subscribe((data) => {
-      console.log(data);
-      alert(data);
+      console.log(typeof data);
+      if (data == 1) {
+        alert("update Successfully");
+      }
       this.redirect();
     }, (err) => {
       console.log(err);
@@ -88,9 +91,8 @@ export class EditPage implements OnInit {
 
   deleteExpense() {
     if (confirm("are you sure about this ?")) {
-      this._ser.deleteExpense(this.expense.id).subscribe((data) => {
-        console.log(data);
-        alert(data);
+      this._ser.deleteExpense(this.expense._id).subscribe((data) => {
+        alert("Expense deleted");
         this.redirect();
       }, (err) => {
         alert(err);

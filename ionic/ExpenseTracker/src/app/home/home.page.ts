@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { StorageService } from '../service/storage.service';
 import { IExpense } from '../interface/IExpense';
 import { Router } from '@angular/router';
@@ -10,20 +10,22 @@ import * as moment from 'moment';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage implements OnInit {
   private expenses: IExpense[] = Array();
   constructor(private _ser: StorageService, private _router: Router) {
+  }
+
+  ngOnInit() {
     this.getExpense();
   }
 
   getExpense() {
     this._ser.getAll().subscribe((data: IExpense[]) => {
       console.log(data);
-      alert(data[0].id + "" + data[1].id);
       this.expenses = data;
     }, (err) => {
       console.log(err);
-      alert(err);
+      alert(JSON.parse(err));
     });
   }
 

@@ -10,7 +10,7 @@ import { HttpHeaders } from '@angular/common/http';
 })
 export class StorageService {
   private data: IExpense[];
-  private url: string = "http://192.168.43.6:8080/api/";
+  private url: string = "http://192.168.1.103:8080/api/";
   constructor(private _http: HttpClient) {
     // this.data = [{
     //   id: 1,
@@ -32,7 +32,7 @@ export class StorageService {
   //   this.data.push(expense);
   // }
 
-  addExpense(exepse: IExpense) {
+  addExpense(exepse) {
     return this._http.post(this.url + "add", exepse);
   }
 
@@ -59,7 +59,18 @@ export class StorageService {
   // }
 
   updateExpense(data: IExpense) {
-    return this._http.put(this.url + "update", this.data);
+    let httpHeaders = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+      })
+    };
+    let md = {
+      date: data.date,
+      amount: data.amount,
+      category: data.category,
+      description: data.description
+    }
+    return this._http.put(this.url + "update/" + data._id, md, httpHeaders);
   }
 
   // getExpenseById(id: number): IResponse {
@@ -72,11 +83,11 @@ export class StorageService {
   //   return { status: false, data: "Data Not Found" }
   // }
 
-  getExpenseById(id: number) {
+  getExpenseById(id: string) {
     return this._http.get(this.url + id);
   }
 
-  deleteExpense(id: number) {
+  deleteExpense(id: string) {
     console.log(this.url + "delete/" + id);
     return this._http.delete(this.url + "delete/" + id);
   }

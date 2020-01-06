@@ -18,13 +18,13 @@ export class AddExpensePage implements OnInit {
   private currentdate: moment.Moment = moment();
   constructor(private _ser: StorageService, private _router: Router) {
     this.initForm();
-    this.patchData();
+    // this.patchData();
     this.category = Category;
   }
 
   initForm() {
     this.data = new FormGroup({
-      id: new FormControl(),
+      // id: new FormControl(),
       date: new FormControl(),
       amount: new FormControl(),
       category: new FormControl(),
@@ -32,27 +32,24 @@ export class AddExpensePage implements OnInit {
     });
   }
 
-  patchData() {
-    this.data.patchValue({
-      id: 20,
-    });
-  }
+  // patchData() {
+  //   this.data.patchValue({
+  //     id: 20,
+  //   });
+  // }
 
   ngOnInit() {
   }
 
-  // addExpense() {
-  //   this._ser.addExpense(this.data.value);
-  //   alert('Added Sucessfully');
-  //   this._router.navigate(['/home']);
-  // }
 
   addExpense() {
+    console.log(this.data);
     this._ser.addExpense(this.data.value).subscribe((data) => {
       console.log(data);
     }, (err) => {
       console.log(err);
     });
+    this._router.navigate(['home']);
   }
 
 }

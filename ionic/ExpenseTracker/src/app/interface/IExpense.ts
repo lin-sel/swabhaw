@@ -1,5 +1,5 @@
 export interface IExpense {
-    id: number,
+    _id: string,
     date: string,
     amount: number,
     description: string,
