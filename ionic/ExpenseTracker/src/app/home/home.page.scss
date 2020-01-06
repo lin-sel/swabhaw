@@ -1,0 +1,41 @@
+
+.content-style {
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
+}
+
+.date-description{
+    display: flex;
+    flex-direction: row;
+}
+
+.date-description{
+    font-size:13px;
+    color:gray;
+}
+
+.description{
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+ion-item, ion-label{
+    border-bottom:none;
+}
+
+.left{
+    width:60%;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+.right{
+    color:lightgrey;
+    padding-top: 5px;
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}

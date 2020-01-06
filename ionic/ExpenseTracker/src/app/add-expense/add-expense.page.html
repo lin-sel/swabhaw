@@ -1,0 +1,58 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button>
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Add Expense</ion-title>
+    <ion-buttons slot="primary" (click)="addExpense()">
+      <ion-button>
+        <ion-icon name="checkmark-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <form [formGroup]="data" class="ion-padding">
+      <ion-list>
+        <div class=" label-input">
+          <div>
+            Date
+          </div>
+          <ion-datetime displayFormat="MMM D, YYYY" pickerFormat="MMM D, YYYY" [max]="currentdate.format('YYYY-MM-DD')"
+            type="date" formControlName="date" name="date" placeholder="Enter Date" required></ion-datetime>
+        </div>
+      </ion-list>
+      <ion-list>
+        <div class="label-input">
+          <div>
+            Amount
+          </div>
+          <ion-input type="number" formControlName="amount" name="amount" placeholder="Amount" required></ion-input>
+        </div>
+      </ion-list>
+      <ion-list>
+        <div class="label-input">
+          <div>
+            Description
+          </div>
+          <ion-input formControlName="description" type="text" name="text" placeholder="Description" required>
+          </ion-input>
+        </div>
+      </ion-list>
+      <ion-list>
+        <div class="label-input">
+          <div>
+            Category
+          </div>
+          <ion-select placeholder="Select One" formControlName="category" name="category" okText="Okay"
+            cancelText="Dismiss" required>
+            <ion-select-option *ngFor="let cate of category" [value]="cate">{{cate}}</ion-select-option>
+          </ion-select>
+        </div>
+      </ion-list>
+    </form>
+  </div>
+</ion-content>

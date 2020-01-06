@@ -1,0 +1,23 @@
+.label-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgb(165, 165, 165);
+}
+
+.label-input:focus{
+    border-bottom: 1px solid green;
+}
+
+.label-input ~ div, ion-datetime, ion-select{
+    padding-left: 0em;
+}
+
+.label-input div{
+    color:blue;
+    font-size: small;
+}
+
+ion-input[type="number"]{
+    text-align: end;
+}
