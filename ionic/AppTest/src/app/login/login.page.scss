@@ -1,0 +1,29 @@
+ @mixin logintheme($themename, $container-bg, $button-bg) {
+     .#{$themename}{
+         *{
+            //  background-color: burlywood;
+             height: 100%;
+             width: 100%;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+            //  background-color: cyan;
+         }
+
+         .login-block{
+             width: 100%;
+             height: 50%;
+         }
+
+         .form-username ion-input{
+             background-color: red;
+         }
+        
+         button{
+             background-color: $button-bg;
+         }
+     }
+ }
+
+ @include logintheme(theme-1, red, blue);
