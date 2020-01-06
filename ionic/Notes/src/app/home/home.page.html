@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">
+      My Notes
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-reorder-group (ionItemReorder)="reOrder($event)" [disabled]="suffle">
+    <ion-item-divider *ngFor="let note of notes">
+      <ion-item-sliding #item>
+        <ion-item lines="none" class="text-content">
+          <ion-label>
+            <ion-label>
+              {{note.title}}
+            </ion-label>
+            <ion-label class="note">
+              {{note.message}}
+            </ion-label>
+          </ion-label>
+          <ion-reorder class="ion-text-end" slot="end"></ion-reorder>
+          <ion-button *ngIf="suffle == true" color="light" shape="round" (click)="redirectTo(note.id)">
+            <ion-icon class="ion-text-end" (click)="iconClick()" item-right ios="ios-arrow-dropright"
+              md="md-arrow-dropright"></ion-icon>
+          </ion-button>
+        </ion-item>
+        <ion-item-options icon-end>
+          <button class="swipe-action" ion-button color="danger" (click)="delete(note.id)">
+            <ion-icon name="trash"></ion-icon>
+            <label>Delete</label>
+          </button>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-item-divider>
+  </ion-reorder-group>
+</ion-content>
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button (click)="redirectAdd()">
+      <ion-icon name="ios-create"></ion-icon>
+      <ion-label>New Note</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button (click)="suffleEnable()">
+      <ion-icon name="ios-shuffle"></ion-icon>
+      <ion-label>Reorder</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

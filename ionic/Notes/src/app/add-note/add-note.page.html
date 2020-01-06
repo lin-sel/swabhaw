@@ -1,0 +1,27 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="My Notes" icon="ios-arrow-dropleft"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Add Note</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form [formGroup]="addForm">
+    <div class="editform">
+      <div>
+        <ion-item lines="none">
+          <ion-input type="text" placeholder="Enter Title" formControlName="title" required></ion-input>
+        </ion-item>
+      </div>
+      <div>
+        <ion-item lines="none">
+          <ion-textarea type="text" placeholder="Enter Message" formControlName="message" rows="6" cols="20" required>
+          </ion-textarea>
+        </ion-item>
+      </div>
+    </div>
+    <ion-button expand="block" [disabled]="addForm.invalid" (click)="addNote()">Save</ion-button>
+  </form>
+</ion-content>

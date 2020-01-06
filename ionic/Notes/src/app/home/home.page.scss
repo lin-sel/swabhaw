@@ -1,0 +1,42 @@
+
+.text-content{
+    width:100%;
+    height:150%;
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: row;
+}
+
+.note {
+    font-size: smaller;
+    color:rgba($color: #ada7a7, $alpha: 1.0);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+ion-reorder:hover{
+    cursor: grab;
+}
+
+ion-button ion-icon {
+    font-size: 30px;
+}
+
+ion-button ion-button-effect{
+    box-shadow: none;
+}
+
+.swipe-action{
+    background-color: red;
+    color:azure;
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+}
+
+.swipe-action ion-icon {
+    font-size: 20px;
+}
