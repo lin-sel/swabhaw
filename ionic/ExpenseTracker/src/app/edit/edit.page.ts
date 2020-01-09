@@ -4,6 +4,8 @@ import { ActivatedRoute, Router } from "@angular/router";
 import { IExpense, Category } from '../interface/IExpense';
 import { StorageService } from '../service/storage.service';
 import * as moment from 'moment';
+import { IResponse } from '../interface/IResponse';
+import { LocalstorageService } from '../service/localstorage.service';
 
 @Component({
   selector: 'app-edit',
@@ -15,7 +17,7 @@ export class EditPage implements OnInit {
   private data: FormGroup;
   private category: string[];
   private currentdate: moment.Moment = moment();
-  constructor(private _route: ActivatedRoute, private _ser: StorageService, private _router: Router) {
+  constructor(private _route: ActivatedRoute, private _ser: LocalstorageService, private _router: Router) {
     this.initForm();
     this.getParameter();
     this.category = Category;
@@ -45,10 +47,22 @@ export class EditPage implements OnInit {
   //   alert(`${resp.data}`);
   // }
 
+  // getExpense(id: string) {
+  //   this._ser.getExpenseById(id).subscribe((data: IExpense) => {
+  //     console.log(data);
+  //     this.expense = data[0];
+  //     this.patchFormData();
+  //   })
+  // }
+
   getExpense(id: string) {
-    this._ser.getExpenseById(id).subscribe((data: IExpense) => {
-      console.log(data);
-      this.expense = data[0];
+    this._ser.getExpenseById(id).subscribe((resp: IResponse) => {
+      if (!resp.status) {
+        alert(resp.data);
+        this.redirectToHome();
+        return;
+      }
+      this.expense = resp.data;
       this.patchFormData();
     })
   }
@@ -67,41 +81,30 @@ export class EditPage implements OnInit {
     console.log("inside log", this.data);
   }
 
-  // updateExpense() {
-  //   alert(this._ser.updateExpense(this.data.value).data);
-  //   this._router.navigate(['/home']);
-  // }
-
   updateExpense() {
-    // alert(this._ser.updateExpense(this.data.value).data);
     this._ser.updateExpense(this.data.value).subscribe((data) => {
-      console.log(typeof data);
-      if (data == 1) {
-        alert("update Successfully");
-      }
-      this.redirect();
+      alert(data.data);
+      this.redirectToHome();
     }, (err) => {
       console.log(err);
       alert(err);
-      this.redirect();
+      this.redirectToHome();
     });
-    // alert(this._ser.updateExpense(this.data.value));
-    // this._router.navigate(['/home']);
   }
 
   deleteExpense() {
     if (confirm("are you sure about this ?")) {
       this._ser.deleteExpense(this.expense._id).subscribe((data) => {
         alert("Expense deleted");
-        this.redirect();
+        this.redirectToHome();
       }, (err) => {
         alert(err);
-        this.redirect();
+        this.redirectToHome();
       });
     }
   }
 
-  redirect() {
+  redirectToHome() {
     this._router.navigate(['/home']);
   }
 }

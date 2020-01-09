@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { Category } from '../interface/IExpense';
 import { FormControl, FormGroup } from '@angular/forms';
 import * as moment from 'moment';
+import { LocalstorageService } from '../service/localstorage.service';
 
 @Component({
   selector: 'app-add-expense',
@@ -16,7 +17,7 @@ export class AddExpensePage implements OnInit {
   private data: FormGroup;
   private category: string[];
   private currentdate: moment.Moment = moment();
-  constructor(private _ser: StorageService, private _router: Router) {
+  constructor(private _ser: LocalstorageService, private _router: Router) {
     this.initForm();
     // this.patchData();
     this.category = Category;
@@ -42,14 +43,21 @@ export class AddExpensePage implements OnInit {
   }
 
 
-  addExpense() {
-    console.log(this.data);
-    this._ser.addExpense(this.data.value).subscribe((data) => {
-      console.log(data);
+  private addExpense() {
+    this._ser.addExpense(this.data.value).subscribe((resp) => {
+      alert("Added Expense");
     }, (err) => {
-      console.log(err);
+      alert(err.data);
     });
     this._router.navigate(['home']);
+  }
+
+  validateForm() {
+    if (this.data.invalid) {
+      alert("Please fill all data");
+      return;
+    }
+    this.addExpense();
   }
 
 }
