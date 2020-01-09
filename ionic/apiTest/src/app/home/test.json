@@ -1,0 +1,22 @@
+{
+    "status": 200,
+    "url": "http://numbersapi.com/12?json",
+    "headers": {
+        "date": "Wed, 08 Jan 2020 10:28:56 GMT",
+        "content-length": "141",
+        "server": "nginx/1.4.6 (Ubuntu)",
+        "expires": "0",
+        "okhttp-selected-protocol": "http/1.1",
+        "x-numbers-api-type": "trivia",
+        "access-control-allow-headers": "X-Requested-With",
+        "pragma": "no-cache",
+        "access-control-allow-origin": "*",
+        "x-numbers-api-number": "12",
+        "okhttp-response-source": "NETWORK 200",
+        "x-powered-by": "Express",
+        "connection": "keep-alive",
+        "content-type": "application/json; charset=utf-8",
+        "cache-control": "no-cache"
+    },
+    "data": "{\n \"text\": \"12 is the number of constellations in the ecliptic (or signs of the zodiac).\",\n \"number\": 12,\n \"found\": true,\n \"type\": \"trivia\"\n}"
+}
