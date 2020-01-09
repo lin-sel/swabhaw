@@ -68,6 +68,7 @@ export class ApiService {
           return;
         }
         this.student[index] = stud;
+        console.log(this.student);
         observe.next({ status: true, resp: resp.status });
       }).catch(err => {
         observe.error({ status: false, resp: err });

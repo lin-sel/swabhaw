@@ -13,6 +13,7 @@ import { Istudent } from '../interface/Istudent';
 export class EditPage implements OnInit {
 
   private editStudent: FormGroup;
+  private gender: string;
   constructor(private _ser: ApiService, private _router: Router, private _activeroute: ActivatedRoute) {
     this.initForm();
     this.getStudentData();
@@ -31,10 +32,11 @@ export class EditPage implements OnInit {
       date: new FormControl(''),
       isMale: new FormControl('')
     });
+    this.gender = 'false';
   }
 
   private updateDetail() {
-    console.log(this.editStudent);
+    this.genderClassify();
     this._ser.update(this.editStudent.value).subscribe((data: Iresponse) => {
       alert("Updated");
       this.redirectToHome();
@@ -50,6 +52,30 @@ export class EditPage implements OnInit {
       alert('Nothing updated');
       return;
     }
+    if (this.editStudent.controls['name'].invalid) {
+      alert('Please enter Name');
+      return;
+    }
+    if (this.editStudent.controls['rollNo'].invalid) {
+      alert('Please enter Roll Number');
+      return;
+    }
+    if (this.editStudent.controls['id'].invalid) {
+      alert('Please enter id');
+      return;
+    }
+    if (this.editStudent.controls['age'].invalid) {
+      alert('Please enter Age');
+      return;
+    }
+    if (this.editStudent.controls['email'].invalid) {
+      alert('Please enter valid Email');
+      return;
+    }
+    if (this.editStudent.controls['date'].invalid) {
+      alert('Please enter date');
+      return;
+    }
     this.updateDetail();
   }
 
@@ -63,6 +89,7 @@ export class EditPage implements OnInit {
       date: student.date,
       isMale: student.isMale
     });
+    this.setGender();
   }
 
   private getStudentData() {
@@ -77,6 +104,25 @@ export class EditPage implements OnInit {
 
   private redirectToHome() {
     this._router.navigate(['/home']);
+  }
+
+  genderClassify() {
+    if (this.editStudent.controls['isMale'].value == "true") {
+      this.editStudent.controls['isMale'].setValue(true);
+      return;
+    }
+    this.editStudent.controls['isMale'].setValue(false);
+  }
+
+  setGender() {
+    if (this.editStudent.controls['isMale'].value) {
+      this.gender = "true";
+      return;
+    }
+    this.gender = "false";
+  }
+  emailValidate(email): boolean {
+    return this.editStudent.contains['email'].value.test(/[a-zA-Z0-9]+@+[a-zA-Z0-9]+.+[a-zA-Z]/);
   }
 
 }

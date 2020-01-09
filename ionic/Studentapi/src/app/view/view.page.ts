@@ -35,9 +35,9 @@ export class ViewPage implements OnInit {
     this._router.navigate(['/home']);
   }
   genderSet(value: boolean): string {
-    console.log(typeof value);
+    console.log(this.student);
+    console.log(typeof value, value);
     if (value) {
-      console.log('inside case');
       return 'Male';
     }
     return 'Female';
@@ -48,12 +48,14 @@ export class ViewPage implements OnInit {
   }
 
   delete() {
-    this._ser.delete(this.student.id).subscribe(data => {
-      alert('Deleted');
-      this.redirectToHome();
-    }, (err) => {
-      alert(JSON.stringify(err));
-      this.redirectToHome();
-    });
+    if (confirm('Are you sure want to delete ?')) {
+      this._ser.delete(this.student.id).subscribe(data => {
+        alert('Deleted');
+        this.redirectToHome();
+      }, (err) => {
+        alert(JSON.stringify(err));
+        this.redirectToHome();
+      });
+    }
   }
 }
