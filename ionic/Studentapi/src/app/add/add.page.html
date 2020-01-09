@@ -1,0 +1,51 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="redirectToHome()">
+        <ion-icon slot="icon-only" name="ios-arrow-round-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>Add Student</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="validateForm()">
+        <ion-icon slot="icon-only" color="primary" name="ios-done-all"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <form [formGroup]="addStudent">
+      <ion-item>
+        <ion-label position="floating">Roll Number</ion-label>
+        <ion-input type="number" formControlName="rollNo" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Name</ion-label>
+        <ion-input type="text" formControlName="name" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Age</ion-label>
+        <ion-input type="number" formControlName="age" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" formControlName="email" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Date</ion-label>
+        <ion-input type="date" formControlName="date" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Gender</ion-label>
+        <ion-select formControlName="isMale" placeholder="Select One">
+          <ion-select-option value="true">Male</ion-select-option>
+          <ion-select-option value="false">Female</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </form>
+  </div>
+</ion-content>

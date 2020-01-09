@@ -1,0 +1,25 @@
+<ion-header>
+  <!-- Small title above a default title -->
+  <ion-toolbar class="ion-text-center">
+    <ion-title>Student List</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [scrollEvents]="true" (ionScrollStart)="logScrollStart()" (ionScroll)="logScrolling($event)"
+  (ionScrollEnd)="logScrollEnd()">
+  <div class="ion-padding">
+    <ion-list>
+      <ion-item-divider *ngFor="let stud of student" (click)="redirectView(stud.id)">
+        <ion-label>{{stud.name}}</ion-label>
+        <ion-note slot="end">
+          <ion-icon name="arrow-round-forward"></ion-icon>
+        </ion-note>
+      </ion-item-divider>
+    </ion-list>
+  </div>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button routerLink="/add">
+      <ion-icon name="ios-add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

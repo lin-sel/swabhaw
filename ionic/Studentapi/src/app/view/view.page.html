@@ -1,0 +1,102 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="redirectToHome()">
+        <ion-icon slot="icon-only" name="ios-arrow-round-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>Student Details</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="redirectToEdit()">
+        <ion-icon slot="icon-only" name="ios-create"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <ion-item-divider>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="3">
+            Roll No:
+          </ion-col>
+          <ion-col size="9">
+            {{student.rollNo}}
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item-divider>
+    <ion-item-divider>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="3">
+            Name:
+          </ion-col>
+          <ion-col size="9">
+            {{student.name}}
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item-divider>
+    <ion-item-divider>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="3">
+            Age:
+          </ion-col>
+          <ion-col size="9">
+            {{student.age}}
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item-divider>
+    <ion-item-divider>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="3">
+            Email:
+          </ion-col>
+          <ion-col size="9">
+            {{student.email}}
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item-divider>
+    <ion-item-divider>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="3">
+            Date:
+          </ion-col>
+          <ion-col size="9">
+            {{student.date}}
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item-divider>
+    <ion-item-divider>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="3">
+            Gender:
+          </ion-col>
+          <ion-col size="9">
+            {{genderSet(student.isMale)}}
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item-divider>
+  </div>
+</ion-content>
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button color="danger" tab="schedule" (click)="delete()">
+      <ion-icon color="danger" name="Trash"></ion-icon>
+      <ion-label>Delete</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

@@ -1,0 +1,7 @@
+{
+  "name": "Studentapi",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
