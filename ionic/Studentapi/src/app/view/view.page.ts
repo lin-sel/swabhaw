@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../service/api.service';
-import { FormGroup, FormControl } from '@angular/forms';
-import { Iresponse } from '../interface/Iresponse';
+// import { FormGroup, FormControl } from '@angular/forms';
+// import { Iresponse } from '../interface/Iresponse';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Istudent } from '../interface/Istudent';
 
