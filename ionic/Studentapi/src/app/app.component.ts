@@ -20,7 +20,9 @@ export class AppComponent {
 
   initializeApp() {
     this.platform.ready().then(() => {
-      this.statusBar.styleLightContent();
+      // this.statusBar.styleLightContent();
+      // this.statusBar.backgroundColorByName('white');
+      this.statusBar.styleBlackTranslucent();
       this.splashScreen.hide();
     });
   }

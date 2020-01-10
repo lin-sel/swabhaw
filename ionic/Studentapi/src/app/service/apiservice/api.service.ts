@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HTTP, HTTPResponse } from '@ionic-native/http/ngx';
-import { Istudent } from '../interface/Istudent';
+import { Istudent } from '../../interface/Istudent';
 import { Observable } from 'rxjs';
-import { Iresponse } from '../interface/Iresponse';
+import { Iresponse } from '../../interface/Iresponse';
 
 @Injectable({
   providedIn: 'root'
@@ -44,25 +44,29 @@ export class ApiService {
   }
 
   delete(id: string): Observable<Iresponse> {
+    console.log(this.student);
     return new Observable(observe => {
       let index = this.findIndex(id);
+      console.log(index);
       if (index == -1) {
         observe.error({ status: false, resp: "Cant be Delete" });
         return;
       }
-      this.student.splice(this.findIndex(id), 1);
       this._http.delete(`${this.url}/${id}`, {}, {}).then(dresp => {
         observe.next({ status: true, resp: dresp });
+        this.student.splice(this.findIndex(id), 1);
       }).catch(err => {
-        observe.error({ status: false, resp: err });
+        observe.error({ status: false, resp: err.error });
       });
     });
   }
 
   update(stud: Istudent): Observable<Iresponse> {
+    console.log(this.student);
     return new Observable(observe => {
       this._http.put(`${this.url}/${stud.id}`, stud, {}).then(resp => {
         let index = this.findIndex(stud.id);
+        console.log(index);
         if (index == -1) {
           observe.error({ status: false, resp: "Data Not Found" });
           return;
@@ -71,7 +75,7 @@ export class ApiService {
         console.log(this.student);
         observe.next({ status: true, resp: resp.status });
       }).catch(err => {
-        observe.error({ status: false, resp: err });
+        observe.error({ status: false, resp: err.error });
       });
     });
   }
@@ -93,7 +97,7 @@ export class ApiService {
 
   private getRawDataWithID(id: string, stud): Istudent {
     return {
-      id: id,
+      id: id.replace(/"/g, ""),
       rollNo: stud.rollNo,
       name: stud.name,
       age: stud.age,

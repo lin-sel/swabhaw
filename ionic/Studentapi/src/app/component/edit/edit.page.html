@@ -6,7 +6,7 @@
       </ion-button>
     </ion-buttons>
 
-    <ion-title>Add Student</ion-title>
+    <ion-title>Update Details</ion-title>
 
     <ion-buttons slot="end">
       <ion-button (click)="validateForm()">
@@ -18,32 +18,48 @@
 
 <ion-content>
   <div class="ion-padding">
-    <form [formGroup]="addStudent">
+    <form [formGroup]="editStudent">
       <ion-item>
         <ion-label position="floating">Roll Number</ion-label>
         <ion-input type="number" formControlName="rollNo" required></ion-input>
       </ion-item>
+      <div *ngIf="submitted && f.rollNo.errors" class="invalid-feedback">
+        <div *ngIf="f.rollNo.errors.required">Roll Number is required*</div>
+      </div>
       <ion-item>
         <ion-label position="floating">Name</ion-label>
         <ion-input type="text" formControlName="name" required></ion-input>
       </ion-item>
+      <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+        <div *ngIf="f.name.errors.required">Name is required*</div>
+      </div>
       <ion-item>
         <ion-label position="floating">Age</ion-label>
         <ion-input type="number" formControlName="age" required></ion-input>
       </ion-item>
+      <div *ngIf="submitted && f.age.errors" class="invalid-feedback">
+        <div *ngIf="f.age.errors.required">Age is required*</div>
+      </div>
       <ion-item>
         <ion-label position="floating">Email</ion-label>
         <ion-input type="email" formControlName="email" required></ion-input>
       </ion-item>
+      <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+        <div *ngIf="f.email.errors.required">Email is required*</div>
+        <div *ngIf="f.email.errors.email">Email must be a valid address*</div>
+      </div>
       <ion-item>
         <ion-label position="floating">Date</ion-label>
         <ion-input type="date" formControlName="date" required></ion-input>
       </ion-item>
+      <div *ngIf="submitted && f.date.errors" class="invalid-feedback">
+        <div *ngIf="f.date.errors.required">Date is required*</div>
+      </div>
       <ion-item>
         <ion-label>Gender</ion-label>
-        <ion-select formControlName="isMale" placeholder="Select One">
-          <ion-select-option value="true">Male</ion-select-option>
-          <ion-select-option value="false">Female</ion-select-option>
+        <ion-select formControlName="isMale" [value]="gender" placeholder="Select One">
+          <ion-select-option value="true" [selected]="gender == 'true'">Male</ion-select-option>
+          <ion-select-option value="false" [selected]="gender == 'false'">Female</ion-select-option>
         </ion-select>
       </ion-item>
     </form>
