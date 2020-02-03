@@ -8,7 +8,7 @@ import { CalculatorService } from 'src/app/service/mainservice/calculator.servic
 })
 export class Tab3Page {
 
-  private output: number;
+  private output: any;
   private number: any;
   constructor(private calculate: CalculatorService) {
     this.output = null;
@@ -20,7 +20,13 @@ export class Tab3Page {
       alert("Please enter Number");
       return;
     }
-    this.output = this.calculate.percentageDifference(this.number.number1, this.number.number2);
+    this.output = this.calculate.percentageDifference(this.number.number1, this.number.number2) + '%';
+  }
+
+  onReset() {
+    this.number.number1 = null;
+    this.number.number2 = null;
+    this.output = null;
   }
 
   initForm() {

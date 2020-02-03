@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 // import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
-// import { HTTP } from '@ionic-native/http/ngx';
+import { HTTP } from '@ionic-native/http/ngx';
 // import { Iresponse } from '../interface/response';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AlertController } from '@ionic/angular';
@@ -38,7 +38,7 @@ export class HomePage implements OnInit {
 
   private form: FormGroup;
   private submitted: boolean;
-  constructor(private formBuilder: FormBuilder, private alertController: AlertController) { }
+  constructor(private formBuilder: FormBuilder, private alertController: AlertController, private _http: HTTP) { }
 
   ngOnInit() {
     this.form = this.formBuilder.group({
@@ -60,10 +60,20 @@ export class HomePage implements OnInit {
     //   return;
     // }
     // this.presentAlertConfirm();
-    this.presentAlert();
+    // this.presentAlert();
     // this.presentAlertMultipleButtons();
     // this.presentAlertConfirm();
+    this.postApi();
   }
+
+  postApi() {
+    this._http.post('https://jsonplaceholder.typicode.com/posts', {}, {}).then((resp) => {
+      console.log(JSON.stringify(resp));
+    }).catch(err => {
+      console.log(err);
+    });
+  }
+
 
   async presentAlert() {
     const alert = await this.alertController.create({

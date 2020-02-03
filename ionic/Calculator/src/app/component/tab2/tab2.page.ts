@@ -8,7 +8,7 @@ import { CalculatorService } from 'src/app/service/mainservice/calculator.servic
 })
 export class Tab2Page {
 
-  private output: number;
+  private output: any;
   private number: any;
   constructor(private calculate: CalculatorService) {
     this.output = null;
@@ -20,7 +20,11 @@ export class Tab2Page {
       alert('Please Enter Number');
       return;
     }
-    this.output = this.calculate.calculatePercentage(this.number.number1, this.number.number2);
+    this.output = this.calculate.calculatePercentage(this.number.number1, this.number.number2) + '%';
+  }
+
+  onReset() {
+    this.initForm();
   }
 
   initForm() {
@@ -28,6 +32,7 @@ export class Tab2Page {
       number1: null,
       number2: null
     }
+    this.output = null;
   }
 
 }

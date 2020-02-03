@@ -18,7 +18,6 @@ export class LoadingService {
       cssClass: 'custom-class custom-loading'
     }).then((resp) => {
       this.loading = resp;
-      console.log("befre start");
       this.loading.present();
     });
   }

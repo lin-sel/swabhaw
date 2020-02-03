@@ -1,7 +1,10 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title class="ion-text-center">
-      Percentage Difference
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Percent Difference
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -23,9 +26,14 @@
     <ion-button expand="block" shape="round" (click)="onClick()"> Calculate</ion-button>
   </div>
   <div class="ion-padding">
-    <ion-label>Output:</ion-label>
+    <ion-label>Result:</ion-label>
     <p class="output">
-      {{output}}%
+      {{output || ''}}
     </p>
+  </div>
+  <div class="ion-padding">
+    <ion-button color="danger" [disabled]="!number.number1 && !number.number2" expand="block" shape="round"
+      (click)="onReset()">
+      Reset</ion-button>
   </div>
 </ion-content>
