@@ -16,7 +16,7 @@ func (ab Foo) printName() {
 
 func main() {
 	var name = "Niranjan"
-	var cgpa float64 = 7.8
+	var cgpa = 7.8
 	_ = 1001
 
 	var ab = Foo{name: "Nilesh"}

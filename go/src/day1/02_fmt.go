@@ -5,8 +5,8 @@ import (
 	"runtime"
 )
 
-func main(){
+func main() {
 	fmt.Print("Hello form fmt")
-	runtime.GOOS()
-	runtime.GOARCH()
+	fmt.Println(runtime.GOOS)
+	fmt.Println(runtime.GOARCH)
 }
