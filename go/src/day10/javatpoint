@@ -1,0 +1,1978 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+<link rel="SHORTCUT ICON" href="https://static.javatpoint.com/images/favicon2.png"/>
+<title>Tutorials List - Javatpoint</title>
+<meta name="keywords" content="javatpoint, java tutorial, core java tutorial, beginners, professionals"/>
+<meta name="description" content="Tutorials, Free Online Tutorials, Javatpoint provides tutorials and interview questions of all technology like java tutorial, android, java frameworks, javascript, ajax, core java, sql, python, php, c language etc. for beginners and professionals."/>
+<link rel="dns-prefetch" href="https://clients1.google.com"><link rel="dns-prefetch" href="https://googleads.g.doubleclick.net"><link rel="dns-prefetch" href="https://static.javatpoint.com"><link rel="dns-prefetch" href="https://www.google.com"><link rel="dns-prefetch" href="https://feedify.net">
+<meta name="viewport" content="width=device-width">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<link rel="canonical" href="https://www.javatpoint.com"/>
+<meta name="theme-color" content="#4CAF50"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:type" content="article"/>
+<meta name="twitter:title" property="og:title" content="Tutorials - Javatpoint"/>
+<meta name="twitter:description" property="og:description" content="Tutorials, Free Online Tutorials, Javatpoint provides tutorials and interview questions of all technology like java tutorial, android, java frameworks, javascript, ajax, core java, sql, python, php, c language etc. for beginners and professionals."/>
+<meta property="og:url" content="https://www.javatpoint.com"/>
+<meta property="og:site_name" content="www.javatpoint.com"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:site" content="@pagejavatpoint"/>
+<meta name="twitter:domain" content="www.javatpoint.com"/>
+<meta name="twitter:creator" content="@pagejavatpoint"/>
+<meta name="google-site-verification" content="NaYVz1vb9vgNxYaO7S6-16EJi3Q60kUuik1erUuFEYo"/>
+<!--
+ 
+<link rel="alternate" type="application/rss+xml" title="www.javatpoint.com &raquo; Feed" href="https://www.javatpoint.com/feed/"/>-->
+
+<link href="https://static.javatpoint.com/link.css" rel="stylesheet" type="text/css" media="all"/>   
+<link href="https://www.javatpoint.com/manifest.json" rel="manifest">
+<!--
+<meta name="google-translate-customization" content="9987806a56aef017-b5565d30ffdd3749-g0046de7d10b7cfee-12"></meta>-->
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//delivery.adrecover.com/37784/adRecover.js?ts=1543562646174'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//cdn.adpushup.com/37780/adpushup.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
+<!--<script  id="feedify_webscript" >
+var feedify = feedify || {};
+window.feedify_options={fedify_url:"https://feedify.net/"};
+(function (window, document){
+	function addScript( script_url ){
+		var s = document.createElement('script');
+		s.type = 'text/javascript';
+		s.src = script_url;
+		document.getElementsByTagName('head')[0].appendChild(s);
+	}
+	addScript('https://tpcf.feedify.net/uploads/settings/2e588c15fa58f6d438b0255693eb0ea3.js?ts='+Math.random());
+	addScript('https://cdn.feedify.net/getjs/feedbackembad-min-2.0.js');
+})(window, document);
+</script>-->
+
+</head> 
+
+<body> <button onclick="topFunction()" id="myBtn" title="Go to top">&#8679;</button>
+
+<div id="page" style="margin:-8px;background-color:#f5f5f4">
+
+<div id="container"> 
+
+<div id="headerpage" class="header"> <table style="width:100%;margin-bottom:5px">
+    <tr>
+        <td>
+            <div style="clear:both;float:left;width:230px;margin-top:15px;margin-left:20px">
+                <a href="https://www.javatpoint.com"><img src="https://www.javatpoint.com/images/logo/jtp_logo.png" alt="Javatpoint Logo" /></a>
+            </div>
+            <div style="float:left;width:60%;">
+<script>
+  (function() {
+    var cx = '005383125436438536544:y1edweedxwi';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+                
+            </div>
+            
+        </td>
+    </tr>
+        <!--<tr>
+        <td>
+            <div id="headerlink" style="padding:0px;margin:0px"><span style="margin-right:20px;width:45px"></span><span style="float:right;margin-right:5px;width:45%"> </span>
+                
+            </div>
+        </td>
+    </tr>-->
+
+</table> 
+</div>
+
+<div class="headermobile">
+
+<div style="margin-top:10px;margin-left:48px;padding:0px;text-align:left;">
+
+<span style="float:left"><a href="https://www.javatpoint.com"><img src="https://www.javatpoint.com/images/logo/jtp_logo.png" alt="Javatpoint Logo"></a>
+</span>
+</div>
+
+<div style="margin:0px;padding:0px;clear:both">
+
+<script>
+  (function() {
+    var cx = '005383125436438536544:y1edweedxwi';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+<!--<form class="navbar-search-m" method="get" action="https://www.google.com/search" target="_blank"> <input type="text" name="q" class="search-query span2-m" placeholder="Search on javatpoint..." title="Search on Javatpoint"/><input type="hidden" name="sitesearch" value="www.javatpoint.com"/></form>-->
+
+</div>
+</div>
+
+<div id="link" style="clear:both"> <div class="ddsmoothmenu"><ul><li><a href="https://www.javatpoint.com" >Home</a></li><li><a href="python-tutorial">Python</a></li><li><a href="java-tutorial">Java</a></li><li><a href="php-tutorial">PHP</a></li><li><a href="javascript-tutorial">JavaScript</a></li><li><a href="cpp-tutorial">C++</a></li><li><a href="c-sharp-tutorial">C#</a></li><li><a href="https://www.javatpoint.com/aptitude/quantitative" >Aptitude</a></li><li><a href="reasoning">Reasoning</a></li><li><a href="programs-list">Programs</a></li><li><a href="selenium-tutorial">Selenium</a></li><li><a href="data-structure-tutorial">DS</a></li><li><a href="dbms-tutorial">DBMS</a></li><li><a href="c-programming-language-tutorial">C</a></li><li><a href="sql-tutorial">SQL</a></li><li><a href="android-tutorial">Android</a></li><li><a href="html-tutorial">HTML</a></li><li><a href="interview-questions-and-answers">Interview Q</a></li><li><a href="training">Training</a></li></ul><br style="clear: left"/></div> 
+</div>
+
+<div class="onlycontent">
+<div id="city">
+    <table>
+        <tr>
+            <td>
+<!-- Cm_728x90_20Sep -->
+<ins class="adPushupAds" data-adpControl="srgop" data-ver="2" data-siteId="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSBDbV83Mjh4OTBfMjBTZXAgLS0+CjxpbnMgY2xhc3M9ImFkc2J5Z29vZ2xlIgogICAgIHN0eWxlPSJkaXNwbGF5OmlubGluZS1ibG9jazt3aWR0aDo3MjhweDtoZWlnaHQ6OTBweCIKICAgICBkYXRhLWFkLWNsaWVudD0iY2EtcHViLTQ2OTk4NTg1NDkwMjMzODIiCiAgICAgZGF0YS1hZC1zbG90PSIyNzMyNzM1Mzk5Ij48L2lucz4KPHNjcmlwdD4KKGFkc2J5Z29vZ2xlID0gd2luZG93LmFkc2J5Z29vZ2xlIHx8IFtdKS5wdXNoKHt9KTsKPC9zY3JpcHQ+"></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+
+
+<!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4699858549023382"
+     data-ad-slot="9201901915"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>-->
+   
+               <h1 class="h2" style="margin-left:10px">Javatpoint - The Best Portal to Learn Technologies</h1>
+                <a href="https://training.javatpoint.com/" target="_blank" rel="noopener"><img class="lazyload imageright" data-src="https://static.javatpoint.com/images/javatpoint-training8.png" style="margin-left:10px" alt="Winter Training"/></a>
+
+                <div style="display:inherit;padding:25px;background-color:#f5fff3;border-left:3px solid #95cc97"><p>JavaTpoint offers <strong>Corporate Training</strong>, <strong>Summer Training</strong>, <strong>Online Training</strong> and <strong>Winter Training</strong> on Java, Blockchain, Machine Learning, Meanstack, Artificial Intelligence, Kotlin, Cloud Computing, Angular, React, IOT, DevOps, RPA, Virtual Reality, Embedded Systems, Robotics, PHP, .Net, Big Data and Hadoop, Spark, Data Analytics, R Programming, SAP, Android, Python, Oracle, Web Designing, Spring, Hibernate, Software Testing, Selenium, QTP, Linux, CCNA, C++ and many more technologies. For more visit
+                    <a href="https://training.javatpoint.com"><img class="lazyload" data-src="images/linkglobe12.png" alt="javatpoint training" />training.javatpoint.com</a></p>
+                    <!--<p>Approach us for Placement Oriented Training on Java, PHP, Android and Selenium.</p>-->
+                </div> 
+
+                <fieldset class="gra1">
+                    <h2 class="h2">Latest Tutorials</h2>
+                    <div class="firsthomecontent">
+     
+                          <a href="https://www.javatpoint.com/uml">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/uml/images/uml-home.png" alt="UML Tutorial" />
+                                <p>UML</p> 
+                            </div>    
+                        </a> 
+                          <a href="https://www.javatpoint.com/artificial-neural-network">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/artificial-neural-network/images/ann-home.png" alt="Artificial Neural Network Tutorial" />
+                                <p>ANN</p> 
+                            </div>    
+                        </a> 
+                          <a href="https://www.javatpoint.com/es6">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/es6/images/es6-home.png" alt="ES6 Tutorial" />
+                                <p>ES6</p> 
+                            </div>    
+                        </a> 
+                        <a href="https://www.javatpoint.com/flutter">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/flutter/images/flutter-home.png" alt="Flutter Tutorial" />
+                                <p>Flutter</p>
+                            </div> 
+                        </a> 
+                        <a href="https://www.javatpoint.com/selenium-python">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/selenium-python/images/selenium-python-home.png" alt="Selenium Python" />
+                                <p>Selenium Py</p>
+                            </div> 
+                        </a> 
+                        <a href="https://www.javatpoint.com/firebase">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/firebase/images/firebase-home.png" alt="Firebase Tutorial" />
+                                <p>Firebase</p>
+                            </div> 
+                        </a> 
+                        <a href="https://www.javatpoint.com/cobol">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/cobol/images/cobol-home.png" alt="Cobol Tutorial" />
+                                <p>Cobol</p>
+                            </div> 
+                        </a>  
+                        <a href="https://www.javatpoint.com/ansible">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/ansible/images/ansible-home.png" alt="Ansible Tutorial" />
+                                <p>Ansible</p>
+                            </div> 
+                        </a> 
+                          <a href="https://www.javatpoint.com/mockito">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/mockito/images/mockito-home.png" alt="Mockito Tutorial" />
+                                <p>Mockito</p> 
+                            </div>    
+                        </a> 
+                          <a href="https://www.javatpoint.com/talend">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/talend/images/talend-home.png" alt="Talend Tutorial" />
+                                <p>Talend</p> 
+                            </div>    
+                        </a> 
+                          <a href="https://www.javatpoint.com/microsoft-azure">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/microsoft-azure/images/microsoft-azure-home.png" alt="Microsoft Azure Tutorial" />
+                                <p>Azure</p> 
+                            </div>    
+                        </a> 
+                          <a href="https://www.javatpoint.com/sharepoint">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/sharepoint/images/sharepoint-home.png" alt="Sharepoint Tutorial" />
+                                <p>SharePoint</p> 
+                            </div>    
+                        </a> 
+
+
+                  </div>
+                </fieldset>
+                <br/>
+                
+<fieldset class="gra1">
+<h2 class="h2">Trending Technologies</h2>
+<div class="firsthomecontent">
+
+                        <a href="https://www.javatpoint.com/artificial-intelligence-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/ai/images/ai-home.png" alt="Artificial Intelligence Tutorial" />
+                                <p>AI</p>
+                            </div> 
+                        </a> 
+                        <a href="https://www.javatpoint.com/aws-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/aws/images/aws-home.png" alt="AWS Tutorial" />
+                                <p>AWS</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/selenium-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/selenium/images/selenium-home.jpg" alt="Selenium tutorial" />
+                                <p>Selenium</p>
+                            </div>
+                        </a>
+                        <a href="cloud-computing-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/cloudhome.png" alt="Cloud tutorial" />
+                                <p>Cloud</p>
+                            </div>
+                        </a>
+                        <a href="hadoop-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/hadoop.jpg" alt="Hadoop tutorial" />
+                                <p>Hadoop</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/reactjs-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/reactjs/images/reactjs-home.png" alt="ReactJS Tutorial" />
+                                <p>ReactJS</p>
+                            </div> 
+                        </a>  
+                        <a href="https://www.javatpoint.com/data-science">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/data-science/images/data-science-home.png" alt="Data Science Tutorial" />
+                                <p>D. Science</p>
+                            </div> 
+                        </a>  
+                        <a href="https://www.javatpoint.com/angular-7-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/angular7/images/angular-7-home.png" alt="Angular 7 Tutorial" />
+                                <p>Angular 7</p>
+                            </div> 
+                        </a>  
+                        <a href="https://www.javatpoint.com/blockchain-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/blockchain/images/blockchain-home.png" alt="Blockchain Tutorial" />
+                                <p>Blockchain</p>
+                            </div>  
+                        </a> 
+                        <a href="https://www.javatpoint.com/git">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/git/images/git-home.png" alt="Git Tutorial" />
+                                <p>Git</p>
+                            </div> 
+                        </a> 
+                          <a href="https://www.javatpoint.com/machine-learning">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/machine-learning/images/machine-learning-home.png" alt="Machine Learning Tutorial" />
+                                <p>ML</p> 
+                            </div>    
+                        </a> 
+                          <a href="https://www.javatpoint.com/devops">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/devops/images/devops-home.png" alt="DevOps Tutorial" />
+                                <p>DevOps</p> 
+                            </div>    
+                        </a> 
+
+  
+</div>
+</fieldset>
+
+<fieldset class="gra1">
+ <h2 class="h2">Preparation</h2>
+<div class="firsthomecontent">
+
+                        <a href="https://www.javatpoint.com/aptitude/quantitative">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/aptitude/images/quantitative-aptitude-home.png" alt="Aptitude" />
+                                <p>Aptitude</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/reasoning">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/reasoning/images/reasoning-home.png" alt="Logical Reasoning" />
+                                <p>Reasoning</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/verbal-ability">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/verbal-ability/images/verbal-ability-home.png" alt="Verbal Ability" />
+                                <p>Verbal A.</p>
+                            </div>
+                        </a>
+                        <a href="interview-questions-and-answers">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/interviewhome.png" alt="Interview Questions" />
+                                <p>Interview</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/company-interview-questions-and-recruitment-process">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/interview/images/company-home.jpeg" alt="Company Interview Questions" />
+                                <p>Company</p>
+                            </div> 
+                        </a> 
+
+</div>
+</fieldset>
+
+
+                    <fieldset class="gra1">
+                    <h2 class="h2">B.Tech / MCA</h2>
+                    <div class="firsthomecontent">
+                        <a href="https://www.javatpoint.com/dbms-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/dbms/images/dbms-home.jpg" alt="DBMS tutorial" />
+                                <p>DBMS</p>
+                            </div>
+                        </a>
+                        <a href="data-structure-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/ds/images/ds-home.png" alt="Data Structures tutorial" />
+                                <p>DS</p>
+                            </div>
+                        </a> 
+                        <a href="https://www.javatpoint.com/daa-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/daa/images/daa-home.png" alt="DAA tutorial" />
+                                <p>DAA</p>
+                            </div>
+                        </a>
+                        <a href="os-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/operating-system/images/operating-system-home.png" alt="Operating System tutorial" />
+                                <p>OS</p>
+                            </div>
+                        </a>
+                        <a href="computer-network-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/computer-network/images/computer-network-home.png" alt="Computer Network tutorial" />
+                                <p>C. Network</p>
+                            </div>
+                        </a>
+                        <a href="compiler-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/compiler/images/compiler-design-home.png" alt="Compiler Design tutorial" />
+                                <p>Compiler D.</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/computer-organization-and-architecture-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/coa/images/coa-home.png" alt="Computer Organization and Architecture" />
+                                <p>COA</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/discrete-mathematics-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/dms/images/discrete-mathematics-home.png" alt="Discrete Mathematics Tutorial" />
+                                <p>D. Math.</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/ethical-hacking-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/ethical-hacking/images/ethical-hacking-home.png" alt="Ethical Hacking Tutorial" />
+                                <p>E. Hacking</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/computer-graphics-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/computer-graphics/images/computer-graphics-home.png" alt="Computer Graphics Tutorial" />
+                                <p>C. Graphics</p>
+                            </div> 
+                        </a>
+                        <a href="https://www.javatpoint.com/software-engineering-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/software-engineering/images/software-engineering-home.png" alt="Software Engineering Tutorial" />
+                                <p>Software E.</p>
+                            </div> 
+                        </a> 
+
+                        <a href="html-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/html-tutorial.png" alt="html tutorial" />
+                                <p>Web Tech.</p>
+                            </div>
+                        </a>
+                        <a href="cyber-security-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/cybersecurity/images/cyber-security-home.png" alt="Cyber Security tutorial" />
+                                <p>Cyber Sec.</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/automata-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/automata/images/automata-home.jpg" alt="Automata Tutorial" />
+                                <p>Automata</p>
+                            </div> 
+                        </a>
+                        
+                        <a href="c-programming-language-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/clanguagehome.png" alt="C Language tutorial" />
+                                <p>C</p>
+                            </div>
+                        </a>
+                        <a href="cpp-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/cpp/images/cpp-home.png" alt="C++ tutorial" />
+                                <p>C++</p>
+                            </div>
+                        </a>
+                        <a href="java-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/javahome.png" alt="Java tutorial" />
+                                <p>Java</p>
+                            </div>
+                        </a>
+                        <a href="net-framework">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/csharp/net/images/net-home.png" alt=".Net Framework tutorial" />
+                                <p>.Net</p>
+                            </div>
+                        </a>
+                        <a href="python-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/pythonhome.png" alt="Python tutorial" />
+                                <p>Python</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.javatpoint.com/programs-list">
+                            <div class="homecontent"><img class="lazyload" data-src="https://www.javatpoint.com/images/programs.jpg" alt="List of Programs" />
+                                <p>Programs</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/control-system-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/control-system/images/control-system-home.jpg" alt="Control Systems tutorial" />
+                                <p>Control S.</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/data-mining">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/data-mining/images/data-mining-home.png" alt="Data Mining Tutorial" />
+                                <p>Data Mining</p> 
+                            </div>    
+                        </a> 
+
+
+                  </div>
+                </fieldset>
+                <br/>
+
+                <fieldset class="gra1">
+                    <h2 class="h2">Database Tutorials</h2>
+                    <div class="firsthomecontent">
+                        <a href="sql-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/sqlhome.png" alt="SQL tutorial" />
+                                <p>SQL</p>
+                            </div>
+                        </a>
+                        <a href="pl-sql-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/plsql.png" alt="PL/SQL tutorial" />
+                                <p>PL/SQL</p>
+                            </div>
+                        </a>
+                        <a href="oracle-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/oracle_logo.png" alt="Oracle tutorial" />
+                                <p>Oracle</p>
+                            </div>
+                        </a>
+                        <a href="mysql-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/mysql.png" alt="mysql tutorial" />
+                                <p>MySQL</p>
+                            </div>
+                        </a>
+                        <a href="postgresql-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/postgre/images/postgre-logo.png" alt="postgresql tutorial" />
+                                <p>PostgreSQL</p>
+                            </div>
+                        </a>
+                        <a href="mongodb-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/mongodb.png" alt="MongoDB tutorial" />
+                                <p>MongoDB</p>
+                            </div>
+                        </a>
+                        <a href="cassandra-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/cassandra/images/cassandra-home.jpg" alt="Cassandra tutorial" />
+                                <p>Cassandra</p>
+                            </div>
+                        </a>
+                        <a href="sqlite-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/sqlite/images/sqlite-home.png" alt="SQLite tutorial" />
+                                <p>SQLite</p>
+                            </div>
+                        </a>
+                        <a href="neo4j-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/neo4j/images/neo4j-home.png" alt="Neo4j tutorial" />
+                                <p>Neo4j</p>
+                            </div>
+                        </a>
+                        <a href="couchdb-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/couchdb/images/couchdb-home.png" alt="CouchDB tutorial" />
+                                <p>CouchDB</p>
+                            </div>
+                        </a>
+                        <a href="sql-server-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/sqlserver/images/sql-server-home.jpg" alt="SQL Server tutorial" />
+                                <p>SQL Server</p>
+                            </div>
+                        </a>
+                        <a href="mariadb-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/mariadb/images/mariadb-home.png" alt="MariaDB tutorial" />
+                                <p>MariaDB</p>
+                            </div>
+                        </a>
+                        <a href="db2-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/db2/images/db2-home.png" alt="MariaDB tutorial" />
+                                <p>DB2</p>
+                            </div>
+                        </a>
+                        <a href="pouchdb-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/pouchdb/images/pouchdb-home.png" alt="PouchDB tutorial" />
+                                <p>PouchDB</p>
+                            </div>
+                        </a>
+                        <a href="redis-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/redis/images/redis-home.png" alt="Redis tutorial" />
+                                <p>Redis</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/memcached-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/memcached/images/memcached-home.png" alt="Memcached Tutorial" />
+                                <p>Memcached</p>
+                            </div> 
+                        </a> 
+
+                    </div>
+                </fieldset><br>
+<!-- CM_JTP_WTC_Responsive -->
+<ins class="adPushupAds" data-adpControl="cj42s" data-ver="2" data-siteId="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSBDTV9KVFBfV1RDX1Jlc3BvbnNpdmUgLS0+CjxpbnMgY2xhc3M9ImFkc2J5Z29vZ2xlIgogICAgIHN0eWxlPSJkaXNwbGF5OmJsb2NrIgogICAgIGRhdGEtYWQtY2xpZW50PSJjYS1wdWItNDY5OTg1ODU0OTAyMzM4MiIKICAgICBkYXRhLWFkLXNsb3Q9IjY3NDYxMzMxMTMiCiAgICAgZGF0YS1hZC1mb3JtYXQ9ImF1dG8iCiAgICAgZGF0YS1mdWxsLXdpZHRoLXJlc3BvbnNpdmU9InRydWUiPjwvaW5zPgo8c2NyaXB0PgooYWRzYnlnb29nbGUgPSB3aW5kb3cuYWRzYnlnb29nbGUgfHwgW10pLnB1c2goe30pOwo8L3NjcmlwdD4="></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+<!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4699858549023382"
+     data-ad-slot="9201901915"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>-->
+
+
+                <fieldset class="gra1">
+                    <h2 class="h2">Web Technology</h2>
+                    <div class="firsthomecontent">
+                        <a href="html-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/html-tutorial.png" alt="html tutorial" />
+                                <p>HTML</p>
+                            </div>
+                        </a>
+                        <a href="css-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/css3.jpg" alt="css tutorial" />
+                                <p>CSS</p>
+                            </div>
+                        </a>
+                        <a href="javascript-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/javascripthome.png" alt="JavaScript tutorial" />
+                                <p>JavaScript</p>
+                            </div>
+                        </a>
+                        <a href="jquery-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/jquery.png" alt="jquery tutorial" />
+                                <p>jQuery</p>
+                            </div>
+                        </a>
+                        <a href="jquery-ui-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/jquery-ui.jpg" alt="jquery ui tutorial" />
+                                <p>jQuery UI</p>
+                            </div>
+                        </a>
+                        <a href="php-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/php-logo.png" alt="php tutorial" />
+                                <p>PHP</p>
+                            </div>
+                        </a>
+                        <a href="xml-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/xml-home.png" alt="html tutorial" />
+                                <p>XML</p>
+                            </div>
+                        </a>
+                        <a href="json-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/json.png" alt="json tutorial" />
+                                <p>JSON</p>
+                            </div>
+                        </a>
+                        <a href="ajax-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/ajaxhome.png" alt="AJAX tutorial" />
+                                <p>AJAX</p>
+                            </div>
+                        </a>
+                        <a href="web-services-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/web-services.png" alt="Web Services tutorial" />
+                                <p>Web Serv-</p>
+                            </div>
+                        </a>
+                        <a href="bootstrap-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/bootstrappages/images/bootstrap-logo.jpg" alt="bootstrap tutorial" />
+                                <p>Bootstrap</p>
+                            </div>
+                        </a>
+                        <a href="angularjs-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/js/angularjs/images/angularjs-logo.png" alt="AngularJS tutorial" />
+                                <p>AngularJS</p>
+                            </div>
+                        </a>
+                        <a href="nodejs-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/js/nodejs/images/nodejs-logo.png" alt="Node.js tutorial" />
+                                <p>Node.js</p>
+                            </div>
+                        </a>
+                        <a href="expressjs-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/js/nodejs/express/images/expressjs-logo.png" alt="expressjs tutorial" />
+                                <p>Express.js</p>
+                            </div>
+                        </a>
+                        <a href="backbonejs-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/backbonejs/images/backbonejs-logo.png" alt="backbonejs tutorial" />
+                                <p>Backbone</p>
+                            </div>
+                        </a>
+                        <a href="sass-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/sass/images/sass.png" alt="Sass tutorial" />
+                                <p>Sass</p>
+                            </div>
+                        </a>
+                        <a href="less-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/less/images/less-logo.png" alt="Less tutorial" />
+                                <p>Less</p>
+                            </div>
+                        </a>
+                        <a href="wordpress-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/wordpress/images/wordpress.png" alt="WordPress tutorial" />
+                                <p>WordPress</p>
+                            </div>
+                        </a>
+                        <a href="codeigniter-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/codeigniter/images/codeigniter-home.png" alt="CodeIgniter tutorial" />
+                                <p>CodeIgniter</p>
+                            </div>
+                        </a>
+                        <a href="xslt-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/xslt/images/xslt-home.png" alt="XSLT tutorial" />
+                                <p>XSLT</p>
+                            </div>
+                        </a>
+                        <a href="xpath-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/xpath/images/xpath-home.jpg" alt="XPath tutorial" />
+                                <p>XPath</p>
+                            </div>
+                        </a>
+                        <a href="xquery-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/xquery/images/xquery-home.png" alt="XQuery tutorial" />
+                                <p>XQuery</p>
+                            </div>
+                        </a>
+                        <a href="yii-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/yii/images/yii-home.png" alt="YII Framework tutorial" />
+                                <p>YII</p>
+                            </div>
+                        </a>
+                        <a href="xhtml-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/xhtml/images/xhtml-home.jpg" alt="XHTML tutorial" />
+                                <p>XHTML</p>
+                            </div>
+                        </a>
+                        <a href="pure-css-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/purecss/images/pure-css-home.png" alt="Pure.CSS tutorial" />
+                                <p>Pure.CSS</p>
+                            </div>
+                        </a>
+                        <a href="materialize-css-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/materializecss/images/materialize-home.png" alt="Materialize CSS tutorial" />
+                                <p>Materialize</p>
+                            </div>
+                        </a>
+                        <a href="framework7-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/framework7/images/framework7-home.jpg" alt="Framework7 tutorial" />
+                                <p>Framework7</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/http-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/http/images/http-home.png" alt="HTTP Tutorial" />
+                                <p>HTTP</p> 
+                            </div>    
+                        </a> 
+
+                    </div>
+                </fieldset>
+                
+<!-- Cm_728x90_20Sep -->
+<ins class="adPushupAds" data-adpControl="srgop" data-ver="2" data-siteId="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSBDbV83Mjh4OTBfMjBTZXAgLS0+CjxpbnMgY2xhc3M9ImFkc2J5Z29vZ2xlIgogICAgIHN0eWxlPSJkaXNwbGF5OmlubGluZS1ibG9jazt3aWR0aDo3MjhweDtoZWlnaHQ6OTBweCIKICAgICBkYXRhLWFkLWNsaWVudD0iY2EtcHViLTQ2OTk4NTg1NDkwMjMzODIiCiAgICAgZGF0YS1hZC1zbG90PSIyNzMyNzM1Mzk5Ij48L2lucz4KPHNjcmlwdD4KKGFkc2J5Z29vZ2xlID0gd2luZG93LmFkc2J5Z29vZ2xlIHx8IFtdKS5wdXNoKHt9KTsKPC9zY3JpcHQ+"></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+<!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4699858549023382"
+     data-ad-slot="9201901915"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>-->
+
+                <fieldset class="gra1">
+                    <h2 class="h2">Java Technology</h2>
+                    <div class="firsthomecontent">
+                        <a href="java-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/javahome.png" alt="Core Java tutorial" />
+                                <p>Core Java</p>
+                            </div>
+                        </a>
+                        <a href="servlet-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/javahome.png" alt="Java Servlet tutorial" />
+                                <p>Servlet</p>
+                            </div>
+                        </a>
+                        <a href="jsp-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/jsphome.png" alt="Java JSP tutorial" />
+                                <p>JSP</p>
+                            </div>
+                        </a>
+                        <a href="jstl">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/jsppages/jstl/images/jstlhome.png" alt="JSTL tutorial" />
+                                <p>JSTL</p>
+                            </div>
+                        </a>
+                        <a href="ejb-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/javahome.png" alt="EJB tutorial" />
+                                <p>EJB</p>
+                            </div>
+                        </a>
+                        <a href="java-web-services-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/web-services.png" alt="Java Web Services tutorial" />
+                                <p>Java WS</p>
+                            </div>
+                        </a>
+                        <a href="jpa-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/jpa/images/jpa-home.png" alt="JPA tutorial" />
+                                <p>JPA</p>
+                            </div>
+                        </a>
+                        <a href="javafx-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/javafx/images/javafx-home.png" alt="javafx tutorial" />
+                                <p>JavaFX</p>
+                            </div>
+                        </a>
+                        <a href="struts-2-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/strutshome.png" alt="Struts tutorial" />
+                                <p>Struts</p>
+                            </div>
+                        </a>
+                        <a href="hibernate-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/hibernatehome.png" alt="Hibernate tutorial" />
+                                <p>Hibernate</p>
+                            </div>
+                        </a>
+                        <a href="spring-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/springhome.png" alt="Spring tutorial" />
+                                <p>Spring</p>
+                            </div>
+                        </a>
+                        <a href="java-mail-api-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/javahome.png" alt="Java Mail tutorial" />
+                                <p>Java Mail</p>
+                            </div>
+                        </a>
+                        <a href="design-patterns-in-java">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/javahome.png" alt="Java Design Pattern tutorial" />
+                                <p>D Pattern</p>
+                            </div>
+                        </a>
+                        <a href="java-swing">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/java/swing/images/java-swing-tutorial.png" alt="Java Swing tutorial" />
+                                <p>Java Swing</p>
+                            </div>
+                        </a>
+                    </div>
+                    <br>
+                    <div class="firsthomecontent">
+                        <a href="junit-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/javahome.png" alt="JUnit tutorial" />
+                                <p>Junit</p>
+                            </div>
+                        </a>
+                        <a href="maven-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/strutshome.png" alt="Maven tutorial" />
+                                <p>Maven</p>
+                            </div>
+                        </a>
+                        <a href="jsoup-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/javahome.png" alt="Maven tutorial" />
+                                <p>Jsoup</p>
+                            </div>
+                        </a>
+                        <a href="jaxb-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/javahome.png" alt="JAXB tutorial" />
+                                <p>JAXB</p>
+                            </div>
+                        </a>
+                        <a href="java-io">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/java/javaio/images/java-io-tutorial.png" alt="Java IO tutorial" />
+                                <p>Java I/O</p>
+                            </div>
+                        </a>
+                        <a href="java-awt">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/java/awt/images/awt-home.png" alt="Java AWT tutorial" />
+                                <p>Java AWT</p>
+                            </div>
+                        </a>
+                        <a href="collections-in-java">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/java/collection/images/java-collections-tutorial.png" alt="Java Collections tutorial" />
+                                <p>Collections</p>
+                            </div>
+                        </a>
+                        <a href="java-date">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/core/date/images/java-date-time.png" alt="Java Date and Time" />
+                                <p>Java Date</p>
+                            </div>
+                        </a>
+                        <a href="jsf-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/jsf/images/jsf-home.jpg" alt="JSF tutorial" />
+                                <p>JSF</p>
+                            </div>
+                        </a>
+                        <a href="spring-boot-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/springboot/images/spring-boot-home.jpg" alt="Spring Boot tutorial" />
+                                <p>Spring Boot</p>
+                            </div>
+                        </a>
+                        <a href="richfaces-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/richfaces/images/richfaces-home.png" alt="Richfaces tutorial" />
+                                <p>RichFaces</p>
+                            </div>
+                        </a>
+                        <a href="primefaces-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/primefaces/images/primefaces-home.png" alt="Primefaces tutorial" />
+                                <p>Primefaces</p>
+                            </div>
+                        </a>
+                        <a href="jdb-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/jdb/images/jdb-home.png" alt="JDB tutorial" />
+                                <p>JDB</p>
+                            </div>
+                        </a>
+                        <a href="jfreechart-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/jfreechart/images/jfreechart-home.jpg" alt="jfreechart tutorial" />
+                                <p>JFreeChart</p>
+                            </div>
+                        </a>
+                        <a href="java-9-features">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/javahome.png" alt="Java9 tutorial" />
+                                <p>Java 9</p>
+                            </div>
+                        </a>
+                        <a href="java-8-features">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/javahome.png" alt="Java8 tutorial" />
+                                <p>Java 8</p>
+                            </div>
+                        </a>
+                        <a href="jogl-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/jogl/images/jogl-home.png" alt="JOGL tutorial" />
+                                <p>JOGL</p>
+                            </div>
+                        </a>
+                        <a href="tika-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tika/images/tika-home.png" alt="Tika tutorial" />
+                                <p>Tika</p>
+                            </div>
+                        </a>
+                        <a href="javafx-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/javafx/images/javafx-home.png" alt="javafx tutorial" />
+                                <p>JavaFX</p>
+                            </div>
+                        </a>
+                        <a href="apache-poi-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/apache-poi/images/apache-poi-home.png" alt="Apache POI tutorial" />
+                                <p>POI</p>
+                            </div>
+                        </a>
+                        <a href="jbpm-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/jbpm/images/jbpm-home.png" alt="JBPM tutorial" />
+                                <p>jBPM</p>
+                            </div>
+                        </a>
+                        <a href="jmeter-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/jmeter/images/jmeter-home.png" alt="JMeter tutorial" />
+                                <p>JMeter</p>
+                            </div>
+                        </a>
+                        <a href="apache-ant-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/apache-ant/images/apache-ant-home.png" alt="Apache Ant tutorial" />
+                                <p>Ant</p>
+                            </div>
+                        </a>
+                        <a href="pdfbox-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/pdfbox/images/pdfbox-home.png" alt="PDFBox tutorial" />
+                                <p>PDFBox</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/intellij-idea-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/intellij-idea/images/intellij-idea-home.png" alt="Intellij Idea tutorial" />
+                                <p>Intellij</p>
+                            </div>
+                        </a>
+                          <a href="https://www.javatpoint.com/restful-web-services-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/restful-web-services/images/restful-home.png" alt="Restful Web Services Tutorial" />
+                                <p>RESTful</p> 
+                            </div>    
+                        </a> 
+                          <a href="https://www.javatpoint.com/microservices">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/microservices/images/microservices-home.jpg" alt="Microservices Tutorial" />
+                                <p>Microservices</p> 
+                            </div>    
+                        </a> 
+                          <a href="https://www.javatpoint.com/spring-cloud">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/spring-cloud/images/spring-cloud-home.png" alt="Spring Cloud Tutorial" />
+                                <p>Spring Clo.</p> 
+                            </div>    
+                        </a> 
+
+                    </div>
+                </fieldset>
+                <br/>
+
+                <fieldset class="gra1">
+                    <h2 class="h2">Popular Tutorials</h2>
+                    <div class="firsthomecontent">
+                        <a href="data-structure-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/ds/images/ds-home.png" alt="Data Structures tutorial" />
+                                <p>DS</p>
+                            </div>
+                        </a>
+
+                        <a href="java-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/javahome.png" alt="Java tutorial" />
+                                <p>Java</p>
+                            </div>
+                        </a>
+                        <a href="c-sharp-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/csharp/images/c-sharp-home.png" alt="C# tutorial" />
+                                <p>C#</p>
+                            </div>
+                        </a>
+                        <a href="c-programming-language-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/clanguagehome.png" alt="C Language tutorial" />
+                                <p>C</p>
+                            </div>
+                        </a>
+                        <a href="cpp-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/cpp/images/cpp-home.png" alt="C++ tutorial" />
+                                <p>C++</p>
+                            </div>
+                        </a>
+                        <a href="sql-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/sqlhome.png" alt="SQL tutorial" />
+                                <p>SQL</p>
+                            </div>
+                        </a>
+                        <a href="android-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/androidhome.png" alt="Android tutorial" />
+                                <p>Android</p>
+                            </div>
+                        </a>
+                        <a href="python-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/pythonhome.png" alt="Python tutorial" />
+                                <p>Python</p>
+                            </div>
+                        </a>
+                        <a href="excel-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/ms/excel/images/excel-logo.png" alt="MS Excel tutorial" />
+                                <p>Excel</p>
+                            </div>
+                        </a>
+                        <a href="computer-fundamentals-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/computer/images/computer-logo.png" alt="Computer Fundamental tutorial" />
+                                <p>Computer</p>
+                            </div>
+                        </a>
+                        <a href="linux-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/linux/images/linux-logo.png" alt="Linux tutorial" />
+                                <p>Linux</p>
+                            </div>
+                        </a>
+                        <a href="vi-editor">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/linux/images/vi-editor.png" alt="vi editor tutorial" />
+                                <p>vi editor</p>
+                            </div>
+                        </a>
+                        <a href="embedded-system-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/embeddedsystem/images/embedded-system-logo.jpg" alt="embedded system tutorial" />
+                                <p>Embedded</p>
+                            </div>
+                        </a>
+                        <a href="robotics-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/robotics/images/robotics-logo.jpg" alt="robotics tutorial" />
+                                <p>Robotics</p>
+                            </div>
+                        </a>
+                        <a href="seo-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/seo/images/seo-home.jpg" alt="SEO tutorial" />
+                                <p>SEO</p>
+                            </div>
+                        </a>
+                        <a href="f-sharp-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/fsharp/images/fsharp-home.png" alt="F# tutorial" />
+                                <p>F#</p>
+                            </div>
+                        </a>
+                        <a href="powerpoint-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/ms/powerpoint/images/powerpoint-home.png" alt="Powerpoint tutorial" />
+                                <p>Powerpoint</p>
+                            </div>
+                        </a>
+                        <a href="shell-scripting-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/linux/images/linux-logo.png" alt="Shell scripting tutorial" />
+                                <p>Shell Script</p>
+                            </div>
+                        </a>
+                        <a href="mathml-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/mathml/images/mathml-home.png" alt="MathML tutorial" />
+                                <p>MathML</p>
+                            </div>
+                        </a> 
+                        <a href="perl-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/perl/images/perl-home.png" alt="Perl tutorial" />
+                                <p>Perl</p>
+                            </div>
+                        </a>
+                        <a href="scala-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/scala/images/scala-home.png" alt="Scala tutorial" />
+                                <p>Scala</p>
+                            </div>
+                        </a>
+                        <a href="ms-word-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/msword/images/word-home.png" alt="Word tutorial" />
+                                <p>MS Word</p>
+                            </div>
+                        </a>
+                        <a href="ruby-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/ruby/images/ruby-home.png" alt="Ruby tutorial" />
+                                <p>Ruby</p>
+                            </div>
+                        </a>
+                        <a href="ruby-on-rails-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/rubyonrails/images/ruby-on-rails-home.jpg" alt="Ruby on Rails tutorial" />
+                                <p>Rails</p>
+                            </div>
+                        </a>
+                        <a href="docker-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/docker/images/docker-home.png" alt="Docker tutorial" />
+                                <p>Docker</p>
+                            </div>
+                        </a>
+                        <a href="asp-net-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/asp/images/asp-net-home.png" alt="ASP.NET tutorial" />
+                                <p>ASP.NET</p>
+                            </div>
+                        </a>
+                        <a href="ado-net-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/ado/images/ado-net-home.jpg" alt="ADO.NET tutorial" />
+                                <p>ADO.NET</p>
+                            </div>
+                        </a>
+                        <a href="gwt-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/gwt/images/gwt-home.jpg" alt="GWT tutorial" />
+                                <p>GWT</p>
+                            </div>
+                        </a>
+                        <a href="go-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/go/images/go-home.jpg" alt="Go Language tutorial" />
+                                <p>Go Lang</p>
+                            </div>
+                        </a>
+                        <a href="software-installation-in-ubuntu">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/installation/images/software-installation-in-ubuntu.png" alt="Software Installation in Ubuntu tutorial" />
+                                <p>On Ubuntu</p>
+                            </div>
+                        </a>
+                        <a href="phalcon-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/phalcon/images/phalcon-home.jpg" alt="Phalcon tutorial" />
+                                <p>Phalcon</p>
+                            </div>
+                        </a>
+                        <a href="software-installation-on-mac">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/macos/images/mac-os-home.png" alt="Software Installation on Mac" />
+                                <p>On Mac</p>
+                            </div>
+                        </a>
+                        <a href="software-installation-on-centos">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/centos/images/software-installation-on-centos-home.png" alt="Software Installation on CentOS" />
+                                <p>On CentOS</p>
+                            </div>
+                        </a>
+                        <a href="svg-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/svg/images/svg-home.png" alt="SVG tutorial" />
+                                <p>SVG</p>
+                            </div>
+                        </a>
+                        <a href="polymer-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/polymerjs/images/polymerjs-home.png" alt="Polymer tutorial" />
+                                <p>Polymer</p>
+                            </div>
+                        </a>
+                        <a href="compiler-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/compiler/images/compiler-design-home.png" alt="Compiler Design tutorial" />
+                                <p>Compiler D.</p>
+                            </div>
+                        </a>
+                        <a href="django-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/django/images/django-home.png" alt="django tutorial" />
+                                <p>Django</p>
+                            </div>
+                        </a>
+                        <a href="net-framework">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/csharp/net/images/net-home.png" alt=".Net Framework tutorial" />
+                                <p>.Net</p>
+                            </div>
+                        </a>
+                        <a href="kotlin-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/kotlin/images/kotlin-home.png" alt="Kotlin tutorial" />
+                                <p>Kotlin</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/aptitude/quantitative">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/aptitude/images/quantitative-aptitude-home.png" alt="Quantitative Aptitude tutorial" />
+                                <p>Aptitude</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/rust-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/rust/images/rust-home.jpg" alt="Rust Programming tutorial" />
+                                <p>Rust</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/control-system-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/control-system/images/control-system-home.jpg" alt="Control Systems tutorial" />
+                                <p>Control S.</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/python-tkinter">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/python/images/tkinter-home.png" alt="Python Tkinter Tutorial" />
+                                <p>Tkinter</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/typescript-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/typescript/images/typescript-home.png" alt="TypeScript Tutorial" />
+                                <p>TypeScript</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/numpy-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/numpy/images/numpy-home.png" alt="Numpy Tutorial" />
+                                <p>NumPy</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/software-testing-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/software-testing/images/software-testing-home.png" alt="Software Testing Tutorial" />
+                                <p>Testing</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/flask-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/flask/images/flask-home.png" alt="Flask Tutorial" />
+                                <p>Flask</p>
+                            </div> 
+                        </a> 
+                        <a href="https://www.javatpoint.com/pig">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/hadooppages/pig/images/pig-home.png" alt="Apache Pig Tutorial" />
+                                <p>Pig</p>
+                            </div> 
+                        </a> 
+                        <a href="https://www.javatpoint.com/swift-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/swift/images/swift-home.png" alt="Swift Tutorial" />
+                                <p>Swift</p>
+                            </div> 
+                        </a> 
+                        <a href="https://www.javatpoint.com/apache-spark-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/spark/images/apache-spark-home.png" alt="Apache Spark Tutorial" />
+                                <p>Spark</p>
+                            </div> 
+                        </a> 
+                        <a href="https://www.javatpoint.com/testng-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/testng/images/testng-home.png" alt="TestNG Tutorial" />
+                                <p>TestNG</p>
+                            </div> 
+                        </a> 
+                        <a href="https://www.javatpoint.com/digital-image-processing-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/dip/images/dip-home.png" alt="Digital Image Processing Tutorial" />
+                                <p>DIP</p>
+                            </div> 
+                        </a> 
+                        <a href="https://www.javatpoint.com/mobile-communication-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/mobile-communication/images/mobile-communication-home.png" alt="Mobile Communication Tutorial" />
+                                <p>Mobile Com.</p>
+                            </div> 
+                        </a> 
+                        <a href="https://www.javatpoint.com/sas-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/sas/images/sas-home.png" alt="SAS Tutorial" />
+                                <p>SAS</p>
+                            </div> 
+                        </a>  
+                        <a href="https://www.javatpoint.com/electrical-machines-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/electrical-machines/images/electrical-machine-home.jpg" alt="Electrical Machines Tutorial" />
+                                <p>Electrical M.</p>
+                            </div>  
+                        </a> 
+                        <a href="https://www.javatpoint.com/quality-assurance">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/quality-assurance/images/quality-assurance-home.png" alt="quality assurance Tutorial" />
+                                <p>QA</p>
+                            </div> 
+                        </a> 
+                        <a href="https://www.javatpoint.com/hive">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/hadooppages/images/hive-home.png" alt="Hive Tutorial" />
+                                <p>Hive</p> 
+                            </div>   
+                        </a> 
+                        <a href="https://www.javatpoint.com/bugzilla">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/bugzilla/images/bugzilla-home.png" alt="Bugzilla Tutorial" />
+                                <p>Bugzilla</p> 
+                            </div>   
+                        </a> 
+                        <a href="https://www.javatpoint.com/ssrs">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/ssrs/images/ssrs-home.png" alt="SSRS Tutorial" />
+                                <p>SSRS</p>
+                            </div>  
+                        </a> 
+                        <a href="https://www.javatpoint.com/tableau">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/tableau/images/tableau-home.png" alt="Tableau Tutorial" />
+                                <p>Tableau</p> 
+                            </div>   
+                        </a> 
+                        <a href="https://www.javatpoint.com/jira-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/jira/images/jira-home.png" alt="JIRA Tutorial" />
+                                <p>JIRA</p>
+                            </div>  
+                        </a> 
+                        <a href="https://www.javatpoint.com/agile">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/agile/images/agile-home.png" alt="Agile Tutorial" />
+                                <p>Agile</p>
+                            </div>  
+                        </a> 
+                        <a href="https://www.javatpoint.com/pytorch">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/pytorch/images/pytorch-home.png" alt="Pytorch Tutorial" />
+                                <p>Pytorch</p> 
+                            </div>   
+                        </a> 
+                        <a href="https://www.javatpoint.com/jenkins">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/jenkins/images/jenkins-home.png" alt="Jenkins Tutorial" />
+                                <p>Jenkins</p> 
+                            </div>   
+                        </a> 
+                        <a href="https://www.javatpoint.com/etl-testing">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/etl-testing/images/etl-home.jpg" alt="ETL Tutorial" />
+                                <p>ETL</p>
+                            </div>  
+                        </a> 
+                        <a href="https://www.javatpoint.com/nginx-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/nginx/images/nginx-home.png" alt="NGINX Tutorial" />
+                                <p>NGINX</p>
+                            </div>  
+                        </a> 
+                        <a href="https://www.javatpoint.com/ssis">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/ssis/images/ssis-home.png" alt="SSIS Tutorial" />
+                                <p>SSIS</p>
+                            </div> 
+                        </a> 
+                        <a href="https://www.javatpoint.com/web-api">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/webapi/images/web-api-home.png" alt="Web API Tutorial" />
+                                <p>Web API</p> 
+                            </div>    
+                        </a> 
+                        <a href="https://www.javatpoint.com/onenote">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/onenote/images/onenote-home.png" alt="OneNote Tutorial" />
+                                <p>OneNote</p>
+                            </div> 
+                        </a> 
+                        <a href="https://www.javatpoint.com/data-warehouse">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/datawarehouse/images/data-warehouse-home.png" alt="Data Warehouse Tutorial" />
+                                <p>Data Ware.</p>
+                            </div> 
+                        </a> 
+                        <a href="https://www.javatpoint.com/vba">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/vba/images/vba-home.png" alt="VBA Tutorial" />
+                                <p>VBA</p>
+                            </div> 
+                        </a> 
+                         <a href="https://www.javatpoint.com/log4j">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/log4j/images/log4j-home.png" alt="Log4j Tutorial" />
+                                <p>Log4j</p> 
+                            </div>    
+                        </a> 
+                        <a href="https://www.javatpoint.com/power-bi">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/power-bi/images/power-bi-home.png" alt="Power BI Tutorial" />
+                                <p>Power BI</p> 
+                            </div>    
+                        </a> 
+                         <a href="https://www.javatpoint.com/bash">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/bash/images/bash-home.png" alt="Bash Scripting Tutorial" />
+                                <p>Bash</p> 
+                            </div>    
+                        </a> 
+                         <a href="https://www.javatpoint.com/pygame">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/pygame/images/pygame-home.png" alt="Pygame Tutorial" />
+                                <p>Pygame</p> 
+                            </div>    
+                        </a> 
+
+                         <a href="https://www.javatpoint.com/qlikview">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/qlikview/images/qlikview-home.png" alt="QlikView Tutorial" />
+                                <p>QlikView</p> 
+                            </div>    
+                        </a> 
+                         <a href="https://www.javatpoint.com/r-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/r/images/r-home.png" alt="R Tutorial" />
+                                <p>R</p> 
+                            </div>    
+                        </a> 
+                         <a href="https://www.javatpoint.com/jupyter-notebook">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/jupyter-notebook/images/jupyter-notebook-home.png" alt="Jupyter Notebook Tutorial" />
+                                <p>Jupyter</p> 
+                            </div>    
+                        </a> 
+                        <a href="https://www.javatpoint.com/git">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/git/images/git-home.png" alt="Git Tutorial" />
+                                <p>Git</p>
+                            </div> 
+                        </a> 
+                        <a href="https://www.javatpoint.com/wireshark">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/wireshark/images/wireshark-home.png" alt="Wireshark Tutorial" />
+                                <p>Wireshark</p>
+                            </div> 
+                        </a> 
+                        <a href="https://www.javatpoint.com/matplotlib">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/matplotlib/images/matplotlib-home.png" alt="Matplotlib Tutorial" />
+                                <p>Matplotlib</p>
+                            </div> 
+                        </a> 
+                        <a href="https://www.javatpoint.com/xamarin">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/xamarin/images/xamarin-home.png" alt="Xamarin Tutorial" />
+                                <p>Xamarin</p>
+                            </div> 
+                        </a> 
+                          <a href="https://www.javatpoint.com/tensorflow">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/tensorflow/images/tensorflow-home.png" alt="Tensorflow Tutorial" />
+                                <p>Tensorflow</p> 
+                            </div>    
+                        </a> 
+                        <a href="https://www.javatpoint.com/vhdl">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/vhdl/images/vhdl-home.jpg" alt="VHDL Tutorial" />
+                                <p>VHDL</p>
+                            </div> 
+                        </a> 
+                        <a href="https://www.javatpoint.com/ionic">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/ionic/images/ionic-home.png" alt="Ionic Tutorial" />
+                                <p>Ionic</p>
+                            </div> 
+                        </a> 
+                         <a href="https://www.javatpoint.com/nlp">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/nlp/images/nlp-home.jpg" alt="NLP Tutorial" />
+                                <p>NLP</p> 
+                            </div>    
+                        </a> 
+
+                          <a href="https://www.javatpoint.com/linq">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/linq/images/linq-home.png" alt="Linq Tutorial" />
+                                <p>LINQ</p> 
+                            </div>    
+                        </a> 
+                          <a href="https://www.javatpoint.com/laravel">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/laravel/images/laravel-home.png" alt="Laravel Tutorial" />
+                                <p>Laravel</p> 
+                            </div>    
+                        </a> 
+                          <a href="https://www.javatpoint.com/latex">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/latex/images/latex-home.png" alt="Latex Tutorial" />
+                                <p>Latex</p> 
+                            </div>    
+                        </a> 
+                        <a href="https://www.javatpoint.com/magento-2">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/magento2/images/magento-home.png" alt="Magento Tutorial" />
+                                <p>Magento</p>
+                            </div> 
+                        </a> 
+                          <a href="https://www.javatpoint.com/inkscape">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/inkscape/images/inkscape-home.png" alt="Inkscape Tutorial" />
+                                <p>Inkscape</p> 
+                            </div>    
+                        </a> 
+                          <a href="https://www.javatpoint.com/matlab">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/matlab/images/matlab-home.png" alt="Matlab Tutorial" />
+                                <p>Matlab</p> 
+                            </div>    
+                        </a> 
+                          <a href="https://www.javatpoint.com/github">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/github/images/github-home.png" alt="GitHub Tutorial" />
+                                <p>GitHub</p> 
+                            </div>    
+                        </a> 
+                          <a href="https://www.javatpoint.com/python-scipy">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/scipy/images/scipy-home.png" alt="Python Scipy Tutorial" />
+                                <p>Scipy</p> 
+                            </div>    
+                        </a> 
+                          <a href="https://www.javatpoint.com/unity">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/unity/images/unity-home.png" alt="Unity Tutorial" />
+                                <p>Unity</p> 
+                            </div>    
+                        </a> 
+                          <a href="https://www.javatpoint.com/svn">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/svn/images/svn-home.png" alt="SVN Tutorial" />
+                                <p>SVN</p> 
+                            </div>    
+                        </a> 
+                          <a href="https://www.javatpoint.com/joomla">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/joomla/images/joomla-home.png" alt="Joomla Tutorial" />
+                                <p>Joomla</p> 
+                            </div>    
+                        </a> 
+                          <a href="https://www.javatpoint.com/reinforcement-learning">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/reinforcement-learning/images/reinforcement-learning-home.png" alt="Reinforcement Learning Tutorial" />
+                                <p>Reinforcement</p> 
+                            </div>    
+                        </a> 
+                          <a href="https://www.javatpoint.com/apache-kafka">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/kafka/images/kafka-home.png" alt="Kafka Tutorial" />
+                                <p>Kafka</p> 
+                            </div>    
+                        </a> 
+                          <a href="https://www.javatpoint.com/python-pandas">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/pandas/images/python-pandas-home.png" alt="Pandas Tutorial" />
+                                <p>Pandas</p> 
+                            </div>    
+                        </a> 
+                          <a href="https://www.javatpoint.com/opencv">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/opencv/images/opencv-home.png" alt="OpenCV Tutorial" />
+                                <p>OpenCV</p> 
+                            </div>    
+                        </a> 
+                          <a href="https://www.javatpoint.com/kali-linux">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/kali-linux/images/kali-linux-home.png" alt="Kali Linux Tutorial" />
+                                <p>Kali Linux</p> 
+                            </div>    
+                        </a> 
+                          <a href="https://www.javatpoint.com/powershell">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/tutorial/powershell/images/powershell-home.png" alt="Powershell Tutorial" />
+                                <p>Powershell</p> 
+                            </div>    
+                        </a> 
+
+                     </div>
+                </fieldset>
+                <br/>
+<!-- CM_JTP_WTC_Responsive -->
+<ins class="adPushupAds" data-adpControl="cj42s" data-ver="2" data-siteId="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSBDTV9KVFBfV1RDX1Jlc3BvbnNpdmUgLS0+CjxpbnMgY2xhc3M9ImFkc2J5Z29vZ2xlIgogICAgIHN0eWxlPSJkaXNwbGF5OmJsb2NrIgogICAgIGRhdGEtYWQtY2xpZW50PSJjYS1wdWItNDY5OTg1ODU0OTAyMzM4MiIKICAgICBkYXRhLWFkLXNsb3Q9IjY3NDYxMzMxMTMiCiAgICAgZGF0YS1hZC1mb3JtYXQ9ImF1dG8iCiAgICAgZGF0YS1mdWxsLXdpZHRoLXJlc3BvbnNpdmU9InRydWUiPjwvaW5zPgo8c2NyaXB0PgooYWRzYnlnb29nbGUgPSB3aW5kb3cuYWRzYnlnb29nbGUgfHwgW10pLnB1c2goe30pOwo8L3NjcmlwdD4="></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+<!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4699858549023382"
+     data-ad-slot="9201901915"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>-->
+
+                <fieldset class="gra1">
+                    <h2 class="h2">Miscellaneous Topics</h2>
+                    <div class="firsthomecontent">
+                        <a href="interview-questions-and-answers">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/interviewhome.png" alt="Interview Questions" />
+                                <p>Interview</p>
+                            </div>
+                        </a>
+                        <a href="free-java-projects">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/projecthome.png" alt="Free Projects" />
+                                <p>Projects</p>
+                            </div>
+                        </a>
+                        <a href="forum">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/forumhome3.png" alt="Forum tutorial" />
+                                <p>Forum</p>
+                            </div>
+                        </a>
+                        <a href="examaccess">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/quizhome.png" alt="Online quiz" />
+                                <p>Quiz</p>
+                            </div>
+                        </a>
+                        <a href="opr/online-java-compiler.jsp">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/javacompiler.png" alt="Online java compiler" />
+                                <p>JCompiler</p>
+                            </div>
+                        </a>
+                    </div>
+                </fieldset>
+                <br/>
+                <fieldset class="gra1">
+                    <h2 class="h2">Non-Technical Topics</h2>
+                    <div class="firsthomecontent">
+                        <a href="full-form">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/full-form.jpg" alt="Full Form" />
+                                <p>Full Form</p>
+                            </div>
+                        </a>
+                        <a href="difference-between">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/difference-between.png" alt="Difference Between" />
+                                <p>Difference</p>
+                            </div>
+                        </a>
+                        <a href="holidays/holidays">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/holiday.png" alt="Holidays" />
+                                <p>Holidays</p>
+                            </div>
+                        </a>
+                        <a href="how-to-lose-weight">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/weight.png" alt="Holidays" />
+                                <p>Health</p>
+                            </div>
+                        </a>
+                        <a href="hr-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/hr.jpg" alt="hr tutorial" />
+                                <p>HR</p>
+                            </div>
+                        </a>
+                        <a href="marketing-tutorial">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/marketing.jpg" alt="marketing tutorial" />
+                                <p>Marketing</p>
+                            </div>
+                        </a>
+                        <a href="https://www.quoteperson.com">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/q.png" alt="Quotes" />
+                                <p>Quotes</p>
+                            </div>
+                        </a>
+                    </div>
+                </fieldset>
+                <br/>
+                <fieldset class="gra1">
+                    <h2 class="h2">American</h2>
+                    <div class="firsthomecontent">
+                        <a href="holidays/american-holidays">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/american-holidays2.jpg" alt="American Holidays" />
+                                <p>Holidays</p>
+                            </div>
+                        </a>
+                    </div>
+                </fieldset>
+                <br/>
+                <fieldset class="gra1">
+                    <h2 class="h2">India</h2>
+                    <div class="firsthomecontent">
+                        <a href="india-pin-codes">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/pincode.png" alt="India Pin Code" />
+                                <p>Pin Code</p>
+                            </div>
+                        </a>
+                        <a href="ifsc-code">
+                            <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/ifsc-code.jpg" alt="IFSC Code" />
+                                <p>IFSC Code</p>
+                            </div>
+                        </a>
+                    </div>
+                </fieldset>
+                <br/>
+            </td>
+        </tr>
+    </table>
+</div>
+</div>
+
+<div id="righthome">
+<h2 class="h3" style="text-align:center;border-left:7px solid #95cc97;background:#f6f9ee;padding:12px">100+ Latest Updates</h2>
+<ol class="points">  
+  
+<li><a href="rpa-vs-traditional-automation">20th Feb - RPA vs Traditional Automation</a></li>
+<li><a href="top-rpa-vendors">20th Feb - Top RPA Vendors</a></li>
+<li><a href="mysql-variables">20th Feb - MySQL Variables</a></li>
+<li><a href="mysql-show-users">20th Feb - MySQL Show Users</a></li>
+<li><a href="mysql-case-expression">20th Feb - MySQL CASE</a></li>
+<li><a href="mysql-if-statement">20th Feb - MySQL IF Statement</a></li>
+<li><a href="internet">19th Feb - Internet</a></li>
+<li><a href="intranet">19th Feb - Intranet</a></li>
+<li><a href="extranet">19th Feb - Extranet</a></li>
+
+<li><a href="javascript-array-of-method">19th Feb - JavaScript Array of() method</a></li>
+<li><a href="javascript-array-reduce-method">19th Feb - JavaScript Array reduce() method</a></li>
+<li><a href="javascript-array-reduceright-method">19th Feb - JavaScript Array reduceRight() method</a></li>
+
+<li><a href="exploratory-testing">19th Feb - Exploratory Testing</a></li>
+<li><a href="test-case-review-process">19th Feb - Test case review process</a></li>
+<li><a href="test-environment">19th Feb - Test Environment</a></li>
+<li><a href="numpy-clip">19th Feb - numpy.clip()</a></li>
+<li><a href="numpy-flatten">19th Feb - numpy.ndarray.flatten()</a></li>
+<li><a href="numpy-meshgrid">19th Feb - numpy.meshgrid()</a></li>
+<li><a href="numpy-std">19th Feb - numpy.std()</a></li>
+
+<li><a href="create-credit-notes-in-tally">18th Feb - Create Credit Notes</a></li>
+<li><a href="tds-configuration-entries-and-returns-in-tally">18th Feb - TDS Configuration, Entries &amp; Returns</a></li>
+<li><a href="php-regular-expressions">18th Feb - PHP Regular Expressions</a></li>
+<li><a href="add-javascript-to-html">18th Feb - Add JavaScript to HTML</a></li>
+<li><a href="html-background-image">18th Feb - HTML Background Image</a></li>
+<li><a href="html-button-type">18th Feb - HTML Button Type</a></li>
+<li><a href="html-hide-element">18th Feb - HTML Hide Element</a></li>
+<li><a href="html-reset-button">18th Feb - HTML Reset Button</a></li>
+<li><a href="html-search-box">18th Feb - HTML Search Box</a></li>
+<li><a href="html-selected-attribute">18th Feb - HTML Selected Attribute</a></li>
+<li><a href="simple-html-pages">18th Feb - Simple HTML Pages</a></li>
+
+<li><a href="es6-spread-operator">18th Feb - ES6 Spread Operator</a></li>
+<li><a href="es5-vs-es6">18th Feb - ES5 vs ES6</a></li>
+<li><a href="es6-rest-parameter">18th Feb - ES6 Rest Parameter</a></li> 
+<li><a href="cpp-getline">17th Feb - C++ getline()</a></li>
+<li><a href="mysql-create-user">17th Feb - MySQL Create User</a></li>
+<li><a href="mysql-drop-user">17th Feb - MySQL Drop User</a></li>
+<li><a href="php-isset-function">17th Feb - isset() function</a></li>
+<li><a href="php-print_r-function">17th Feb - print_r() function</a></li>
+<li><a href="ios-saving-data-in-userdefaults">17th Feb - iOS: Saving Data in UserDefaults</a></li>
+<li><a href="ios-getting-data-from-userdefaults">17th Feb - iOS: Getting Data from UserDefaults</a></li>
+<li><a href="ios-coredata">17th Feb - iOS: CoreData</a></li>
+<li><a href="ios-managed-object-model">17th Feb - iOS: Managed Object Model</a></li>
+<li><a href="ios-persistent-object-coordinator">17th Feb - iOS: Persistent Object Coordinator</a></li>
+
+<li><a href="how-many-ounces-in-a-tablespoon">15th Feb - How many ounces (oz) in a tablespoon</a></li>
+<li><a href="how-many-ounces-in-a-quart">15th Feb - How many ounces (oz) in a quart</a></li>
+<li><a href="how-many-ounces-in-a-liter">15th Feb - How many ounces (oz) in a liter</a></li>
+<li><a href="how-many-ounces-in-a-pint">15th Feb - How many ounces (oz) in a pint</a></li>
+<li><a href="how-many-ounces-in-a-gallon">15th Feb - How many ounces (oz) in a gallon</a></li>
+<li><a href="how-many-ounces-in-a-pound">15th Feb - How many ounces (oz) in a pound (lb)</a></li>
+<li><a href="how-many-ounces-in-a-cup">15th Feb - How many ounces (oz) in a cup</a></li>
+<li><a href="fibonacci-numbers-list">15th Feb - Fibonacci Numbers List</a></li>
+<li><a href="square-numbers-list">15th Feb - Square Numbers List</a></li>
+<li><a href="binary-numbers-list">15th Feb - Binary Numbers List</a></li>
+<li><a href="cpp-reference-vs-pointer">15th Feb - Reference vs Pointer</a></li>
+<li><a href="numpy-transpose">15th Feb - numpy.transpose()</a></li>
+<li><a href="numpy-mean">15th Feb - numpy.mean()</a></li>
+<li><a href="numpy-unique">15th Feb - numpy.unique()</a></li>
+<li><a href="numpy-array-tolist">15th Feb - numpy.ndarray.tolist()</a></li>
+<li><a href="numpy-dot">15th Feb - numpy.dot()</a></li>
+<li><a href="numpy-loadtxt">15th Feb - numpy.loadtxt()</a></li>
+<li><a href="godots-design-philosophy">15th Feb - Godot's Design Philosophy</a></li>
+<li><a href="godot-design-interfaces-with-control-nodes">15th Feb - Design interface with control nodes</a></li>
+<li><a href="design-title-screen-in-godot">15th Feb - Design title screen in Godot</a></li>
+<li><a href="godot-design-gui">15th Feb - Design GUI in Godot</a></li>
+<li><a href="design-energybar-in-godot">15th Feb - Design EnergyBar in Godot</a></li>
+<li><a href="splash-screen-in-godot">15th Feb - Splash screen in Godot</a></li>
+<li><a href="animations-in-godot">15th Feb - Animations in Godot</a></li>
+<li><a href="godot-file-system">15th Feb - File system</a></li>
+<li><a href="scenetree-in-godot">15th Feb - SceneTree in Godot</a></li>
+
+<li><a href="prime-numbers-list">14th Feb - Prime Numbers List</a></li>
+<li><a href="composite-numbers-list">14th Feb - Composite Numbers List</a></li>
+<li><a href="javascript-array-from-method">14th Feb - JavaScript Array from() method</a></li>
+<li><a href="javascript-array-isarray-method">14th Feb - JavaScript Array isArray() method</a></li>
+<li><a href="javascript-array-keys-method">14th Feb - JavaScript Array keys() method</a></li>
+<li><a href="how-to-create-drop-down-list-in-excel">14th Feb - Create drop-down List in Excel</a></li>
+<li><a href="python-json">14th Feb - Python JSON</a></li>
+<li><a href="javascript-array-flatmap-method">14th Feb - JavaScript Array flatMap() method</a></li>
+<li><a href="javascript-array-flat-method">14th Feb - JavaScript Array flat() method</a></li>
+<li><a href="cloud-computing-applications">14th Feb - Cloud Computing Applications</a></li>
+<li><a href="security-risks-of-cloud-computing">14th Feb - Security Risks of Cloud Computing</a></li>
+
+<li><a href="cpp-memory-management">13th Feb - C++ Memory Management</a></li>
+<li><a href="compatibility-testing">13th Feb - Compatibility Testing</a></li>
+<li><a href="software-testing-bug-life-cycle">13th Feb - Bug Life cycle</a></li>
+<li><a href="severity-and-priority-in-testing">13th Feb - Severity &amp; Priority</a></li>
+<li><a href="adhoc-testing">13th Feb - Adhoc Testing</a></li>
+
+<li><a href="mysql-ifnull">12th Feb - MySQL IFNULL()</a></li>
+<li><a href="mysql-nullif">12th Feb - MySQL NULLIF()</a></li>
+<li><a href="gradle-build-scans">12th Feb - Gradle Build Scans</a></li>
+<li><a href="gradle-wrapper">12th Feb - Gradle Wrapper</a></li>
+<li><a href="multi-project-build-in-gradle">12th Feb - Gradle Multiproject Builds</a></li>
+<li><a href="gradle-java-application">12th Feb - Gradle Java Application</a></li>
+
+<li><a href="components-of-rpa">12th Feb - Components of RPA</a></li>
+<li><a href="examples-of-rpa">12th Feb - Examples of RPA</a></li>
+<li><a href="myths-of-rpa">12th Feb - Myths of RPA</a></li>
+
+<li><a href="excel-pivot-table">12th Feb - What is Pivot Table</a></li>
+<li><a href="how-to-use-count-countif-and-countifs-function">12th Feb - Excel COUNTIF</a></li>
+<li><a href="how-to-find-and-remove-duplicates-in-microsoft-excel">12th Feb - Find &amp; Remove Duplicates in Excel</a></li>
+
+<li><a href="ios-setting-up-cocoapods-for-xcode-projects">12th Feb - iOS Setting Up Cocoapods for XCode Projects</a></li>
+<li><a href="ios-using-cocoapods-for-xcode-projects">12th Feb - iOS Using Cocoapods for XCode Projects</a></li>
+<li><a href="ios-alamofire-library">12th Feb - iOS Alamofire Library</a></li>
+<li><a href="ios-fetching-data-through-get-request-using-alamofire">12th Feb - iOS Fetching data through Get Request</a></li>
+<li><a href="ios-parsing-json-response">12th Feb - iOS Parsing JSON Response</a></li>
+<li><a href="ios-image-caching-with-alamofireimage">12th Feb - iOS Image Caching</a></li>
+<li><a href="ios-pull-to-refresh-functionality">12th Feb - iOS Pull to Refresh functionality</a></li>
+<li><a href="ios-navigation-controller">12th Feb - iOS Navigation Controller</a></li>
+<li><a href="ios-navigation-bar">12th Feb - iOS Navigation Bar</a></li>
+<li><a href="ios-navigation-item">12th Feb - iOS Navigation Item</a></li>
+
+<li><a href="mysql-versions">11th Feb - MySQL Versions</a></li>
+<li><a href="mysql-if">11th Feb - MySQL IF()</a></li>
+<li><a href="es6-map">11th Feb - ES6 Maps</a></li>
+<li><a href="es6-set">11th Feb - ES6 Sets</a></li>
+<li><a href="es6-numbers">11th Feb - ES6 Number</a></li>
+<li><a href="cpp-expression">10th Feb - C++ Expression</a></li>
+<li><a href="digital-marketing">10th Feb - Digital Marketing Tutorial (Updated)</a></li>
+<li><a href="infrastructure-as-a-service">10th Feb - IaaS Layer</a></li>
+<li><a href="platform-as-a-service">10th Feb - PaaS Layer</a></li>
+<li><a href="software-as-a-service">10th Feb - SaaS Layer</a></li>
+<li><a href="computer-shortcut-keys">10th Feb - Computer Shortcut Keys (Updated)</a></li>
+
+<li><a href="spring-boot-aop-after-returning-advice">8th Feb - Spring Boot After Returning Advice</a></li>
+<li><a href="spring-boot-aop-after-throwing-advice">8th Feb - Spring Boot After Throwing Advice</a></li>
+<li><a href="spring-boot-h2-database">8th Feb - Spring Boot H2 Database</a></li>
+<li><a href="spring-boot-crud-operations">8th Feb - Spring Boot CRUD Operations</a></li>
+<li><a href="spring-boot-caching">8th Feb - Spring Boot Caching</a></li>
+<li><a href="pyspark-mllib">8th Feb - PySpark MLlib</a></li>
+<li><a href="python-decorator">8th Feb - Python Decorator</a></li>
+<li><a href="python-generators">8th Feb - Python Generators</a></li>
+<li><a href="web-scraping-using-python">8th Feb - Web Scraping Using Python</a></li>
+
+<li><a href="mysql-workbench">7th Feb - MySQL Workbench</a></li>
+<li><a href="excel-vs-google-sheets">7th Feb - Excel vs Google Sheets</a></li>
+<li><a href="html-background-color">7th Feb - HTML Background-color</a></li>
+<li><a href="html-date">7th Feb - HTML Date</a></li>
+<li><a href="html-form-action">7th Feb - HTML Form Action</a></li>
+<li><a href="html-id-attribute">7th Feb - HTML Id Attribute</a></li>
+<li><a href="html-list-box">7th Feb - HTML List Box</a></li>
+<li><a href="es6-template-literals">7th Feb - ES6 Template Literals</a></li>
+
+<li><a href="uml-state-machine-diagram">6th Feb - UML State Machine Diagram</a></li>
+<li><a href="uml-activity-diagram">6th Feb - UML Activity Diagram</a></li>
+
+<li><a href="what-is-workbook-window">6th Feb - Workbook Window</a></li>
+<li><a href="how-to-create-and-open-workbooks">6th Feb - Create &amp; Open Workbooks</a></li>
+<li><a href="what-is-microsoft-excel-online">6th Feb - MS Excel Online</a></li>
+<li><a href="autocad-2019-free-download">6th Feb - AutoCAD 2019 Free Download</a></li>
+<li><a href="autocad-2018-free-download">6th Feb - AutoCAD 2018 Free Download</a></li>
+<li><a href="autocad-2017-free-download">6th Feb - AutoCAD 2017 Free Download</a></li>
+<li><a href="autocad-calculator">6th Feb - AutoCAD Calculator</a></li>
+<li><a href="autocad-started-with-quickcalc">6th Feb - Started with QuickCalc</a></li>
+<li><a href="autocad-started-with-cal-command">6th Feb - Started with CAL command</a></li>
+<li><a href="autocad-examples-of-quickcalc">6th Feb - Examples of QuickCalc</a></li>
+<li><a href="autocad-2020">6th Feb - AutoCAD 2020</a></li>
+<li><a href="autocad-2019-and-2019-1">6th Feb - AutoCAD 2019 &amp; 2019.1</a></li>
+<li><a href="autocad-2018">6th Feb - AutoCAD 2018</a></li>
+<li><a href="autocad-2017">6th Feb - AutoCAD 2017</a></li>
+<li><a href="autocad-lt">6th Feb - AutoCAD LT</a></li>
+<li><a href="autocad-student-version">6th Feb - AutoCAD Student Version</a></li>
+<li><a href="autocad-vs-autocad-lt">6th Feb - AutoCAD vs AutoCAD LT</a></li>
+<li><a href="autocad-mac-2020-system-requirements">6th Feb - AutoCAD Mac 2020 System Requirements</a></li>
+<li><a href="autocad-2020-system-requirements">6th Feb - AutoCAD 2020 System Requirements</a></li>
+<li><a href="autocad-2019-system-requirements-and-mac-2019-system-requirements">6th Feb - AutoCAD 2019 System Requirements and Mac 2019 System Requirements</a></li>
+<li><a href="autocad-2018-system-requirements-and-mac-2018-system-requirements">6th Feb - AutoCAD 2018 System Requirements and Mac 2018 System Requirements</a></li>
+<li><a href="autocad-2017-system-requirements-and-mac-2017-system-requirements">6th Feb - AutoCAD 2017 System Requirements and Mac 2017 System Requirements</a></li>
+<li><a href="system-requirements-for-autocad-lt">6th Feb - AutoCAD LT 2020 System Requirements and Mac LT 2020 System Requirements</a></li>
+<li><a href="autocad-line-command">6th Feb - Line command</a></li>
+<li><a href="autocad-rectangle-command">6th Feb - Rectangle Command</a></li>
+<li><a href="autocad-polygon-command">6th Feb - Polygon command</a></li>
+<li><a href="autocad-circles-and-ellipse-command">6th Feb - Circle Command</a></li>
+<li><a href="autocad-limits-command">6th Feb - Limits in AutoCAD</a></li>
+<li><a href="autocad-practice-question-1">6th Feb - Practice Question 1</a></li>
+<li><a href="autocad-move-command">6th Feb - Move command</a></li>
+<li><a href="autocad-copy-and-rotate-command">6th Feb - Copy Command</a></li>
+<li><a href="rectangular-arrays-in-autocad">6th Feb - Rectangular Array</a></li>
+<li><a href="autocad-path-array">6th Feb - Path Array</a></li>
+<li><a href="autocad-polar-array">6th Feb - Polar Array</a></li>
+<li><a href="autocad-to-pdf">6th Feb - AutoCAD to PDF</a></li>
+<li><a href="pdf-to-autocad">6th Feb - PDF to AutoCAD</a></li>
+<li><a href="autocad-360">6th Feb - AutoCAD 360</a></li>
+<li><a href="autocad-fusion-360">6th Feb - AutoCAD Fusion 360</a></li>
+<li><a href="icons-of-autocad-2d-display">6th Feb - AutoCAD 2D Display</a></li>
+<li><a href="icons-of-autocad-3d-basics-display">6th Feb - AutoCAD 3D Basics</a></li>
+
+<li><a href="cpp-identifiers">5th Feb - C++ Identifiers</a></li>
+<li><a href="php-var_dump-function">5th Feb - PHP var_dump() function</a></li>
+<li><a href="php-preg_match-function">5th Feb - PHP preg_match() function</a></li>
+<li><a href="php-preg_replace-function">5th Feb - PHP preg_replace() function</a></li>
+
+<li><a href="numpy-matrix-multiplication">5th Feb - Matrix Multiplication</a></li>
+<li><a href="numpy-random">5th Feb - numpy random()</a></li>
+<li><a href="numpy-zeros">5th Feb - numpy.zeros()</a></li>
+<li><a href="numpy-log">5th Feb - numpy.log()</a></li>
+<li><a href="numpy-where">5th Feb - numpy.where()</a></li>
+<li><a href="numpy-argsort">5th Feb - numpy.argsort()</a></li>
+
+<li><a href="uml-sequence-diagram">4th Feb - UML Sequence Diagram</a></li>
+<li><a href="uml-collaboration-diagram">4th Feb - UML Collaboration Diagram</a></li>
+<li><a href="puppet-architecture">4th Feb - Puppet Architecture</a></li>
+<li><a href="puppet-components">4th Feb - Puppet Components</a></li>
+<li><a href="application-of-puppet">4th Feb - Puppet Applications</a></li>
+<li><a href="puppet-installation">4th Feb - Puppet Installation</a></li>
+<li><a href="puppet-coding-style">4th Feb - Puppet Coding Style</a></li>
+
+<li><a href="bug-in-software-testing">3rd Feb - Bug in Software Testing</a></li>
+<li><a href="usability-testing">3rd Feb - Usability Testing</a></li>
+<li><a href="create-simple-payroll-units-in-tally">3rd Feb - Create Simple Payroll Units</a></li>
+<li><a href="create-compound-payroll-units-in-tally">3rd Feb - Create Compound Payroll Units</a></li>
+<li><a href="create-purchase-voucher-in-tally">3rd Feb - Create Purchase Voucher</a></li>
+<li><a href="create-sales-voucher-in-tally">3rd Feb - Create Sales Voucher</a></li>
+<li><a href="creating-receipt-voucher-in-tally">3rd Feb - Creating Receipt Voucher</a></li>
+
+<li><a href="brain-state-in-a-box-network">3rd Feb - Brain-State-in- a Box Network</a></li>
+<li><a href="associate-memory-network">3rd Feb - Associate Memory Network</a></li>
+<li><a href="boltzmann-machines">3rd Feb - Boltzmann Machines</a></li>
+
+<li><a href="decision-tree-induction">3rd Feb - Decision Tree Induction</a></li>
+<li><a href="educational-data-mining">3rd Feb - Educational Data Mining</a></li>
+<li><a href="data-mining-in-healthcare">3rd Feb - Data Mining in Healthcare</a></li>
+
+<li><a href="java-mcq">2nd Feb - Java MCQ</a></li>
+<li><a href="flutter-testing">2nd Feb - Flutter Testing</a></li>
+<li><a href="es6-strings">2nd Feb - ES6 Strings</a></li>
+<li><a href="es6-animation">2nd Feb - ES6 Animation</a></li>
+<li><a href="c-function-pointer">1st Feb - C Function Pointer</a></li>
+<li><a href="flutter-interview-questions">1st Feb - Flutter Interview Questions</a></li>
+<li><a href="matlab-interview-questions">1st Feb - MATLAB Interview Questions</a></li>
+<li><a href="matlab-graphical-user-interface">1st Feb - MATLAB GUI</a></li>
+<li><a href="matlab-environment-programming">1st Feb - MATLAB Environment Programming</a></li>
+<li><a href="matlab-variables">1st Feb - MATLAB Variables</a></li>
+<li><a href="matlab-operations-on-matrices">1st Feb - MATLAB Operations on Matrices</a></li>
+<li><a href="matlab-control-statements">1st Feb - MATLAB Control Statements</a></li>
+<li><a href="matlab-2-d-plots">1st Feb - MATLAB 2-D Plots</a></li>
+<li><a href="matlab-sine-wave-plot">1st Feb - MATLAB Sine Wave Plot</a></li>
+
+<li><a href="sql-injection">31st Jan - SQL Injection</a></li>
+<li><a href="router">31st Jan - What is Router</a></li>
+<li><a href="php-continue"><span>31st Jan - PHP Continue</span></a></li>
+<li><a href="android-antivirus">31st Jan - Android Antivirus</a></li>
+<li><a href="android-data-recovery">31st Jan - Android Data Recovery</a></li>
+<li><a href="android-lollipop">31st Jan - Android Lollipop</a></li>
+<li><a href="android-vs-iphone">31st Jan - Android vs iPhone</a></li>
+<li><a href="android-wear-os">31st Jan - Android Wear OS</a></li>
+<li><a href="android-x86">31st Jan - Android x86</a></li>
+<li><a href="android-emulator-for-pc">31st Jan - Emulator for PC</a></li>
+
+<li><a href="cordova-config-xml-file">30th Jan - Cordova Config.xml file</a></li>
+<li><a href="top-cordova-frameworks-for-hybrid-mobile-app-development">30th Jan - Top Cordova Frameworks for Hybrid Mobile App Development</a></li>
+
+<li><a href="uml-deployment-diagram">30th Jan - UML Deployment Diagram</a></li>
+<li><a href="uml-interaction-diagram">30th Jan - UML Interaction Diagram</a></li>
+<li><a href="uml-use-case-diagram">30th Jan - UML Use Case Diagram</a></li>
+
+<li><a href="rpa-tools">30th Jan - RPA Tools</a></li>
+<li><a href="rpa-vs-ai">30th Jan - RPA vs AI</a></li>
+<li><a href="rpa-vs-test-automation">30th Jan - RPA vs Test Automation</a></li>
+
+<li><a href="es6-modules">30th Jan - ES6 Modules</a></li>
+<li><a href="es6-promises">30th Jan - ES6 Promises</a></li>
+<li><a href="es6-validations">30th Jan - ES6 Validations</a></li>
+
+<li><a href="performance-testing">30th Jan - Performance Testing</a></li>
+<li><a href="automation-testing-vs-manual-testing">30th Jan - Automation Testing vs Manual Testing</a></li>
+<li><a href="load-testing-vs-stress-testing">30th Jan - Load Testing vs Stress Testing</a></li>
+<li><a href="static-testing-vs-dynamic-testing">30th Jan - Static Testing vs Dynamic Testing</a></li>
+<li><a href="verification-and-validation-testing">30th Jan - Verification &amp; Validation Testing</a></li>
+
+<li><a href="firebase-firestore-vs-realtime-database">29th Jan - Firebase Firestore vs Realtime Database</li>
+<li><a href="mongodb-atlas">29th Jan - MongoDB Atlas</a></li>
+<li><a href="flutter-database-concepts">29th Jan - Flutter Database Concepts</a></li>
+<li><a href="flutter-vs-react-native">29th Jan - Flutter vs React native</a></li>
+<li><a href="types-of-cloud">29th Jan - Types of Cloud</a></li>
+<li><a href="community-cloud">29th Jan - Community Cloud</a></li>
+<li><a href="cloud-service-models">29th Jan - Cloud Service Models</a></li>
+<li><a href="null-pointer-in-c">29th Jan - Null Pointer in C</a></li>
+<li><a href="classification-of-programming-languages">29th Jan - Classification of Programming Languages</a></li>
+<li><a href="first-game-in-godot">29th Jan - First game in Godot</a></li>
+<li><a href="godot-node-setup-of-game">29th Jan - Node set-up of game</a></li>
+<li><a href="godot-hud">29th Jan - HUD in godot</a></li>
+
+<li><a href="numpy-array">28th Jan - numpy array()</a></li>
+<li><a href="numpy-concatenate">28th Jan - numpy concatenate()</a></li>
+<li><a href="numpy-append">28th Jan - numpy append()</a></li>
+<li><a href="numpy-reshape">28th Jan - numpy reshape()</a></li>
+<li><a href="numpy-sum">28th Jan - numpy sum()</a></li>
+
+<li><a href="create-employee-groups-in-tally">28th Jan - Tally: Create Employee Groups</a></li>
+<li><a href="create-employees-master-data-in-tally">28th Jan - Tally: Create Employees Master Data</a></li>
+<li><a href="create-stock-category-in-tally">28th Jan - Tally: Create Stock Categoryy</a></li>
+<li><a href="create-stock-units-in-tally-erp-9">28th Jan - Tally: Create Stock Units</a></li>
+<li><a href="creating-single-stock-group-in-tally">28th Jan - Tally: Creating Single Stock Group</a></li>
+<li><a href="creation-of-godowns-location-in-tally">28th Jan - Tally: Creation of Godowns/ Location</a></li>
+<li><a href="creation-of-multiple-stock-groups-in-tally">28th Jan - Tally: Creation of Multiple Stock Groups</a></li>
+<li><a href="define-employee-category-in-tally">28th Jan - Tally: Define Employee Category</a></li>
+<li><a href="enable-payroll-statutory-features-in-tally">28th Jan - Tally: Enable Payroll Statutory Features</a></li>
+<li><a href="how-to-activate-gst-in-tally">28th Jan - Tally: Activate GST</a></li>
+<li><a href="how-to-create-stock-items-in-tally-erp-9">28th Jan - Tally: Create Stock Items</a></li>
+<li><a href="how-to-enable-payroll-in-tally">28th Jan - Tally: Enable Payroll</a></li>
+<li><a href="payroll-configuration-in-tally-erp-9">28th Jan - Tally: Payroll Configuration</a></li>
+
+<li><a href="html-button-onclick">27th Jan - HTML Button onClick</a></li>
+<li><a href="html-checkbox-tag">27th Jan - HTML Checkbox Tag</a></li>
+<li><a href="html-favicon">27th Jan - HTML favicon</a></li>
+<li><a href="html-login-form">27th Jan - HTML Login Form</a></li>
+<li><a href="html-radio-tag">27th Jan - HTML Radio Tag</a></li>
+<li><a href="html-registration-form">27th Jan - HTML Registration Form</a></li>
+<li><a href="html-required-attribute">27th Jan - HTML Required Attribute</a></li>
+<li><a href="html-space-code">27th Jan - HTML Space Code</a></li>
+<li><a href="html-text-tag">27th Jan - HTML Text Tag</a></li>
+
+<li><a href="artificial-neural-network">27th Jan - Artificial Neural Network Tutorial</a></li>
+<li><a href="artificial-neural-network-adaptive-resonance-theory">27th Jan - Adaptive Resonance Theory</a></li>
+<li><a href="artificial-neural-network-building-blocks">27th Jan - Building Blocks</a></li>
+<li><a href="artificial-neural-network-genetic-algorithm">27th Jan - Genetic Algorithm</a></li>
+<li><a href="history-of-artificial-neural-network">27th Jan - ANN History</a></li>
+<li><a href="artificial-neural-network-learning-and-adaption">27th Jan - Learning &amp; Adaption</a></li>
+<li><a href="artificial-neural-network-hopfield-network">27th Jan - Hopfield Network</a></li>
+<li><a href="artificial-neural-network-kohonen-self-rganizing-feature-map">27th Jan - Kohonen Self Organizing Map</a></li>
+<li><a href="unsupervised-artificial-neural-networks">27th Jan - Unsupervised ANNs</a></li>
+<li><a href="unsupervised-anns-algorithms-and-techniques">27th Jan - Unsupervised ANNs Algorithms &amp; Techniques</a></li>
+
+<li><a href="es6-objects">26th Jan - ES6 Objects</a></li>
+<li><a href="es6-classes">26th Jan - ES6 Classes</a></li>
+<li><a href="es6-events">26th Jan - ES6 Events</a></li>
+<li><a href="es6-cookies">26th Jan - ES6 Cookies</a></li>
+<li><a href="es6-dialog-boxes">26th Jan - ES6 Dialog Boxes</a></li>
+<li><a href="es6-page-redirect">26th Jan - ES6 Page Redirect</a></li>
+<li><a href="es6-boolean">26th Jan - ES6 Boolean</a></li>
+<li><a href="es6-void-keyword">26th Jan - ES6 void Keyword</a></li>
+<li><a href="es6-page-printing">26th Jan - ES6 Page Printing</a></li>
+
+<li><a href="godot-introduction-of-gdscript">26th Jan - GDscript Introduction</a></li>
+<li><a href="godot-keywords">26th Jan - Keywords of GDscript</a></li>
+<li><a href="godot-referencing-functions">26th Jan - Referencing Function</a></li>
+<li><a href="godot-classes-in-gdscript">26th Jan - Classes in GDscript</a></li>
+<li><a href="godot-tool-mode-in-gdscript">26th Jan - Tool Mode in GDscript</a></li>
+
+<li><a href="uml-component-diagram">25th Jan - UML Component Diagram</a></li>
+<li><a href="flask-vs-django">25th Jan - Flask vs Django</a></li>
+<li><a href="gradle-eclipse-plugin">25th Jan - Eclipse Plugin</a></li>
+<li><a href="gradle-build">25th Jan - Gradle Build</a></li>
+<li><a href="gradle-dependencies">25th Jan - Gradle Dependencies</a></li>
+<li><a href="gradle-repository">25th Jan - Gradle Repository</a></li>
+<li><a href="gradle-projects-and-tasks">25th Jan - Projects &amp; Tasks</a></li>
+
+<li><a href="ansible-copy">25th Jan - Ansible Copy</a></li>
+<li><a href="ansible-command">25th Jan - Ansible Command</a></li>
+<li><a href="ansible-file">25th Jan - Ansible File</a></li>
+<li><a href="ansible-vault">25th Jan - Ansible Vault</a></li>
+<li><a href="ansible-windows">25th Jan - Ansible Windows</a></li>
+<li><a href="ansible-yum">25th Jan - Ansible Yum</a></li>
+<li><a href="ansible-awx">25th Jan - Ansible AWX</a></li>
+<li><a href="ansible-unarchive">25th Jan - Ansible Unarchive</a></li>
+<li><a href="ansible-pip">25th Jan - Ansible Pip</a></li>
+
+
+<!--
+<li><a href=""></a></li>
+-->
+</ol>
+<!-- newright -->
+<ins class="adPushupAds" data-adpControl="am3c1" data-ver="2" data-siteId="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSBuZXdyaWdodCAtLT4KPGlucyBjbGFzcz0iYWRzYnlnb29nbGUiCiAgICAgc3R5bGU9ImRpc3BsYXk6YmxvY2siCiAgICAgZGF0YS1hZC1jbGllbnQ9ImNhLXB1Yi00Njk5ODU4NTQ5MDIzMzgyIgogICAgIGRhdGEtYWQtc2xvdD0iNjAzNDkxMjU0MSIKICAgICBkYXRhLWFkLWZvcm1hdD0iYXV0byIKICAgICBkYXRhLWZ1bGwtd2lkdGgtcmVzcG9uc2l2ZT0idHJ1ZSI+PC9pbnM+CjxzY3JpcHQ+CihhZHNieWdvb2dsZSA9IHdpbmRvdy5hZHNieWdvb2dsZSB8fCBbXSkucHVzaCh7fSk7Cjwvc2NyaXB0Pg=="></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+
+
+
+<br/><br/>
+
+
+</div>
+<div class="right1024" style="float:left;margin-left:10px;margin-top:10px;">
+<ins class="adPushupAds" data-adpControl="am3c1" data-ver="2" data-siteId="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSBuZXdyaWdodCAtLT4KPGlucyBjbGFzcz0iYWRzYnlnb29nbGUiCiAgICAgc3R5bGU9ImRpc3BsYXk6YmxvY2siCiAgICAgZGF0YS1hZC1jbGllbnQ9ImNhLXB1Yi00Njk5ODU4NTQ5MDIzMzgyIgogICAgIGRhdGEtYWQtc2xvdD0iNjAzNDkxMjU0MSIKICAgICBkYXRhLWFkLWZvcm1hdD0iYXV0byIKICAgICBkYXRhLWZ1bGwtd2lkdGgtcmVzcG9uc2l2ZT0idHJ1ZSI+PC9pbnM+CjxzY3JpcHQ+CihhZHNieWdvb2dsZSA9IHdpbmRvdy5hZHNieWdvb2dsZSB8fCBbXSkucHVzaCh7fSk7Cjwvc2NyaXB0Pg=="></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+
+
+
+</div>
+
+<div class="authorview"><img data-src="https://static.javatpoint.com/images/sonoohome4.jpg" class="lazyload" style="float:left;margin-right:10px;width:110px;" alt="sonoo jaiswal" />                <h2 class="h2" style="margin-left:20px">Author View</h2>
+<span>Hi, I have written and developed this site so that students may learn computer science related technologies easily. I'm committed to provide easy and in-depth tutorials on various technologies. No one is perfect in this world and nothing is eternally best. But we can try to be better. I hope it will help you a lot.</span><span style="float:right"> <b> - Sonoo Jaiswal</b></span></div>
+
+<div id="footer" style="clear:both;width:100%;"><!--<div style="width:100%;float:center;margin-top:-20px;color:white;background-image: linear-gradient(145deg,#90715c,#523b1f);line-height:28px;"> <h2 style="padding:60px 0px 0px 20px">Summer Training</h2> <p style="padding:0px 20px 60px 20px">JavaTpoint offers <strong>Summer Internship Training</strong> on Java, PHP, .Net, Hadoop, Data Analytics, R Programming, SAP, Android, Python, Oracle, Seleninum, Linux, C++ and many more technologies in Delhi/NCR, India. For more visit <a style="color:white" href="https://training.javatpoint.com"><img src="https://static.javatpoint.com/images/linkglobe12.png" alt="javatpoint training"/>training.javatpoint.com</a> <br>Course Fee: &#8377; 6000 Only<br>Duration: 6 Week </p></div>--><div style="width:100%;margin-top:10px;color:white;background-image: linear-gradient(145deg,#52a2fc,#480fcc);line-height:28px;"> <h2 style="padding:60px 0px 0px 20px">Javatpoint Services</h2> <p style="padding:0px 20px 0px 20px">JavaTpoint offers too many high quality services. Mail us on hr@javatpoint.com, to get more information about given services. </p><ul class="points"> <li>Website Designing</li><li>Website Development</li><li>Java Development</li><li>PHP Development</li><li>WordPress</li><li>Graphic Designing</li><li>Logo</li><li>Digital Marketing</li><li>On Page and Off Page SEO</li><li>PPC</li><li>Content Development</li><li>Corporate Training</li><li>Classroom and Online Training</li><li>Data Entry</li></ul> <p style="padding-bottom:60px"></p></div><div style="width:100%;margin-top:-20px;color:white;background-image: linear-gradient(145deg,#dc8140,#b16b15);line-height:28px;"> <h2 style="padding:60px 0px 0px 20px">Training For College Campus</h2> <p style="padding:0px 20px 60px 20px">JavaTpoint offers college campus training on Core Java, Advance Java, .Net, Android, Hadoop, PHP, Web Technology and Python. Please mail your requirement at hr@javatpoint.com. <br>Duration: 1 week to 2 week<br></p></div><!--<div class="homebox2"><h2>Our Initiatives</h2><marquee behavior="alternate"><a rel="nofollow noopener" href="https://www.hindi100.com"><div class="box2"><img class="box2img" src="https://www.hindi100.com/resources/images/javatpoint.png" alt="javatpoint"/><p>Hindi100</p></div></a><a rel="nofollow noopener" href="https://www.lyricsia.com"><div class="box2"><img class="box2img" src="https://www.hindi100.com/resources/images/lyrics.png" alt="lyrics"/><p>Lyricsia</p></div></a></div></a></marquee></div>--><script>var _gaq=_gaq || []; _gaq.push(['_setAccount', 'UA-24880427-1']); _gaq.push(['_trackPageview']); (function(){var ga=document.createElement('script'); ga.type='text/javascript'; ga.async=true; ga.src=('https:'==document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js'; var s=document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script><div style="margin-top:5px;text-align:center"> <sup style="font:16px arial;">Like/Subscribe us for latest updates or newsletter </sup> <a target="_blank" rel="nofollow noopener" href="https://feeds.feedburner.com/javatpointsonoo"><img src="https://static.javatpoint.com/images/social/rss1.png" alt="RSS Feed"/></a> <a target="_blank"  rel="nofollow noopener" href="https://feedburner.google.com/fb/a/mailverify?uri=javatpointsonoo"><img src="https://static.javatpoint.com/images/social/mail1.png" alt="Subscribe to Get Email Alerts"/></a> <a  rel="nofollow noopener" target="_blank" href="https://www.facebook.com/javatpoint"><img src="https://static.javatpoint.com/images/social/facebook1.jpg" alt="Facebook Page"/></a> <a target="_blank noopener" rel="nofollow" href="https://twitter.com/pagejavatpoint"><img src="https://static.javatpoint.com/images/social/twitter1.png" alt="Twitter Page"/></a> <a target="_blank" rel="nofollow noopener" href="https://www.youtube.com/channel/UCUnYvQVCrJoFWZhKK3O2xLg"><img src="https://static.javatpoint.com/images/youtube32.png" alt="YouTube"/></a> <a target="_blank" rel="nofollow noopener" href="https://javatpoint.blogspot.com"><img src="https://static.javatpoint.com/images/social/blog.png" alt="Blog Page"/></a> </div><footer class="footer1"><div class="column4"><h3>Learn Tutorials</h3><a href="https://www.javatpoint.com/java-tutorial">Learn Java</a><a href="https://www.javatpoint.com/data-structure-tutorial">Learn Data Structures</a><a href="https://www.javatpoint.com/c-programming-language-tutorial">Learn C Programming</a><a href="https://www.javatpoint.com/cpp-tutorial">Learn C++ Tutorial</a><a href="https://www.javatpoint.com/c-sharp-tutorial">Learn C# Tutorial</a><a href="https://www.javatpoint.com/php-tutorial">Learn PHP Tutorial</a><a href="https://www.javatpoint.com/html-tutorial">Learn HTML Tutorial</a><a href="https://www.javatpoint.com/javascript-tutorial">Learn JavaScript Tutorial</a><a href="https://www.javatpoint.com/jquery-tutorial">Learn jQuery Tutorial</a><a href="https://www.javatpoint.com/spring-tutorial">Learn Spring Tutorial</a></div><div class="column4"><h3>Our Websites</h3><a href="https://www.javatpoint.com">Javatpoint.com</a><a rel="dofollow noopener" target="_blank" href="https://www.hindi100.com">Hindi100.com</a><a rel="dofollow noopener" target="_blank" href="https://www.lyricsia.com">Lyricsia.com</a><a rel="nofollow noopener" target="_blank" href="https://www.quoteperson.com">Quoteperson.com</a><a rel="nofollow noopener" target="_blank" href="https://www.jobandplacement.com">Jobandplacement.com</a></div><div class="column4"><h3>Our Services</h3><p>Website Development</p><p>Android Development</p><p>Website Designing</p><p>Digital Marketing</p><p>Summer Training</p><p>Industrial Training</p><p>College Campus Training</p></div><div class="column4"><h3>Contact</h3><p>Address: G-13, 2nd Floor, Sec-3</p><p>Noida, UP, 201301, India</p><p>Contact No: 0120-4256464, 9990449935</p><a href="https://www.javatpoint.com/contact-us">Contact Us</a> <a href="https://www.javatpoint.com/subscribe.jsp">Subscribe Us</a> <a href="https://www.javatpoint.com/privacy-policy">Privacy Policy</a><a href="https://www.javatpoint.com/sitemap.xml">Sitemap</a></div></footer><footer class="footer2"><p>&copy; Copyright 2011-2018 www.javatpoint.com. All rights reserved. Developed by JavaTpoint.</p></footer>
+</div>
+</div>
+</div>
+<script src="https://static.javatpoint.com/js/shcoreandbrush.js">
+</script>
+<script>dp.SyntaxHighlighter.HighlightAll('code'); 
+</script>
+<!--<script src="https://static.javatpoint.com/lazysizes.min.js">-->
+<script src="https://static.javatpoint.com/lazysizes.min.js" async></script>
+</body> 
+</html> 
