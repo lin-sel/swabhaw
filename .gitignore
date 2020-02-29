@@ -127,6 +127,8 @@ hs_err_pid*
 *.dll
 *.so
 *.dylib
+pkg/
+bin/
 
 # Test binary, built with `go test -c`
 *.test

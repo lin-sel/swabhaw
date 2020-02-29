@@ -5,6 +5,7 @@ import (
 
 	"github.com/jinzhu/gorm"
 	uuid "github.com/satori/go.uuid"
+	service "github.com/swabhav/gomodapp/service"
 
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 )
@@ -36,6 +37,8 @@ func main() {
 	con.Where("id = ?", users[0].ID).Find(&user)
 
 	fmt.Println(user.ID)
+
+	service.NewDataService()
 
 }
 
