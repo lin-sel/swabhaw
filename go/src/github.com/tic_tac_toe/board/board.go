@@ -36,7 +36,7 @@ func (board *Board) SetMark(index uint8, mark cell.Mark) error {
 
 //GetMark get Mark
 func (board *Board) GetMark(index uint8) (cell.Mark, error) {
-	if index <= board.Size {
+	if index < board.Size {
 		return board.cells[index].GetMark(), nil
 	}
 	return cell.NoMark, errors.New("Inavlid Index")
