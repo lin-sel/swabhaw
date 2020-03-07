@@ -1,0 +1,35 @@
+<app-loader [class]="loader"></app-loader>
+<div [class]="mainDiv">
+    <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="email">Name:</label>
+            <input type="email" formControlName="name" class="form-control" placeholder="Enter Name" required>
+        </div>
+        <div class="form-group">
+            <label for="pwd">Email:</label>
+            <input type="email" formControlName="email" name="email" class="form-control" placeholder="Enter Email"
+                required>
+        </div>
+        <div class="form-group">
+            <label for="pwd">RollNo:</label>
+            <input type="number" formControlName="rollNo" class="form-control" placeholder="Enter RollNo" required>
+        </div>
+        <div class="form-group">
+            <label for="pwd">Age:</label>
+            <input type="number" formControlName="age" class="form-control" placeholder="Enter Number" required>
+        </div>
+        <div class="form-group">
+            <label for="pwd">Date:</label>
+            <input type="date" formControlName="date" class="form-control" placeholder="Enter Email" required>
+        </div>
+        <div class="form-group">
+            <label for="pwd">Gender:</label>
+            <select class="form-control" formControlName="isMale">
+                <option value="">Select Gender</option>
+                <option [value]="male">Male</option>
+                <option [value]="female">Female</option>
+            </select>
+        </div>
+        <button type="submit" [disabled]="!addForm.valid" class="btn btn-primary">Add Student</button>
+    </form>
+</div>
