@@ -74,12 +74,12 @@ func TestRDiagonal(t *testing.T) {
 	}
 }
 
-// func TestVertical(t *testing.T) {
-// 	b := board.NewBoard(3)
-// 	analyzer := NewResultAnalyzer()
-// 	fillVertical(b, 1, 1)
-// 	expected, actual := true, analyzer.AnalyzeBoard(1, b)
-// 	if expected != actual {
-// 		t.Errorf("Expected %v and Actual %v", expected, actual)
-// 	}
-// }
+func TestVertical(t *testing.T) {
+	b := board.NewBoard(3)
+	analyzer := NewResultAnalyzer()
+	fillVertical(b, 1, 1)
+	expected, actual := true, analyzer.AnalyzeBoard(1, b)
+	if expected != actual {
+		t.Errorf("Expected %v and Actual %v", expected, actual)
+	}
+}

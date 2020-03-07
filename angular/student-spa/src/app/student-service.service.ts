@@ -11,8 +11,8 @@ export class StudentServiceService {
       private url: string;
       private data: IStudent[] = Array();
       constructor(private _http: HttpClient) {
-            this.url = 'http://gsmktg.azurewebsites.net:80/api/v1/techlabs/test/students/';
-            // this.url = 'http://127.0.0.1:8080/'
+            // this.url = 'http://gsmktg.azurewebsites.net:80/api/v1/techlabs/test/students/';
+            this.url = 'http://127.0.0.1:8080/api/'
       }
 
       getStudentList(): Observable<IStudent[]> {

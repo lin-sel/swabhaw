@@ -25,6 +25,7 @@ func RouterStart(router *mux.Router) {
 	log.Info("Route Register")
 }
 
+// Return All Student
 func getAll(w http.ResponseWriter, r *http.Request) {
 	log.Info("Get Endpoint Hit")
 	w.Header().Set("Content-type", "application/json")
@@ -38,6 +39,7 @@ func getAll(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(students)
 }
 
+// Return Student By ID
 func getByID(w http.ResponseWriter, r *http.Request) {
 	log.Info("GetByID Endpoint Hit")
 	w.Header().Set("Content-type", "application/json")
@@ -51,6 +53,7 @@ func getByID(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(student)
 }
 
+// Add New Student to List
 func addStudent(w http.ResponseWriter, r *http.Request) {
 	log.Info("Add Endpoint Hit")
 	w.Header().Set("Content-type", "application/json")
@@ -75,6 +78,7 @@ func addStudent(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(id)
 }
 
+// Update Student By ID
 func updateStudent(w http.ResponseWriter, r *http.Request) {
 	log.Info("Update Endpoint Hit")
 	w.Header().Set("Content-Type", "application/json")
@@ -98,6 +102,7 @@ func updateStudent(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+// Delete Student By ID
 func deleteStudent(w http.ResponseWriter, r *http.Request) {
 	log.Info("Delete Endpoint Hit")
 	w.Header().Set("Content-Type", "application/json")
@@ -109,6 +114,7 @@ func deleteStudent(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+// Decode application/x-www-form-urlencoded data to Struct
 func urlEncodedData(student *Student, r *http.Request) {
 	r.ParseForm()
 	student.Name = r.FormValue("name")
