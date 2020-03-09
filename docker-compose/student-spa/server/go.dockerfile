@@ -2,7 +2,7 @@ FROM golang:1.13
 
 ENV GO111MODULE=on
 
-RUN mkdir /var/www/server
+RUN mkdir /build
 
 WORKDIR /build
 
@@ -14,4 +14,4 @@ COPY . .
 
 RUN go build -o main .
 
-CMD ["/var/www/main"]
+CMD ["/build/main"]

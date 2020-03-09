@@ -8,11 +8,11 @@ import { Router } from '@angular/router';
       styleUrls: ['./add.component.css']
 })
 export class AddComponent implements OnInit {
-      private addForm: FormGroup;
-      private male: boolean;
-      private female: boolean;
-      private loader: string;
-      private mainDiv: string;
+      addForm: FormGroup;
+      male: boolean;
+      female: boolean;
+      loader: string;
+      mainDiv: string;
       constructor(private _ser: StudentServiceService, private _router: Router) {
             this.initializeForm();
             this.male = true;

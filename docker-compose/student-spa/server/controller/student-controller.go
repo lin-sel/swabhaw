@@ -3,7 +3,6 @@ package controller
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
 	"net/http"
 	"strconv"
 	"strings"
@@ -65,10 +64,10 @@ func (rs *RouterService) addStudent(w http.ResponseWriter, r *http.Request) {
 	if strings.Compare(r.Header["Content-Type"][0], "application/x-www-form-urlencoded") == 0 {
 		urlEncodedData(&student, r)
 	} else {
-		var p []byte
-		p, _ = ioutil.ReadAll(r.Body)
-		// r.Body.Read(p)
-		fmt.Println("Byte", string(p))
+		// var p []byte
+		// p, _ = ioutil.ReadAll(r.Body)
+		// // r.Body.Read(p)
+		// fmt.Println("Byte", string(p))
 		err := json.NewDecoder(r.Body).Decode(&student)
 		fmt.Println(student)
 		if err != nil {

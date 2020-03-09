@@ -10,10 +10,10 @@ import { IStudent } from '../interface/Istudent';
       styleUrls: ['./edit.component.css']
 })
 export class EditComponent implements OnInit {
-      private updateForm: FormGroup;
-      private studentData: IStudent;
-      private loader: string;
-      private mainDiv: string;
+      updateForm: FormGroup;
+      studentData: IStudent;
+      loader: string;
+      mainDiv: string;
       constructor(private _ser: StudentServiceService, private _router: Router, private _activeRoute: ActivatedRoute) {
             this.initializeForm();
             this.loader = 'show';

@@ -1,6 +1,34 @@
 version: "3"
 
 services:
-  client-side:
-    context: .
-    dockerfile:
+  nginx:
+    container_name: nginx-angular
+    image: nginx-angular
+    build:
+      context: .
+      dockerfile: nginx.dockerfile
+    volumes:
+      - ./dist/student-spa:/usr/share/nginx/html
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - go
+    # networks:
+    #   - app-network
+    network_mode: host
+
+  go:
+    container_name: angular-go-server
+    image: go-server
+    build:
+      context: ./server
+      dockerfile: go.dockerfile
+    ports:
+      - "8080:8080"
+    # networks:
+    #   - app-network
+    network_mode: host
+# networks:
+#   app-network:
+#     driver: host
