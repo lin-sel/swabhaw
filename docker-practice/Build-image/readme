@@ -1,0 +1,4 @@
+
+Command
+      docker build -t tagname (Dockerfilename or .)
+      docker run -p externalport:internalport --env-file environment-file.env -it tagname
